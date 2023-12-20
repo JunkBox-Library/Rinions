@@ -1,0 +1,67 @@
+388a389
+> //		modified by Fumi.Iseki for External Animation 
+390c391,392
+< void LLKeyframeMotion::JointMotion::update(LLJointState* joint_state, F32 time, F32 duration)
+---
+> //void LLKeyframeMotion::JointMotion::update(LLJointState* joint_state, F32 time, F32 duration)
+> void LLKeyframeMotion::JointMotion::update(LLJointState* joint_state, F32 time, F32 duration, LLKeyframeMotion* motion)
+400a403,405
+> 	// added by Fumi.Iseki for External Animation
+> 	if (motion!=NULL) motion->externalAnimation.CheckChannelIndexShm();
+> 
+406c411,422
+< 		joint_state->setScale( mScaleCurve.getValue( time, duration ) );
+---
+> 		// modified by Fumi.Iseki for External Animation
+> 		LLVector3 vect;
+> 		
+> 		if (motion!=NULL && motion->externalAnimation.isExternal) {
+> 			vect = motion->externalAnimation.GetAnimationScale(joint_state->getJoint()->getName());	
+> 		}
+> 		else {
+> 			vect = mScaleCurve.getValue( time, duration );
+> 		}
+> 
+> 		//joint_state->setScale( mScaleCurve.getValue( time, duration ) );
+> 		joint_state->setScale( vect );
+414c430,441
+< 		joint_state->setRotation( mRotationCurve.getValue( time, duration ) );
+---
+> 		// modified by Fumi.Iseki for External Animation
+> 		LLQuaternion quat;
+> 		
+> 		if (motion!=NULL && motion->externalAnimation.isExternal) {
+> 			quat = motion->externalAnimation.GetAnimationRotation(joint_state->getJoint()->getName());			
+> 		}
+> 		else {
+> 			quat = mRotationCurve.getValue( time, duration );
+> 		}
+> 
+> 		//joint_state->setRotation( mRotationCurve.getValue( time, duration ) );
+> 		joint_state->setRotation( quat );
+422c449,460
+< 		joint_state->setPosition( mPositionCurve.getValue( time, duration ) );
+---
+> 		// modified by Fumi.Iseki for External Animation
+> 		LLVector3 vect;
+> 		
+> 		if (motion!=NULL && motion->externalAnimation.isExternal) {
+> 			vect = motion->externalAnimation.GetAnimationPosition(joint_state->getJoint()->getName());	
+> 		}
+> 		else {
+> 			vect = mPositionCurve.getValue( time, duration );
+> 		}
+> 
+> 		//joint_state->setPosition( mPositionCurve.getValue( time, duration ) );
+> 		joint_state->setPosition( vect );
+446c484,485
+< 
+---
+> 	// added by Fumi.Iseki for External Animation
+> 	externalAnimation.init(id);
+742a782
+> 		// modified by Fumi.Iseki for External Animation
+745c785
+< 													  mJointMotionList->mDuration );
+---
+> 													  mJointMotionList->mDuration, this );

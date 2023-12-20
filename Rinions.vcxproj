@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|x64">
+      <Configuration>Template</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EFE54E8-6071-4153-8E76-EDCC3845A25A}</ProjectGuid>
+    <RootNamespace>Rinions</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>Rinions</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Configuration)64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Configuration)64\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Configuration)64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)64\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\JunkBox_Lib++\MathLib;..\JunkBox_Lib++\NiLib;..\JunkBox_Lib++\BasicLib;..\JunkBox_Lib++\GraphLib;..\JunkBox_Lib++\BasicLib\Lib;..\JunkBox_Lib++\ExtendLib;..\JunkBox_Lib++\ExtendLib\xLib;..\JunkBox_Win_Lib\WinBaseLib;..\JunkBox_Win_Lib\DLGBoxLib;..\JunkBox_Win_Lib\MFCLib;..\JunkBox_Win_Lib\MFCBaseLib;..\JunkBox_Win_Lib\WinNiLib;..\JunkBox_Win_Lib\MotionLib;.;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;C:\Program Files (x86)\PrimeSense\NITE\Include;C:\Program Files\Microsoft SDKs\Kinect\v1.6\inc;C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.6.0\inc;C:\Program Files (x86)\OpenNI\Include;C:\Program Files (x86)\OpenNI2\Include;C:\Program Files (x86)\PrimeSense\NiTE2\Include;..\opencv\build\include;..\magdb142;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;ENABLE_KINECT_SDK;ENABLE_OPENNI2;ENABLE_OPENCV;ENABLE_NI_SPEECH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;JunkBox_Win_Lib.lib
+;JunkBox_Lib++.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\JunkBox_Lib++\Debug;..\JunkBox_Win_Lib\Debug;C:\Program Files (x86)\OpenNI\Lib;C:\Program Files (x86)\PrimeSense\NITE\Lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;C:\Program Files\Microsoft SDKs\Kinect\v1.6\lib\x86;C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.6.0\Lib\x86;C:\Program Files (x86)\Microsoft SDKs\Speech\v11.0\Lib;C:\Program Files (x86)\OpenNI2\Lib;C:\Program Files (x86)\PrimeSense\NiTE2\Lib;..\opencv\build\x86\vc10\staticlib;..\jpeg-8c;..\magdb142;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <DelayLoadDLLs>OpenNI.dll;OpenNI2.dll;NiTE2.dll;Kinect10.dll;FaceTrackLib.dll</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\JunkBox_Lib++\MathLib;..\JunkBox_Lib++\NiLib;..\JunkBox_Lib++\BasicLib;..\JunkBox_Lib++\GraphLib;..\JunkBox_Lib++\BasicLib\Lib;..\JunkBox_Lib++\ExtendLib;..\JunkBox_Lib++\ExtendLib\xLib;..\JunkBox_Win_Lib\WinBaseLib;..\JunkBox_Win_Lib\DLGBoxLib;..\JunkBox_Win_Lib\MFCLib;..\JunkBox_Win_Lib\MFCBaseLib;.;..\JunkBox_Win_Lib\WinNiLib;..\JunkBox_Win_Lib\MotionLib;C:\Program Files\OpenNI\Include;C:\Program Files\PrimeSense\NITE\Include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;C:\Program Files\Microsoft SDKs\Kinect\v1.6\inc;C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.6.0\inc;C:\Program Files\OpenNI2\Include;C:\Program Files\PrimeSense\NITE2\Include;..\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WIN64;_WINDOWS;_DEBUG;ENABLE_KINECT_SDK;ENABLE_OPENNI2;ENABLE_OPENCV;ENABLE_NI_SPEECH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;JunkBox_Win_Lib.lib
+;JunkBox_Lib++.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\JunkBox_Lib++\Debug64;..\JunkBox_Win_Lib\Debug64;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;C:\Program Files\OpenNI\Lib64;C:\Program Files\PrimeSense\NITE\Lib64;C:\Program Files\Microsoft SDKs\Kinect\v1.6\lib\amd64;C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.6.0\Lib\amd64;C:\Program Files\Microsoft SDKs\Speech\v11.0\Lib;C:\Program Files\OpenNI2\Lib;C:\Program Files\PrimeSense\NITE2\Lib;..\opencv\build\x64\vc10\staticlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <DelayLoadDLLs>OpenNI64.dll;OpenNI2.dll;NiTE2.dll;Kinect10.dll;FaceTrackLib.dll</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\JunkBox_Lib++\MathLib;..\JunkBox_Lib++\NiLib;..\JunkBox_Lib++\BasicLib;..\JunkBox_Lib++\GraphLib;..\JunkBox_Lib++\BasicLib\Lib;..\JunkBox_Win_Lib\WinBaseLib;..\JunkBox_Win_Lib\DLGBoxLib;..\JunkBox_Win_Lib\MFCLib;..\JunkBox_Lib++\ExtendLib;..\JunkBox_Lib++\ExtendLib\xLib;..\JunkBox_Win_Lib\DocFrameView;..\JunkBox_Win_Lib\MFCBaseLib;..\JunkBox_Win_Lib\WinNiLib;..\JunkBox_Win_Lib\MotionLib;.;C:\Program Files (x86)\OpenNI\Include;C:\Program Files (x86)\PrimeSense\NITE\Include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;C:\Program Files\Microsoft SDKs\Kinect\v1.6\inc;C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.6.0\inc;C:\Program Files (x86)\OpenNI2\Include;C:\Program Files (x86)\PrimeSense\NITE2\Include;..\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ENABLE_KINECT_SDK;ENABLE_OPENNI2;ENABLE_OPENCV;ENABLE_NI_SPEECH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;JunkBox_Win_Lib.lib
+;JunkBox_Lib++.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\JunkBox_Lib++\Release;..\JunkBox_Win_Lib\Release;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;C:\Program Files (x86)\OpenNI\Lib;C:\Program Files (x86)\PrimeSense\NITE\Lib;C:\Program Files\Microsoft SDKs\Kinect\v1.6\lib\x86;C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.6.0\Lib\x86;C:\Program Files (x86)\Microsoft SDKs\Speech\v11.0\Lib;C:\Program Files (x86)\OpenNI2\Lib;C:\Program Files (x86)\PrimeSense\NiTE2\Lib;..\opencv\build\x86\vc10\staticlib;..\jpeg-8c;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <DelayLoadDLLs>OpenNI.dll;OpenNI2.dll;NiTE2.dll;Kinect10.dll;FaceTrackLib.dll</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\JunkBox_Lib++\MathLib;..\JunkBox_Lib++\NiLib;..\JunkBox_Lib++\BasicLib;..\JunkBox_Lib++\GraphLib;..\JunkBox_Lib++\BasicLib\Lib;..\JunkBox_Win_Lib\WinBaseLib;..\JunkBox_Win_Lib\DLGBoxLib;..\JunkBox_Win_Lib\MFCLib;..\JunkBox_Win_Lib\MotionLib;..\JunkBox_Win_Lib\WinNiLib;..\JunkBox_Lib++\ExtendLib;..\JunkBox_Lib++\ExtendLib\xLib;..\JunkBox_Win_Lib\MFCBaseLib;.;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;C:\Program Files\OpenNI\Include;C:\Program Files\PrimeSense\NITE\Include;C:\Program Files\Microsoft SDKs\Kinect\v1.6\inc;C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.6.0\inc;C:\Program Files\OpenNI2\Include;C:\Program Files\PrimeSense\NITE2\Include;..\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WIN64;_WINDOWS;NDEBUG;ENABLE_KINECT_SDK;ENABLE_OPENNI2;ENABLE_OPENCV;ENABLE_NI_SPEECH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;JunkBox_Win_Lib.lib
+;JunkBox_Lib++.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\JunkBox_Lib++\Release64;..\JunkBox_Win_Lib\Release64;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;C:\Program Files\OpenNI\Lib64;C:\Program Files\PrimeSense\NITE\Lib64;C:\Program Files\Microsoft SDKs\Kinect\v1.6\lib\amd64;C:\Program Files\Microsoft SDKs\Kinect\Developer Toolkit v1.6.0\Lib\amd64;C:\Program Files\Microsoft SDKs\Speech\v11.0\Lib;C:\Program Files\OpenNI2\Lib;C:\Program Files\PrimeSense\NITE2\Lib;..\opencv\build\x64\vc10\staticlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <DelayLoadDLLs>OpenNI64.dll;OpenNI2.dll;NiTE2.dll;Kinect10.dll;FaceTrackLib.dll</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DepthFrame.cpp" />
+    <ClCompile Include="Dialog\FilePlayerDLG.cpp" />
+    <ClCompile Include="Dialog\SetAnimation.cpp" />
+    <ClCompile Include="Dialog\SetDataSave.cpp" />
+    <ClCompile Include="Dialog\SetDevice.cpp" />
+    <ClCompile Include="Dialog\SetLogMode.cpp" />
+    <ClCompile Include="Dialog\SetMotion.cpp" />
+    <ClCompile Include="Dialog\SetNetwork.cpp" />
+    <ClCompile Include="Dialog\SetOutData.cpp" />
+    <ClCompile Include="Dialog\SetSpeech.cpp" />
+    <ClCompile Include="Dialog\SetViewMode.cpp" />
+    <ClCompile Include="ExNILib\ExKinectWin.cpp" />
+    <ClCompile Include="ExNiLib\ExNiDevice.cpp" />
+    <ClCompile Include="ExNiLib\ExNiFileDev.cpp" />
+    <ClCompile Include="ExNiLib\ExNiJoints.cpp" />
+    <ClCompile Include="ExNiLib\ExNiNetwork.cpp" />
+    <ClCompile Include="ExNiLib\ExNiSHMemory.cpp" />
+    <ClCompile Include="ExNILib\ExOpenNiWin.cpp" />
+    <ClCompile Include="ExNiLib\ExportNiData.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="ParameterSet.cpp" />
+    <ClCompile Include="Rinions.cpp" />
+    <ClCompile Include="SensorFrame.cpp" />
+    <ClCompile Include="CameraView.cpp" />
+    <ClCompile Include="SHMIF\SHMIF.cpp" />
+    <ClCompile Include="SHMIF\SHMJoints.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="anm_data.h" />
+    <ClInclude Include="DepthFrame.h" />
+    <ClInclude Include="Dialog\FilePlayerDLG.h" />
+    <ClInclude Include="Dialog\SetAnimation.h" />
+    <ClInclude Include="Dialog\SetDataSave.h" />
+    <ClInclude Include="Dialog\SetDevice.h" />
+    <ClInclude Include="Dialog\SetLogMode.h" />
+    <ClInclude Include="Dialog\SetMotion.h" />
+    <ClInclude Include="Dialog\SetNetwork.h" />
+    <ClInclude Include="Dialog\SetOutData.h" />
+    <ClInclude Include="Dialog\SetSpeech.h" />
+    <ClInclude Include="Dialog\SetViewMode.h" />
+    <ClInclude Include="ExNILib\ExKinectWin.h" />
+    <ClInclude Include="ExNiLib\ExNiDevice.h" />
+    <ClInclude Include="ExNiLib\ExNiFileDev.h" />
+    <ClInclude Include="ExNiLib\ExNiJoints.h" />
+    <ClInclude Include="ExNiLib\ExNiNetwork.h" />
+    <ClInclude Include="ExNiLib\ExNiSHMemory.h" />
+    <ClInclude Include="ExNILib\ExOpenNiWin.h" />
+    <ClInclude Include="ExNiLib\ExportNiData.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="ParameterSet.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Rinions.h" />
+    <ClInclude Include="Rinions_config.h" />
+    <ClInclude Include="SensorFrame.h" />
+    <ClInclude Include="CameraView.h" />
+    <ClInclude Include="SHMIF\SHMIF.h" />
+    <ClInclude Include="SHMIF\SHMJoints.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\JunkBox_Win_Lib\res\LogWndToolbar.bmp" />
+    <None Include="res\Rinions.ico" />
+    <None Include="res\Rinions.rc2" />
+    <None Include="res\Rinions2.ico" />
+    <None Include="res\RinionsDoc.ico" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar2.bmp" />
+    <None Include="res\Toolbar3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Rinions.rc" />
+    <ResourceCompile Include="..\JunkBox_Win_Lib\WinLib.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Rinions.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

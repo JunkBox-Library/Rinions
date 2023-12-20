@@ -1,0 +1,307 @@
+﻿<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="rootRule">
+    <one-of>
+
+      <!-- for System Command 1 -->
+      <item>
+        <tag>UP</tag>
+        <one-of>
+          <item> up </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>DOWN</tag>
+        <one-of>
+          <item> down </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>RIGHT</tag>
+        <one-of>
+          <item> right </item>
+        </one-of>
+      </item>      <item>
+        <tag>LEFT</tag>
+        <one-of>
+          <item> left </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>NEXT</tag>
+        <one-of>
+          <item> next </item>
+          <item> tab </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>BACK</tag>
+        <one-of>
+          <item> back </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>ENTER</tag>
+        <one-of>
+          <item> enter </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>MENU</tag>
+        <one-of>
+          <item> menu </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>ESC</tag>
+        <one-of>
+          <item> escape </item>
+        </one-of>
+      </item>
+
+
+      <!-- for System Command 2 -->
+      <item>
+        <tag>CHANGE</tag>
+        <one-of>
+          <item> change </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>CLOSE</tag>
+        <one-of>
+          <item> close </item>
+        </one-of>
+      </item>
+
+
+      <!-- for System Command 3 -->
+      <item>
+        <tag>OK</tag>
+        <one-of>
+          <item> ok </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>NO</tag>
+        <one-of>
+          <item> no </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>CANCEL</tag>
+        <one-of>
+          <item> cancel </item>
+        </one-of>
+      </item>
+
+
+
+      <!-- Main Menu -->
+      <item>
+        <tag>F</tag>
+        <one-of>
+          <item> file </item>
+          <item> f </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>W</tag>
+        <one-of>
+          <item> window </item>
+          <item> w </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>T</tag>
+        <one-of>
+          <item> setting </item>
+          <item> t </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>H</tag>
+        <one-of>
+          <item> help </item>
+          <item> h </item>
+        </one-of>
+      </item>
+
+
+     <!-- Sub Menu 1 -->
+      <item>
+        <tag>L</tag>
+        <one-of>
+          <item> login </item>
+          <item> log window </item>
+          <item> l </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>O</tag>
+        <one-of>
+          <item> logout </item>
+          <item> output </item>
+          <item> output data </item>
+          <item> o </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>N</tag>
+        <one-of>
+          <item> receive data </item>
+          <item> network </item>
+          <item> n </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>R</tag>
+        <one-of>
+          <item> read data </item>
+          <item> r </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>S</tag>
+        <one-of>
+          <item> save data </item>
+          <item> save </item>
+          <item> s </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>I</tag>
+        <one-of>
+          <item> initailize </item>
+          <item> i </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>X</tag>
+        <one-of>
+          <item> exit </item>
+          <item> x </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>C</tag>
+        <one-of>
+          <item> camera </item>
+          <item> camera window </item>
+          <item> c </item>
+        </one-of>
+      </item>
+
+
+     <!-- Sub Menu 2 -->
+       <item>
+        <tag>D</tag>
+        <one-of>
+          <item> device </item>
+          <item> depth data </item>
+          <item> d </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>P</tag>
+        <one-of>
+          <item> speech </item>
+          <item> p </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>A</tag>
+        <one-of>
+          <item> animation </item>
+          <item> about </item>
+          <item> a </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>M</tag>
+        <one-of>
+          <item> motion </item>
+          <item> m </item>
+        </one-of>
+      </item>
+
+
+    <!-- Sub Menu 3 -->
+      <item>
+        <tag>1</tag>
+        <one-of>
+          <item> one </item>
+          <item> 1 </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>2</tag>
+        <one-of>
+          <item> two </item>
+          <item> 2 </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>3</tag>
+        <one-of>
+          <item> three </item>
+          <item> 3 </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>4</tag>
+        <one-of>
+          <item> four </item>
+          <item> 4 </item>
+        </one-of>
+      </item>
+
+
+
+     <!-- Camera View -->
+      <item>
+        <tag>START</tag>
+        <one-of>
+          <item> start </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>RECORD</tag>
+        <one-of>
+          <item> record </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>STOP</tag>
+        <one-of>
+          <item> stop </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>USER</tag>
+        <one-of>
+          <item> user </item>
+        </one-of>
+      </item>
+
+      <item>
+        <tag>MOTOR_UP</tag>
+        <one-of>
+          <item> motor up </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>MOTOR_DOWN</tag>
+        <one-of>
+          <item> motor down </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>MOTOR_CENTER</tag>
+        <one-of>
+          <item> motor center </item>
+        </one-of>
+      </item>
+
+    </one-of>
+  </rule>
+</grammar>

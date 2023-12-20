@@ -1,0 +1,13 @@
+45a46,48
+> // added by Fumi.Iseki for External Animation
+> #include "nslExternalAnimation.h"
+> 
+162a166,167
+> 	// added by Fumi.Iseki for External Animation
+> 	nsl::ExternalAnimation   externalAnimation;
+390c395,397
+< 		void update(LLJointState* joint_state, F32 time, F32 duration);
+---
+> 		// modified by Fumi.Iseki for External Animation
+> 		//void update(LLJointState* joint_state, F32 time, F32 duration);
+> 		void update(LLJointState* joint_state, F32 time, F32 duration, LLKeyframeMotion* motion=NULL);

@@ -1,0 +1,30 @@
+#
+# Please describe restriction of joints rotation by dgree.
+#
+#  TORSO, CHEST, NECK, HEAD, HIP and KNEE are ZXY euler rotation.
+#  COLLAR and ELBOW are YXZ euler rotation.
+#  SHLDR WRIST are YZX euler rotation.
+#  ANKLE is XZY euler rotation.
+#
+# ex.) NECK  -30.0  30.0  -37.0  22.0  -45.0  45.0
+#
+NAME     XMIN   XMAX   YMIN   YMAX   ZMIN   ZMAX
+---------------------------------------------------------
+TORSO    
+CHEST    
+NECK     
+HEAD     
+L_COLLAR 
+L_SHLDR  
+L_ELBOW  
+L_WRIST  
+R_COLLAR 
+R_SHLDR  
+R_ELBOW  
+R_WRIST  
+L_HIP    
+L_KNEE   
+L_ANKLE  
+R_HIP    
+R_KNEE   
+R_ANKLE  
