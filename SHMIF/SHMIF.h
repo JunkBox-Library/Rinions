@@ -1,6 +1,5 @@
 #pragma once
 
-
 /** 
  * SHMIF.h    v1.0
  *
@@ -8,29 +7,21 @@
  * 
  */
 
-
-
-
 #include "tools++.h"
 #include "buffer.h"
 #include "Vector.h"
 #include "Rotation.h"
 
-
-
 #define	  SHMIF_JOINT_NUM		34
-
 
 #define   SHMIF_CHANNEL_NUM		22	// Local 1 + Network (Oneself 1 + Other 20)
 #define   SHMIF_DATA_SIZE		64	// ジョイントのデータサイズ  8+8x3+8x4   see also ANM_COM_LEN_DATA in anm_data.h
 #define   SHMIF_INDEX_LEN		40	// 36 + 4
 #define   SHMIF_UUID_LEN		36
 
-
 #define	  SHMIF_INDEX_NAME		"AnimationIndex"
 #define   SHMIF_ZERO_UUID		"00000000-0000-0000-0000-000000000000"
 #define   SHMIF_DEFAULT_ANIM	"f9073e22-6148-ea6f-8906-8378bfe6d44b"
-
 
 
 //
@@ -79,19 +70,10 @@
 #define   SHMIF_AVATAR		33		// "Avatar"
 
 
-
-
-
-
-
 using namespace jbxl;
 
 
-
 std::string  SHMJointName(int n);
-
-
-
 
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -117,7 +99,6 @@ public:
 	void*		mapHandle[SHMIF_JOINT_NUM];
 	double*		ptrShm[SHMIF_JOINT_NUM];
 
-
 public:
 	CSHMInterFace()  {}
 	CSHMInterFace(char* id) { init(id);}
@@ -136,15 +117,10 @@ public:
 	int			getChannelIndexShm(Buffer uuid);
 	void 		checkChannelIndexShm(void);
 
-
 	void		getJointStatus(double* data);
-
 
 	Quaternion<double> getAnimationRotation(std::string joint_name);
 	Vector<double>     getAnimationPosition(std::string joint_name);
 	Vector<double>     getAnimationScale   (std::string joint_name);
 };
-
-
-
 
