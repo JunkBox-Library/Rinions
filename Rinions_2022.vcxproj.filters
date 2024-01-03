@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ExNILib\ExKinectWin.cpp">
+      <Filter>ExNiLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ExNiLib\ExNiDevice.cpp">
+      <Filter>ExNiLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ExNiLib\ExNiFileDev.cpp">
+      <Filter>ExNiLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ExNiLib\ExNiJoints.cpp">
+      <Filter>ExNiLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ExNiLib\ExNiNetwork.cpp">
+      <Filter>ExNiLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ExNiLib\ExNiSHMemory.cpp">
+      <Filter>ExNiLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ExNILib\ExOpenNiWin.cpp">
+      <Filter>ExNiLib</Filter>
+    </ClCompile>
+    <ClCompile Include="ExNiLib\ExportNiData.cpp">
+      <Filter>ExNiLib</Filter>
+    </ClCompile>
+    <ClCompile Include="SHMIF\SHMIF.cpp">
+      <Filter>SHMIF</Filter>
+    </ClCompile>
+    <ClCompile Include="SHMIF\SHMJoints.cpp">
+      <Filter>SHMIF</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\SetAnimation.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\SetDataSave.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\SetDevice.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\SetLogMode.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\SetMotion.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\SetNetwork.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\SetOutData.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\SetSpeech.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\SetViewMode.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\FilePlayerDLG.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraView.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthFrame.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ParameterSet.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Rinions.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorFrame.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExNILib\ExKinectWin.h">
+      <Filter>ExNiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ExNiLib\ExNiDevice.h">
+      <Filter>ExNiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ExNiLib\ExNiFileDev.h">
+      <Filter>ExNiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ExNiLib\ExNiJoints.h">
+      <Filter>ExNiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ExNiLib\ExNiNetwork.h">
+      <Filter>ExNiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ExNiLib\ExNiSHMemory.h">
+      <Filter>ExNiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ExNILib\ExOpenNiWin.h">
+      <Filter>ExNiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ExNiLib\ExportNiData.h">
+      <Filter>ExNiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="SHMIF\SHMIF.h">
+      <Filter>SHMIF</Filter>
+    </ClInclude>
+    <ClInclude Include="SHMIF\SHMJoints.h">
+      <Filter>SHMIF</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\SetAnimation.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\SetDataSave.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\SetDevice.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\SetLogMode.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\SetMotion.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\SetNetwork.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\SetOutData.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\SetSpeech.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\SetViewMode.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\FilePlayerDLG.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="anm_data.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraView.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthFrame.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ParameterSet.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Rinions.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Rinions_config.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorFrame.h">
+      <Filter>ヘッダファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Rinions.rc">
+      <Filter>リソースファイル</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\JunkBox_Win_Lib\WinLib.rc">
+      <Filter>リソースファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\JunkBox_Win_Lib\res\LogWndToolbar.bmp">
+      <Filter>リソースファイル</Filter>
+    </None>
+    <None Include="res\Rinions.ico">
+      <Filter>リソースファイル</Filter>
+    </None>
+    <None Include="res\Rinions.rc2">
+      <Filter>リソースファイル</Filter>
+    </None>
+    <None Include="res\Rinions2.ico">
+      <Filter>リソースファイル</Filter>
+    </None>
+    <None Include="res\RinionsDoc.ico">
+      <Filter>リソースファイル</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>リソースファイル</Filter>
+    </None>
+    <None Include="res\Toolbar2.bmp">
+      <Filter>リソースファイル</Filter>
+    </None>
+    <None Include="res\Toolbar3.bmp">
+      <Filter>リソースファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ExNiLib">
+      <UniqueIdentifier>{a875a0d9-15f0-4e72-ac13-0cb3dac81fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SHMIF">
+      <UniqueIdentifier>{e5792cf4-56c4-4b1d-a8e6-1bc86d04a19f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{6cc754b2-b091-40ea-bb45-fb6d43776e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル">
+      <UniqueIdentifier>{c16c853b-fe26-4035-b08c-4f2a4a9f0e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダファイル">
+      <UniqueIdentifier>{3742e633-0001-4e85-a64a-7a31955aa66d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソースファイル">
+      <UniqueIdentifier>{78565e60-7c0e-4079-b6fb-70447337733a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
