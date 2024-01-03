@@ -4,5 +4,5 @@
 #### Suspension of updates (freeze)
 - needs Kinect SDK and OpenCV
 - [Wiki](https://polaris.star-dust.jp/pukiwiki/?Rinions)
-- 今はもう動かす気力は無い．コードビューのため保存．
+- 今はもう動かす気力は無い．コードレビューのため保存．
 
