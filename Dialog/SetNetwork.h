@@ -3,14 +3,14 @@
 #include  "ParameterSet.h"
 
 
-// CSetNetwork ƒ_ƒCƒAƒƒO
+// CSetNetwork ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 
 
 
 /*
 Delete
 IDD_SETNETWORK
-@@CONTROL         " ©“®’²®  i–¢j",IDC_CHECK_AUTO_IN_FPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,115,57,10
+ã€€ã€€CONTROL         " è‡ªå‹•èª¿æ•´  ï¼ˆæœªï¼‰",IDC_CHECK_AUTO_IN_FPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,115,57,10
     CONTROL         " Automatic adjustment (not yet)",IDC_CHECK_AUTO_IN_FPS,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,115,111,10
 */
@@ -21,12 +21,12 @@ class CSetNetwork : public CDialog
 	DECLARE_DYNAMIC(CSetNetwork)
 
 public:
-	CSetNetwork(CParameterSet prm, BOOL login, CWnd* pParent=NULL);   // •W€ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	CSetNetwork(CParameterSet prm, BOOL login, CWnd* pParent=NULL);   // æ¨™æº–ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	virtual ~CSetNetwork() {}
 
 	CParameterSet getParameter(void) { return param;}
 
-	// ƒ_ƒCƒAƒƒO ƒf[ƒ^
+	// ãƒ€ã‚¤ã‚¢ãƒ­ã‚° ãƒ‡ãƒ¼ã‚¿
 	enum { IDD = IDD_SETNETWORK };
 
 
@@ -60,7 +60,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ƒTƒ|[ƒg
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ã‚µãƒãƒ¼ãƒˆ
 
 	DECLARE_MESSAGE_MAP()
 public:

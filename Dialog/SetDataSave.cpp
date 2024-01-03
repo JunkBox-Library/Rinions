@@ -1,4 +1,4 @@
-// setDataSave.cpp : 実装ファイル
+// setDataSave.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include "stdafx.h"
@@ -8,7 +8,7 @@
 #include "WinTools.h"
 
 
-// CSetDataSave ダイアログ
+// CSetDataSave 繝繧､繧｢繝ｭ繧ｰ
 
 IMPLEMENT_DYNAMIC(CSetDataSave, CDialog)
 
@@ -62,7 +62,7 @@ BEGIN_MESSAGE_MAP(CSetDataSave, CDialog)
 END_MESSAGE_MAP()
 
 
-// CSetDataSave メッセージ ハンドラ
+// CSetDataSave 繝｡繝�繧ｻ繝ｼ繧ｸ 繝上Φ繝峨Λ
 
 
 

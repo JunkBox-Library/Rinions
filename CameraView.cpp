@@ -1,4 +1,4 @@
-// CameraView.cpp : À‘•ƒtƒ@ƒCƒ‹
+// CameraView.cpp : å®Ÿè£…ãƒ•ã‚¡ã‚¤ãƒ«
 //
 
 #include "stdafx.h"
@@ -69,17 +69,17 @@ BEGIN_MESSAGE_MAP(CCameraView, CView)
 END_MESSAGE_MAP()
 
 
-// CCameraView •`‰æ
+// CCameraView æç”»
 
 void CCameraView::OnDraw(CDC* pDC)
 {
 	CDocument* pDoc = GetDocument();
-	// TODO: •`‰æƒR[ƒh‚ğ‚±‚±‚É’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢B
+	// TODO: æç”»ã‚³ãƒ¼ãƒ‰ã‚’ã“ã“ã«è¿½åŠ ã—ã¦ãã ã•ã„ã€‚
 }
 
 
 
-// CCameraView f’f
+// CCameraView è¨ºæ–­
 
 #ifdef _DEBUG
 void CCameraView::AssertValid() const
@@ -96,4 +96,4 @@ void CCameraView::Dump(CDumpContext& dc) const
 #endif //_DEBUG
 
 
-// CCameraView ƒƒbƒZ[ƒW ƒnƒ“ƒhƒ‰[
+// CCameraView ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒ³ãƒ‰ãƒ©ãƒ¼

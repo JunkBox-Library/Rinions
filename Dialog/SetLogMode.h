@@ -4,7 +4,7 @@
 
 
 
-// CSetLogMode É_ÉCÉAÉçÉO
+// CSetLogMode „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 
 class CSetLogMode : public CDialog
 {
@@ -16,7 +16,7 @@ public:
 
 	CParameterSet getParameter(void) { return param;}
 
-	// É_ÉCÉAÉçÉO ÉfÅ[É^
+	// „ÉÄ„Ç§„Ç¢„É≠„Ç∞ „Éá„Éº„Çø
 	enum { IDD = IDD_SETLOGMODE };
 
 
@@ -38,7 +38,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÉTÉ|Å[Ég
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV „Çµ„Éù„Éº„Éà
 
 	DECLARE_MESSAGE_MAP()
 public:

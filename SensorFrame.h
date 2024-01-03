@@ -1,4 +1,4 @@
-// CSensorFrame ƒtƒŒ[ƒ€
+// CSensorFrame ãƒ•ãƒ¬ãƒ¼ãƒ 
 
 #pragma once
 

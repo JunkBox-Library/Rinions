@@ -1,6 +1,6 @@
 
 /*
-MMDóp Rinions Shared Memory ÉCÉìÉ^Å[ÉtÉFÉCÉX v0.9 
+MMDÁî® Rinions Shared Memory „Ç§„É≥„Çø„Éº„Éï„Çß„Ç§„Çπ v0.9 
                                             by Fumi.Iseki
 
 */
@@ -41,7 +41,7 @@ D3DXVECTOR3		BP_Vector[MMD_JOINT_NUM];
 
 
 /*
-ã§óLÉÅÉÇÉäñº
+ÂÖ±Êúâ„É°„É¢„É™Âêç
     mPelvis(0), mTorso(1), mChest(2), mNeck(3), mHead(4), mSkull(5), 
 	mEyeLeft(6), mEyeRight(7), mBustLeft(8), mBustRight(9),
     mCollarLeft (10), mShoulderLeft (11), mElbowLeft (12), mWristLeft (13), mFingertipLeft (14),
@@ -98,8 +98,8 @@ Quaternion<double> get_joint_rotation(int num)
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// óBàÍÇÃÉAÉvÉäÉPÅ[ÉVÉáÉì ÉIÉuÉWÉFÉNÉg
-// DEBUGÉÇÅ[ÉhÇ≈ïKóv
+// ÂîØ‰∏Ä„ÅÆ„Ç¢„Éó„É™„Ç±„Éº„Ç∑„Éß„É≥ „Ç™„Éñ„Ç∏„Çß„ÇØ„Éà
+// DEBUG„É¢„Éº„Éâ„ÅßÂøÖË¶Å
 //
 
 CWinApp theApp;
@@ -110,14 +110,14 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 {
 	int nRetCode = 0;
 
-	// MFC Çèâä˙âªÇµÇƒÅAÉGÉâÅ[ÇÃèÍçáÇÕåãâ ÇàÛç¸ÇµÇ‹Ç∑ÅB
+	// MFC „ÇíÂàùÊúüÂåñ„Åó„Å¶„ÄÅ„Ç®„É©„Éº„ÅÆÂ†¥Âêà„ÅØÁµêÊûú„ÇíÂç∞Âà∑„Åó„Åæ„Åô„ÄÇ
 	if (!AfxWinInit(::GetModuleHandle(NULL), NULL, ::GetCommandLine(), 0)) {
-		// TODO: ïKóvÇ…âûÇ∂ÇƒÉGÉâÅ[ ÉRÅ[ÉhÇïœçXÇµÇƒÇ≠ÇæÇ≥Ç¢ÅB
-		_tprintf(_T("ívñΩìIÇ»ÉGÉâÅ[: MFC ÇÃèâä˙âªÇ™Ç≈Ç´Ç‹ÇπÇÒÇ≈ÇµÇΩ\n"));
+		// TODO: ÂøÖË¶Å„Å´Âøú„Åò„Å¶„Ç®„É©„Éº „Ç≥„Éº„Éâ„ÇíÂ§âÊõ¥„Åó„Å¶„Åè„Å†„Åï„ÅÑ„ÄÇ
+		_tprintf(_T("Ëá¥ÂëΩÁöÑ„Å™„Ç®„É©„Éº: MFC „ÅÆÂàùÊúüÂåñ„Åå„Åß„Åç„Åæ„Åõ„Çì„Åß„Åó„Åü\n"));
 		nRetCode = 1;
 	}
 	else{
-		// TODO: ÉAÉvÉäÉPÅ[ÉVÉáÉìÇÃìÆçÏÇãLèqÇ∑ÇÈÉRÅ[ÉhÇÇ±Ç±Ç…ë}ì¸ÇµÇƒÇ≠ÇæÇ≥Ç¢ÅB
+		// TODO: „Ç¢„Éó„É™„Ç±„Éº„Ç∑„Éß„É≥„ÅÆÂãï‰Ωú„ÇíË®òËø∞„Åô„Çã„Ç≥„Éº„Éâ„Çí„Åì„Åì„Å´ÊåøÂÖ•„Åó„Å¶„Åè„Å†„Åï„ÅÑ„ÄÇ
 	}
 
 	return nRetCode;
@@ -136,14 +136,14 @@ MMD_SHM_API  bool __stdcall OpenNIInit(HWND hWnd, bool EngFlag, LPDIRECT3DDEVICE
 	//DEBUG_INFO("OpenNIInit");
 
 	if (onifilename!=NULL) {
-		MessageDLG(_T("íçà”!?"), _T("Ç±Ç±Ç©ÇÁÉtÉ@ÉCÉãÇì«Ç›çûÇﬁÇ±Ç∆ÇÕèoóàÇ‹ÇπÇÒ\nRinionsÇ≈ì«Ç›çûÇÒÇ≈Ç≠ÇæÇ≥Ç¢"), MB_OK, hWnd);
+		MessageDLG(_T("Ê≥®ÊÑè!?"), _T("„Åì„Åì„Åã„Çâ„Éï„Ç°„Ç§„É´„ÇíË™≠„ÅøËæº„ÇÄ„Åì„Å®„ÅØÂá∫Êù•„Åæ„Åõ„Çì\nRinions„ÅßË™≠„ÅøËæº„Çì„Åß„Åè„Å†„Åï„ÅÑ"), MB_OK, hWnd);
 		return false;
 	}
 
 	//
 	CString animUUID = _T(SHMIF_DEFAULT_ANIM);
 
-	// Rinions ÇÃê›íËÉtÉ@ÉCÉãÇì«Çﬁ
+	// Rinions „ÅÆË®≠ÂÆö„Éï„Ç°„Ç§„É´„ÇíË™≠„ÇÄ
 	CString config = MakeWorkingFolderPath(_T(RINIONS_CONFIG_FILE), FALSE, _T(RINIOMS_CONFIG_PATH), TRUE);
 	char* configpath = ::ts2mbs(config);
 	tList* lt = read_index_tList_file(configpath, ' ');
@@ -153,7 +153,7 @@ MMD_SHM_API  bool __stdcall OpenNIInit(HWND hWnd, bool EngFlag, LPDIRECT3DDEVICE
 	free(configpath);
 
 
-	// ï\é¶Åïì¸óÕópÉ_ÉCÉAÉçÉO
+	// Ë°®Á§∫ÔºÜÂÖ•ÂäõÁî®„ÉÄ„Ç§„Ç¢„É≠„Ç∞
 	CAnimationDLG* anmdlg = new CAnimationDLG(animUUID);
 	if (anmdlg==NULL) return false;
 	
@@ -162,7 +162,7 @@ MMD_SHM_API  bool __stdcall OpenNIInit(HWND hWnd, bool EngFlag, LPDIRECT3DDEVICE
 	delete(anmdlg);
 	
 
-	// IFÇÃê∂ê¨
+	// IF„ÅÆÁîüÊàê
 	char* uuid = ::ts2mbs(animUUID);
 	ShmIF = new CSHMInterFace(uuid);
 	free(uuid);
@@ -218,7 +218,7 @@ MMD_SHM_API  void __stdcall OpenNIDrawDepthMap(bool waitflag)
 			BP_Vector[num].z = -(float)vect.x*1000.0f;
 
 
-			// è„îºêgÉÇÅ[ÉhÇ≈ÇÃï‚ê≥
+			// ‰∏äÂçäË∫´„É¢„Éº„Éâ„Åß„ÅÆË£úÊ≠£
 			if (ShmIF->isProfUpper) {
 				if (num==MMD_R_SHOULDER) {
 					cshldr.x = (BP_Vector[MMD_R_SHOULDER].x + BP_Vector[MMD_L_SHOULDER].x)*0.50f;

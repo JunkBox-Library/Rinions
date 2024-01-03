@@ -50,8 +50,8 @@ using namespace jbxl;
 
 
 //
-//  Šg’£‹¤’ÊƒWƒ‡ƒCƒ“ƒgƒNƒ‰ƒX
-//		ƒWƒ‡ƒCƒ“ƒgƒf[ƒ^‚Ì•â³
+//  æ‹¡å¼µå…±é€šã‚¸ãƒ§ã‚¤ãƒ³ãƒˆã‚¯ãƒ©ã‚¹
+//		ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆãƒ‡ãƒ¼ã‚¿ã®è£œæ­£
 //
 
 class  CExNiJoints : public CNiJoints
@@ -67,7 +67,7 @@ public:
 	CParameterSet appParam;
 
 	//
-	ExCmnHead**	pViewData;	// QÆ—pDƒƒ‚ƒŠŠÇ—‚È‚µDƒf[ƒ^‚ğƒtƒŠ[‚µ‚È‚¢–D
+	ExCmnHead**	pViewData;	// å‚ç…§ç”¨ï¼ãƒ¡ãƒ¢ãƒªç®¡ç†ãªã—ï¼ãƒ‡ãƒ¼ã‚¿ã‚’ãƒ•ãƒªãƒ¼ã—ãªã„äº‹ï¼
 
 	rectangle	faceRect;
 	rectangle   eyesRect[2];

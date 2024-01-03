@@ -30,13 +30,13 @@
 
 
 typedef struct _udp_header {
-    unsigned char  com [ANM_COM_LEN_COMMAND];	//  2	ÉRÉ}ÉìÉh
-    unsigned short msec;						//  2	É^ÉCÉ}Å[ÅimsecÅj
-    char		   key [ANM_COM_LEN_IDKEY+1];	// 17	ÉOÉãÅ[ÉvÉLÅ[
-    char		   uuid[ANM_COM_LEN_UUID+1];	// 37	ÉAÉjÉÅÅ[ÉVÉáÉìUUID
-    unsigned short port;						//  2	É|Å[Égî‘çÜ/éØï ópî‘çÜ
-    unsigned short num;							//  2	ÉfÅ[É^ÇÃêî
-    unsigned short tsz;							//  2	ÉNÉâÉCÉAÉìÉgÇ÷ì]ëóÇ∑ÇÈÉfÅ[É^ÇÃÉTÉCÉY
+    unsigned char  com [ANM_COM_LEN_COMMAND];	//  2	„Ç≥„Éû„É≥„Éâ
+    unsigned short msec;						//  2	„Çø„Ç§„Éû„ÉºÔºàmsecÔºâ
+    char		   key [ANM_COM_LEN_IDKEY+1];	// 17	„Ç∞„É´„Éº„Éó„Ç≠„Éº
+    char		   uuid[ANM_COM_LEN_UUID+1];	// 37	„Ç¢„Éã„É°„Éº„Ç∑„Éß„É≥UUID
+    unsigned short port;						//  2	„Éù„Éº„ÉàÁï™Âè∑/Ë≠òÂà•Áî®Áï™Âè∑
+    unsigned short num;							//  2	„Éá„Éº„Çø„ÅÆÊï∞
+    unsigned short tsz;							//  2	„ÇØ„É©„Ç§„Ç¢„É≥„Éà„Å∏Ëª¢ÈÄÅ„Åô„Çã„Éá„Éº„Çø„ÅÆ„Çµ„Ç§„Ç∫
 } udp_header;									// ---> 64
 
 
@@ -51,7 +51,7 @@ typedef struct _udp_header {
 
 
 
-// com[0] Ç…ê›íË REQUEST 
+// com[0] „Å´Ë®≠ÂÆö REQUEST 
 #define  ANM_COM_REQ_LOGIN          0x01
 #define  ANM_COM_REQ_LOGOUT         0x02
 #define  ANM_COM_REQ_REGIST         0x03
@@ -65,7 +65,7 @@ typedef struct _udp_header {
 #define  ANM_COM_REQ_LOG_STOP		0x13
 
 
-// com[1] Ç…ê›íË  REPLY
+// com[1] „Å´Ë®≠ÂÆö  REPLY
 #define  ANM_COM_REPLY_ERROR        0x00
 #define  ANM_COM_REPLY_OK           0x01
 #define  ANM_COM_REPLY_NG           0x02

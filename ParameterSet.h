@@ -82,8 +82,8 @@ public:
 	// from RINIONS_CONFIG_FILE
 	NiSDK_Lib	 nextSDKLib;
 
-	BOOL		 isMirroring;		// ƒ~ƒ‰[ƒŠƒ“ƒO‚ğs‚¤D
-	BOOL		 isUseImage;		// ƒJƒƒ‰ƒCƒ[ƒW‚ğg—p‚·‚éD
+	BOOL		 isMirroring;		// ãƒŸãƒ©ãƒ¼ãƒªãƒ³ã‚°ã‚’è¡Œã†ï¼
+	BOOL		 isUseImage;		// ã‚«ãƒ¡ãƒ©ã‚¤ãƒ¡ãƒ¼ã‚¸ã‚’ä½¿ç”¨ã™ã‚‹ï¼
 	int			 lineSkeleton;
 
 	NiNetOutMode netOutMode;

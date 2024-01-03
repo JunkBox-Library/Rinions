@@ -39,8 +39,8 @@ void  CExportNiData::clear(void)
 BOOL  CExportNiData::exportJointsData(Vector<float>* posVect, Quaternion<float>* rotQuat, float* jntAngl, CExNiNetwork* net, NiSDK_Lib lib, int joint_num)
 {
 	if ((!ctrlFPS || checkOutputPeriod()) && net!=NULL) {
-		exportData(posVect, rotQuat, jntAngl, net, lib, joint_num);		// ƒf[ƒ^‚ğo—Í
-		calcLocalFPS();													// FPS ‚ÌŒvZ
+		exportData(posVect, rotQuat, jntAngl, net, lib, joint_num);		// ãƒ‡ãƒ¼ã‚¿ã‚’å‡ºåŠ›
+		calcLocalFPS();													// FPS ã®è¨ˆç®—
 		return TRUE;
 	}
 
@@ -140,7 +140,7 @@ void  CExportNiData::calcLocalFPS(void)
 
 
 //
-// ‹¤—Lƒƒ‚ƒŠ‚Æƒlƒbƒgƒ[ƒN‚Éƒf[ƒ^‚ğo—Í‚·‚éD
+// å…±æœ‰ãƒ¡ãƒ¢ãƒªã¨ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ã«ãƒ‡ãƒ¼ã‚¿ã‚’å‡ºåŠ›ã™ã‚‹ï¼
 //
 void  CExportNiData::exportData(Vector<float>* posVect, Quaternion<float>* rotQuat, float* jntAngl, CExNiNetwork* net, NiSDK_Lib lib, int joint_num)
 {

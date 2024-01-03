@@ -7,11 +7,11 @@
 
 
 #ifndef __AFXWIN_H__
-	#error "PCH �ɑ΂��Ă��̃t�@�C�����C���N���[�h����O�� 'stdafx.h' ���C���N���[�h���Ă�������"
+	#error "PCH に対してこのファイルをインクルードする前に 'stdafx.h' をインクルードしてください"
 #endif
 
 
-#include  "resource.h"       // ���C�� �V���{��
+#include  "resource.h"       // メイン シンボル
 
 #include  "ExNiLib/ExNiDevice.h"
 #include  "WinBaseLib.h"
@@ -70,11 +70,11 @@ public:
 
 	BOOL	isLoggedIn;
 	BOOL	isRecvData;
-	BOOL	dataSaving;		// �f�[�^���ꎞ��ƃt�@�C���ɕۑ���
-	BOOL	savedData;		// �L���i�ۑ��\�j�Ȉꎞ��ƃt�@�C���L��
-	BOOL	loadedData;		// �������ɓǂݍ��ݍς݂̃f�[�^�L��iONI�t�@�C���p�j
-	BOOL	logfSaving;		// ���O�f�[�^��ۑ���
-	BOOL	logfSending;	// ���O�f�[�^�𑗐M��
+	BOOL	dataSaving;		// データを一時作業ファイルに保存中
+	BOOL	savedData;		// 有効（保存可能）な一時作業ファイル有り
+	BOOL	loadedData;		// メモリに読み込み済みのデータ有り（ONIファイル用）
+	BOOL	logfSaving;		// ログデータを保存中
+	BOOL	logfSending;	// ログデータを送信中
 
 	int		cameraScale;
 	int		depthScale;

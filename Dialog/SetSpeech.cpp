@@ -1,4 +1,4 @@
-// SetSpeech.cpp : 実装ファイル
+// SetSpeech.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include "stdafx.h"
@@ -9,7 +9,7 @@
 
 
 
-// CSetSpeech ダイアログ
+// CSetSpeech 繝繧､繧｢繝ｭ繧ｰ
 
 IMPLEMENT_DYNAMIC(CSetSpeech, CDialog)
 
@@ -180,7 +180,7 @@ void CSetSpeech::OnCheckSpeechCtrl()
 void CSetSpeech::OnNMCustomdrawSliderSpeechConfd(NMHDR *pNMHDR, LRESULT *pResult)
 {
 	LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
-	// TODO: ここにコントロール通知ハンドラー コードを追加します。
+	// TODO: 縺薙％縺ｫ繧ｳ繝ｳ繝医Ο繝ｼ繝ｫ騾夂衍繝上Φ繝峨Λ繝ｼ 繧ｳ繝ｼ繝峨ｒ霑ｽ蜉縺励∪縺吶�
 	*pResult = 0;
 }
 

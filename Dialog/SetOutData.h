@@ -8,26 +8,26 @@
 /*
 Delete
 IDD_SETOUTDATA
-    CONTROL         " ©“®’²® i–¢j",IDC_CHECK_OUT_FPS_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,75,57,10
+    CONTROL         " è‡ªå‹•èª¿æ•´ ï¼ˆæœªï¼‰",IDC_CHECK_OUT_FPS_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,75,57,10
     CONTROL         " Automatic adjustment (not yet)",IDC_CHECK_OUT_FPS_AUTO,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,75,115,10
 */
 
 
 
-// CSetOutData ƒ_ƒCƒAƒƒO
+// CSetOutData ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 
 class CSetOutData : public CDialog
 {
 	DECLARE_DYNAMIC(CSetOutData)
 
 public:
-	CSetOutData(CParameterSet prm, CWnd* pParent=NULL);   // •W€ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	CSetOutData(CParameterSet prm, CWnd* pParent=NULL);   // æ¨™æº–ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	virtual ~CSetOutData() {}
 
 	CParameterSet getParameter(void) { return param;}
 
-	// ƒ_ƒCƒAƒƒO ƒf[ƒ^
+	// ãƒ€ã‚¤ã‚¢ãƒ­ã‚° ãƒ‡ãƒ¼ã‚¿
 	enum { IDD = IDD_SETOUTDATA };
 
 
@@ -49,7 +49,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ƒTƒ|[ƒg
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ã‚µãƒãƒ¼ãƒˆ
 
 	DECLARE_MESSAGE_MAP()
 public:

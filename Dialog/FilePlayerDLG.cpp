@@ -1,4 +1,4 @@
-// FilePlayerDLG.cpp : 実装ファイル
+// FilePlayerDLG.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include "stdafx.h"
@@ -7,7 +7,7 @@
 #include "FilePlayerDLG.h"
 
 
-// CFilePlayerDLG ダイアログ
+// CFilePlayerDLG 繝繧､繧｢繝ｭ繧ｰ
 
 
 IMPLEMENT_DYNAMIC(CFilePlayerDLG, CDialog)

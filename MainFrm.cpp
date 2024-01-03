@@ -1,4 +1,4 @@
-// MainFrm.cpp : CMainFrame ƒNƒ‰ƒX‚Ì“®ì‚Ì’è‹`‚ğs‚¢‚Ü‚·B
+// MainFrm.cpp : CMainFrame ã‚¯ãƒ©ã‚¹ã®å‹•ä½œã®å®šç¾©ã‚’è¡Œã„ã¾ã™ã€‚
 //
 
 #include "stdafx.h"
@@ -15,7 +15,7 @@ using namespace jbxwl;
 
 
 
- // ƒXƒe[ƒ^ƒX ƒ‰ƒCƒ“ ƒCƒ“ƒWƒP[ƒ^
+ // ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ ãƒ©ã‚¤ãƒ³ ã‚¤ãƒ³ã‚¸ã‚±ãƒ¼ã‚¿
 static UINT indicators[] =
 {
 	IDS_STR_STATUSBAR_INIT,
@@ -115,27 +115,27 @@ LRESULT CMainFrame::OnEventSpeech(WPARAM wParam, LPARAM lParam)
 				//
 				CWnd* wnd = GetForegroundWindow();	// GetActiveWindow(), GetLastActivePopup()
 				if (wnd!=NULL) {
-					if (wnd->m_hWnd==m_hWnd) {	// ©ƒEƒBƒ“ƒhƒE
+					if (wnd->m_hWnd==m_hWnd) {	// è‡ªã‚¦ã‚£ãƒ³ãƒ‰ã‚¦
 						ret = DoSystemKeyAction((LPCTSTR)lParam);
 						if (!ret) ret = DoLocalMenuKeyAction((LPCTSTR)lParam);
 					}
 					else {
 						CWnd* pnt = wnd->GetParent();
-						if (pnt!=NULL && pnt->m_hWnd==m_hWnd) {	// ƒ‚[ƒ_ƒ‹ƒ_ƒCƒAƒƒO
+						if (pnt!=NULL && pnt->m_hWnd==m_hWnd) {	// ãƒ¢ãƒ¼ãƒ€ãƒ«ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 							wnd->SendMessage(JBXWL_WM_SPEECH_EVENT, wParam, lParam);
-							::Sleep(30);			// ˆ—‚ªŠ®—¹‚·‚é‚Ü‚Å‘Ò‚ÂH
+							::Sleep(30);			// å‡¦ç†ãŒå®Œäº†ã™ã‚‹ã¾ã§å¾…ã¤ï¼Ÿ
 							ret = TRUE;
 						}
 					}
 				}
 
 				if (!ret) {
-					// ƒZƒ“ƒT[iƒJƒƒ‰jƒEƒBƒ“ƒhƒE
+					// ã‚»ãƒ³ã‚µãƒ¼ï¼ˆã‚«ãƒ¡ãƒ©ï¼‰ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦
 					if (pApp->pSensorView!=NULL && pApp->pSensorView->pFrame!=NULL) {
 						CWnd* snsr = FromHandle(pApp->pSensorView->pFrame->m_hWnd);
 						if (snsr!=NULL) {
 							snsr->SendMessage(JBXWL_WM_SPEECH_EVENT, wParam, lParam);
-							::Sleep(30);	// ˆ—‚ªŠ®—¹‚·‚é‚Ü‚Å‘Ò‚ÂH
+							::Sleep(30);	// å‡¦ç†ãŒå®Œäº†ã™ã‚‹ã¾ã§å¾…ã¤ï¼Ÿ
 						}
 					}
 				}
@@ -187,14 +187,14 @@ BOOL  CMainFrame::DoLocalMenuKeyAction(LPCTSTR com)
 
 
 /////////////////////////////////////////////////////////////////////////////
-// CMainFrame ƒNƒ‰ƒX‚Ì\’z/Á–Å
+// CMainFrame ã‚¯ãƒ©ã‚¹ã®æ§‹ç¯‰/æ¶ˆæ»…
 
 CMainFrame::CMainFrame()
 {
 	pApp = NULL;
 	memset(&windowSize, 0, sizeof(RECT));
 
-	// ƒƒjƒ…[‚Ì—LŒøC–³Œø‚ÌØ‚è‘Ö‚¦‚ğ‰Â”\‚É‚·‚é
+	// ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æœ‰åŠ¹ï¼Œç„¡åŠ¹ã®åˆ‡ã‚Šæ›¿ãˆã‚’å¯èƒ½ã«ã™ã‚‹
 	m_bAutoMenuEnable = FALSE;
 }
 
@@ -226,7 +226,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (!m_wndStatusBar.Create(this))
 	{
 		DEBUG_INFO("CMainFrame::OnCreate(): ERROR: Failed to create status bar");
-		return -1;      // ì¬‚É¸”s
+		return -1;      // ä½œæˆã«å¤±æ•—
 	}
 	m_wndStatusBar.SetIndicators(indicators, sizeof(indicators)/sizeof(UINT));
 
@@ -252,7 +252,7 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 
 
 /////////////////////////////////////////////////////////////////////////////
-// ƒXƒe[ƒ^ƒXƒo[‚Ö‚Ìİ’è
+// ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒãƒ¼ã¸ã®è¨­å®š
 
 void  CMainFrame::SetStausBarText(CString mesg)
 {
@@ -295,7 +295,7 @@ void  CMainFrame::SetStausBarNetworkBPS(float bps)
 
 
 /////////////////////////////////////////////////////////////////////////////
-// CMainFrame ƒNƒ‰ƒX‚Ìf’f
+// CMainFrame ã‚¯ãƒ©ã‚¹ã®è¨ºæ–­
 
 #ifdef _DEBUG
 void CMainFrame::AssertValid() const
@@ -318,7 +318,7 @@ void CMainFrame::Dump(CDumpContext& dc) const
 
 
 /////////////////////////////////////////////////////////////////////////////
-// CMainFrame ƒƒbƒZ[ƒW ƒnƒ“ƒhƒ‰
+// CMainFrame ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒ³ãƒ‰ãƒ©
 
 void  CMainFrame::OnInitMenu(CMenu* pMenu)
 {

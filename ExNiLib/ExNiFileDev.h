@@ -76,7 +76,7 @@ public:
 	void	setTempFilePath(void) { tempFilePath = MakeWorkingFolderPath(_T(NI_RECORDE_TEMP_FILE), TRUE, _T("\\NSL\\Rinions\\"), TRUE);}
 	void	deleteRecordeTempFile(void) { if (tempFilePath!=_T("")) tunlink(tempFilePath);}
 	
-	BOOL	openTempJointsFile(void)	    { return open_wfile(tempFilePath, TRUE);}	// ã≠êßè„èëÇ´
+	BOOL	openTempJointsFile(void)	    { return open_wfile(tempFilePath, TRUE);}	// Âº∑Âà∂‰∏äÊõ∏„Åç
 	void	closeTempJointsFile(void)	    { close_wfile();}
 	void	writeTempJointsFileHeader(void) { write_header(NULL);}
 

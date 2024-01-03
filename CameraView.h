@@ -5,14 +5,14 @@
 //#include "Rinions.h"
 
 
-// CCameraView ƒrƒ…[
+// CCameraView ãƒ“ãƒ¥ãƒ¼
 
 class CCameraView : public CDxDirectView
 {
 	DECLARE_DYNCREATE(CCameraView)
 
 protected:
-	CCameraView();           // “®“I¶¬‚Åg—p‚³‚ê‚é protected ƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+	CCameraView();           // å‹•çš„ç”Ÿæˆã§ä½¿ç”¨ã•ã‚Œã‚‹ protected ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	virtual ~CCameraView();
 
 
@@ -32,7 +32,7 @@ public:
 
 //
 public:
-	virtual void OnDraw(CDC* pDC);      // ‚±‚Ìƒrƒ…[‚ğ•`‰æ‚·‚é‚½‚ß‚ÉƒI[ƒo[ƒ‰ƒCƒh‚³‚ê‚Ü‚·B
+	virtual void OnDraw(CDC* pDC);      // ã“ã®ãƒ“ãƒ¥ãƒ¼ã‚’æç”»ã™ã‚‹ãŸã‚ã«ã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã•ã‚Œã¾ã™ã€‚
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 #ifndef _WIN32_WCE

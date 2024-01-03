@@ -4,7 +4,7 @@
 #include  "ExNiLib/ExNiDevice.h"
 #include  "ParameterSet.h"
 
-// CSetDevice ƒ_ƒCƒAƒƒO
+// CSetDevice ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 
 
 
@@ -14,13 +14,13 @@ class CSetDevice : public CDialog
 	DECLARE_DYNAMIC(CSetDevice)
 
 public:
-//	CSetDevice(NiSDK_Lib lib, CParameterSet prm, CWnd* pParent=NULL);   // •W€ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	CSetDevice(CExNiDevice* dev, CParameterSet prm, CWnd* pParent=NULL);   // •W€ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+//	CSetDevice(NiSDK_Lib lib, CParameterSet prm, CWnd* pParent=NULL);   // æ¨™æº–ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	CSetDevice(CExNiDevice* dev, CParameterSet prm, CWnd* pParent=NULL);   // æ¨™æº–ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	virtual ~CSetDevice() {}
 
 	CParameterSet getParameter(void) { return param;}
 
-	// ƒ_ƒCƒAƒƒO ƒf[ƒ^
+	// ãƒ€ã‚¤ã‚¢ãƒ­ã‚° ãƒ‡ãƒ¼ã‚¿
 	enum { IDD = IDD_SETDEVICE };
 
 
@@ -41,7 +41,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ƒTƒ|[ƒg
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ã‚µãƒãƒ¼ãƒˆ
 
 	DECLARE_MESSAGE_MAP()
 public:

@@ -10,7 +10,7 @@
 
 
 /*
-�g�p����p�����[�^
+使用するパラメータ
 	appParam.animationUUID		CSetAnimation
 */
 
@@ -366,25 +366,25 @@ void  CExNiSHMemory::clearAnimationData(void)
 /**
 
 
-@param data   �f�[�^���ւ̃|�C���^
-@param uuid   �A�j���[�V����UUID
-@param joints �f�[�^�̌�
-@param size   ��̃f�[�^�T�C�Y
+@param data   データ部へのポインタ
+@param uuid   アニメーションUUID
+@param joints データの個数
+@param size   一個のデータサイズ
 
 
-data�̐擪4Byte       mode[0]                    mode[1]
+dataの先頭4Byte       mode[0]                    mode[1]
      +-------------------------------------------------------+
-     |�W���C���g�̏��(1)|�p�P�b�g�̏��(1)|�W���C���g�ԍ�(2)|
+     |ジョイントの状態(1)|パケットの状態(1)|ジョイント番号(2)|
      +-------------------------------------------------------+
 
-�W���C���g�̏��
-  �㔼�g���[�h�@�@�@NI_SHM_PROFILE_UPPER
-  �g���b�N���O��	NI_SHM_IS_TRACKING
+ジョイントの状態
+  上半身モード　　　NI_SHM_PROFILE_UPPER
+  トラックング中	NI_SHM_IS_TRACKING
 
-�p�P�b�g���̃f�[�^�̏�ԁF
-//  0x0000 �ʒu�f�[�^�Ɖ�]�f�[�^�����݂���D
-  ANM_COM_DATA_POSITION (0x0001) �ʒu�f�[�^�����݂���D
-  ANM_COM_DATA_ROTATION�i0x0002�j��]�f�[�^�����݂���D
+パケット内のデータの状態：
+//  0x0000 位置データと回転データが存在する．
+  ANM_COM_DATA_POSITION (0x0001) 位置データが存在する．
+  ANM_COM_DATA_ROTATION（0x0002）回転データが存在する．
 
 */
 void  CExNiSHMemory::updateNetworkAnimation(char* data, char* uuid, int joints)
@@ -395,7 +395,7 @@ void  CExNiSHMemory::updateNetworkAnimation(char* data, char* uuid, int joints)
 	//}
 
 	int channel = checkNetworkAnimationIndex(uuid);
-	if (channel<0) return;		// �C���f�b�N�X����UUID������
+	if (channel<0) return;		// インデックス部にUUIDが無い
 
 	int chnlpos = channel*ANM_COM_NUM_DATA;
 	unsigned short* mode = NULL;
@@ -408,14 +408,14 @@ void  CExNiSHMemory::updateNetworkAnimation(char* data, char* uuid, int joints)
 	float* net = (float*)data;
 	for (int i=0; i<joints; i++) {
 		mode = (unsigned short*)net;
-		int n = mode[1];	// Joint�ԍ�
+		int n = mode[1];	// Joint番号
 		//
 		if (n>=0 && n<SHMIF_JOINT_NUM && ptrMapData[n]!=NULL) {
 			double* shm = ptrMapData[n] + chnlpos;
 				
 			//
-			info[0] = mode[0];		// �W���C���g�ƃp�P�b�g�̏��
-			info[1] = mode[1];		// �W���C���g�ԍ�
+			info[0] = mode[0];		// ジョイントとパケットの状態
+			info[1] = mode[1];		// ジョイント番号
 			shm[0]  = *joint_info;
 			net++;
 
@@ -457,8 +457,8 @@ void  CExNiSHMemory::updateNetworkAnimation(char* data, char* uuid, int joints)
 				double* shm = ptrMapData[n] + chnlpos;
 
 				//
-				info[0] = mode[0];		// �W���C���g�ƃp�P�b�g�̏��
-				info[1] = mode[1];		// �W���C���g�ԍ�
+				info[0] = mode[0];		// ジョイントとパケットの状態
+				info[1] = mode[1];		// ジョイント番号
 				shm[0]  = *joint_info;
 				net++;
 				
@@ -499,7 +499,7 @@ void  CExNiSHMemory::clearNetworkAnimation(char* uuid)
 
 	int n;
 
-	// �����F���[�J���̓N���A�Ώۂł͂Ȃ��̂ŁC������ n�� 1����
+	// 検索：ローカルはクリア対象ではないので，検索は nが 1から
 	for (n=1; n<SHMIF_CHANNEL_NUM; n++) {
 		if (!strncasecmp(ptr, uuid, ANM_COM_LEN_UUID)) {
 			memset(ptr, 0, SHMIF_INDEX_LEN);
@@ -508,7 +508,7 @@ void  CExNiSHMemory::clearNetworkAnimation(char* uuid)
 		ptr += SHMIF_INDEX_LEN;
 	}
 
-	// �N���A
+	// クリア
 	if (n<SHMIF_CHANNEL_NUM) {
 		for (int i=0; i<SHMIF_JOINT_NUM; i++) {
 			if (ptrMapData[i]!=NULL) {

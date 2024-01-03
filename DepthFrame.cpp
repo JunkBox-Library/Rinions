@@ -1,4 +1,4 @@
-// DepthFrame.cpp : 実装ファイル
+// DepthFrame.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include  "stdafx.h"
@@ -43,7 +43,7 @@ END_MESSAGE_MAP()
 
 
 
-// CDepthFrame メッセージ ハンドラ
+// CDepthFrame 繝｡繝�繧ｻ繝ｼ繧ｸ 繝上Φ繝峨Λ
 
 int  CDepthFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 {

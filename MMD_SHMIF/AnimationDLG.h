@@ -5,17 +5,17 @@
 
 
 
-// CAnimationDLG É_ÉCÉAÉçÉO
+// CAnimationDLG „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 
 class CAnimationDLG : public CDialog
 {
 	DECLARE_DYNAMIC(CAnimationDLG)
 
 public:
-	CAnimationDLG(CString uuid, CWnd* pParent=NULL);   // ïWèÄÉRÉìÉXÉgÉâÉNÉ^
+	CAnimationDLG(CString uuid, CWnd* pParent=NULL);   // Ê®ôÊ∫ñ„Ç≥„É≥„Çπ„Éà„É©„ÇØ„Çø
 	virtual ~CAnimationDLG() {}
 
-	// É_ÉCÉAÉçÉO ÉfÅ[É^
+	// „ÉÄ„Ç§„Ç¢„É≠„Ç∞ „Éá„Éº„Çø
 	enum { IDD = IDD_SETANIMATION };
 
 
@@ -29,7 +29,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÉTÉ|Å[Ég
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV „Çµ„Éù„Éº„Éà
 
 	DECLARE_MESSAGE_MAP()
 	virtual void OnOK();

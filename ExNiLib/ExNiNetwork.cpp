@@ -8,7 +8,7 @@
 
 
 /*
-g—p‚·‚éƒpƒ‰ƒ[ƒ^
+ä½¿ç”¨ã™ã‚‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿
 	appParam.clientPort			CSetNetwork
 	appParam.animationUUID		CSetAnimation
 	appParam.printNetwkMode		CSetLogMode
@@ -45,7 +45,7 @@ CExNiNetwork::CExNiNetwork(void)
 	recvBuffer = make_Buffer(NINET_BUFFER_LEN);
 	sendBuffer = make_Buffer(NINET_BUFFER_LEN);
 
-	// Network‚Ì‰Šú‰» see network.c
+	// Networkã®åˆæœŸåŒ– see network.c
 	init_network();
 }
 
@@ -362,7 +362,7 @@ void  CExNiNetwork::sendAnimationLogStart(NiSDK_Lib lib, int joints_num)
 	int sz = ANM_COM_LEN_NAME + 5;		// + 1 + 4
 	datptr += sz;
 	len += sz;
-	mode[1] = (unsigned short)sz;	// ƒf[ƒ^’·
+	mode[1] = (unsigned short)sz;	// ãƒ‡ãƒ¼ã‚¿é•·
 	num++;
 
 	/*
@@ -375,7 +375,7 @@ void  CExNiNetwork::sendAnimationLogStart(NiSDK_Lib lib, int joints_num)
 	sz += 4;
 	datptr += sz;
 	len += sz;
-	mode[1] = (unsigned short)sz;	// ƒf[ƒ^’·
+	mode[1] = (unsigned short)sz;	// ãƒ‡ãƒ¼ã‚¿é•·
 	num++;
 
 	//
@@ -393,7 +393,7 @@ void  CExNiNetwork::sendAnimationLogStart(NiSDK_Lib lib, int joints_num)
 			sz += 4;
 			datptr += sz;
 			len += sz;
-			mode[1] = (unsigned short)sz;	// ƒf[ƒ^’·
+			mode[1] = (unsigned short)sz;	// ãƒ‡ãƒ¼ã‚¿é•·
 			num++;
 		}
 	}
@@ -441,7 +441,7 @@ void  CExNiNetwork::sendAnimationLogStop(void)
 	free_Buffer(&buf);
 	//
 	len = ANM_COM_LEN_NAME + 5;		// + 1 + 4
-	mode[1] = (unsigned short)len;	// ƒf[ƒ^’·
+	mode[1] = (unsigned short)len;	// ãƒ‡ãƒ¼ã‚¿é•·
 
 
 	//
@@ -583,7 +583,7 @@ void  CExNiNetwork::sendAnimationData(Vector<float>* posVect, Quaternion<float>*
 	sz = (ANM_COM_LEN_NAME+sizeof(float))/sizeof(float) + 1;
 	datptr += sz;
 	len += sz;
-	mode[1] = (unsigned short)(sz*sizeof(float));	// ƒf[ƒ^’·
+	mode[1] = (unsigned short)(sz*sizeof(float));	// ãƒ‡ãƒ¼ã‚¿é•·
 	num++;
 
 	// Lap Time
@@ -594,7 +594,7 @@ void  CExNiNetwork::sendAnimationData(Vector<float>* posVect, Quaternion<float>*
 	sz = (sizeof(unsigned long int)+sizeof(float)-1)/sizeof(float) + 1;
 	datptr += sz;
 	len += sz;
-	mode[1] = (unsigned short)(sz*sizeof(float));	// ƒf[ƒ^’·
+	mode[1] = (unsigned short)(sz*sizeof(float));	// ãƒ‡ãƒ¼ã‚¿é•·
 	num++;
 
 	// Angle between Joints
@@ -636,11 +636,11 @@ void  CExNiNetwork::sendAnimationData(Vector<float>* posVect, Quaternion<float>*
 
 ////////////////////////////////////////////////////////////////////////////////////////
 //
-// ƒXƒŒƒbƒh
+// ã‚¹ãƒ¬ãƒƒãƒ‰
 //
 
 //
-// ƒf[ƒ^óM
+// ãƒ‡ãƒ¼ã‚¿å—ä¿¡
 //
 
 UINT  niNetworkRecieveLoop(LPVOID pParam)
@@ -723,7 +723,7 @@ UINT  niNetworkRecieveLoop(LPVOID pParam)
 							break;
 						}
 					}
-					// ‹¤—Lƒƒ‚ƒŠ‚É‘‚«‚İ
+					// å…±æœ‰ãƒ¡ãƒ¢ãƒªã«æ›¸ãè¾¼ã¿
 					else {
 						ptr += sizeof(udp_header);
 						niNetwork->sharedMem->updateNetworkAnimation(ptr, udphd->uuid, joints);

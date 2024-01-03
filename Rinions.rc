@@ -16,11 +16,12 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// “ú–{Œê (“ú–{) resources
+// æ—¥æœ¬èªž (æ—¥æœ¬) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
 LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
-#pragma code_page(932)
+//#pragma code_page(932)
+#pragma code_page(65001)
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -50,12 +51,12 @@ BEGIN
     "\r\n"
     "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
     "LANGUAGE 17, 1\r\n"
-    "#pragma code_page(932)\r\n"
-    "#include ""res\\Rinions.rc2""     // Microsoft Visual C++ ˆÈŠO‚Å•ÒW‚³‚ê‚½ƒŠƒ\[ƒX\r\n"
-    "#include ""l.JPN\\afxres.rc""     // •W€ƒRƒ“ƒ|[ƒlƒ“ƒg\r\n"
+    "#pragma code_page(65001)\r\n"
+    "#include ""res\\Rinions.rc2""     // Microsoft Visual C++ ä»¥å¤–ã§ç·¨é›†ã•ã‚ŒãŸãƒªã‚½ãƒ¼ã‚¹\r\n"
+    "#include ""l.JPN\\afxres.rc""     // æ¨™æº–ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆ\r\n"
     "#if !defined(_AFXDLL)\r\n"
-    "#include ""l.JPN\\afxprint.rc""   // ˆóü/ˆóüƒvƒŒƒrƒ…[ ƒŠƒ\[ƒX\r\n"
-    "#include ""l.JPN\\afxribbon.rc""  // MFC ‚ÌƒŠƒ{ƒ“ ƒŠƒ\[ƒX‚ÆƒRƒ“ƒgƒ[ƒ‹ ƒo[ ƒŠƒ\[ƒX\r\n"
+    "#include ""l.JPN\\afxprint.rc""   // å°åˆ·/å°åˆ·ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼ ãƒªã‚½ãƒ¼ã‚¹\r\n"
+    "#include ""l.JPN\\afxribbon.rc""  // MFC ã®ãƒªãƒœãƒ³ ãƒªã‚½ãƒ¼ã‚¹ã¨ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ« ãƒãƒ¼ ãƒªã‚½ãƒ¼ã‚¹\r\n"
     "#endif\r\n"
     "#endif\r\n"
     "\0"
@@ -139,30 +140,30 @@ END
 
 IDR_MAINFRAME MENU
 BEGIN
-    POPUP "ƒtƒ@ƒCƒ‹ (&F)"
+    POPUP "ãƒ•ã‚¡ã‚¤ãƒ« (&F)"
     BEGIN
-        MENUITEM "ƒƒOƒCƒ“ (&L)",                   ID_APP_LOGIN
-        MENUITEM "ƒƒOƒAƒEƒg (&O)",                  ID_APP_LOGOUT
+        MENUITEM "ãƒ­ã‚°ã‚¤ãƒ³ (&L)",                   ID_APP_LOGIN
+        MENUITEM "ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ (&O)",                  ID_APP_LOGOUT
         MENUITEM SEPARATOR
-        MENUITEM "ƒf[ƒ^ŽóM (&N)",                  ID_APP_DATA_RECV
+        MENUITEM "ãƒ‡ãƒ¼ã‚¿å—ä¿¡ (&N)",                  ID_APP_DATA_RECV
         MENUITEM SEPARATOR
-        MENUITEM "ƒf[ƒ^“Çž (&R)",                  ID_APP_DATA_LOAD
-        MENUITEM "ƒf[ƒ^•Û‘¶ (&S)",                  ID_APP_DATA_SAVE
+        MENUITEM "ãƒ‡ãƒ¼ã‚¿èª­è¾¼ (&R)",                  ID_APP_DATA_LOAD
+        MENUITEM "ãƒ‡ãƒ¼ã‚¿ä¿å­˜ (&S)",                  ID_APP_DATA_SAVE
         MENUITEM SEPARATOR
-        MENUITEM "‰Šú‰» (&I)",                    ID_APP_INIT
+        MENUITEM "åˆæœŸåŒ– (&I)",                    ID_APP_INIT
         MENUITEM SEPARATOR
-        MENUITEM "I—¹ (&X)",                     ID_APP_EXIT
+        MENUITEM "çµ‚äº† (&X)",                     ID_APP_EXIT
     END
-    POPUP "ƒEƒBƒ“ƒhƒE (&W)"
+    POPUP "ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ (&W)"
     BEGIN
-        POPUP "ƒJƒƒ‰ (&C)"
+        POPUP "ã‚«ãƒ¡ãƒ© (&C)"
         BEGIN
             MENUITEM "x 1    (&1)",                 ID_SNSR_WND_OPEN_1
             MENUITEM "x 1/2 (&2)",                  ID_SNSR_WND_OPEN_2
             MENUITEM "x 1/3 (&3)",                  ID_SNSR_WND_OPEN_3
             MENUITEM "x 1/4 (&4)",                  ID_SNSR_WND_OPEN_4
         END
-        POPUP "“Çžƒf[ƒ^ (&R)"
+        POPUP "èª­è¾¼ãƒ‡ãƒ¼ã‚¿ (&R)"
         BEGIN
             MENUITEM "x 1    (&1)",                 ID_LOAD_WND_OPEN_1
             MENUITEM "x 1/2 (&2)",                  ID_LOAD_WND_OPEN_2
@@ -170,7 +171,7 @@ BEGIN
             MENUITEM "x 1/4 (&4)",                  ID_LOAD_WND_OPEN_4
         END
         MENUITEM SEPARATOR
-        POPUP "[“xƒf[ƒ^ (&D)"
+        POPUP "æ·±åº¦ãƒ‡ãƒ¼ã‚¿ (&D)"
         BEGIN
             MENUITEM "x 1    (&1)",                 ID_DPTH_WND_OPEN_1
             MENUITEM "x 1/2 (&2)",                  ID_DPTH_WND_OPEN_2
@@ -178,23 +179,23 @@ BEGIN
             MENUITEM "x 1/4 (&4)",                  ID_DPTH_WND_OPEN_4
         END
         MENUITEM SEPARATOR
-        MENUITEM "ƒƒO ƒEƒBƒ“ƒhƒE (&L)",               ID_LOG_WND_OPEN
+        MENUITEM "ãƒ­ã‚° ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ (&L)",               ID_LOG_WND_OPEN
     END
-    POPUP "Ý’è (&T)"
+    POPUP "è¨­å®š (&T)"
     BEGIN
-        MENUITEM "ƒfƒoƒCƒX (&D)",                   ID_SETTING_DEVICE
-        MENUITEM "ƒAƒjƒ[ƒVƒ‡ƒ“ (&A)",                ID_SETTING_ANIMATION
-        MENUITEM "‰¹º”FŽ¯ (&P)",                   ID_SETTING_SPEECH
-        MENUITEM "ƒ‚[ƒVƒ‡ƒ“ (&M)",                  ID_SETTING_MOTION
-        MENUITEM "ƒlƒbƒgƒ[ƒN (&N)",                 ID_SETTING_NETWORK
-        MENUITEM "ƒJƒƒ‰ ƒEƒBƒ“ƒhƒE (&C)",              ID_SETTING_VIEWMODE
-        MENUITEM "ƒƒO ƒEƒBƒ“ƒhƒE (&L)",               ID_SETTING_LOGINGMODE
-        MENUITEM "ƒf[ƒ^•Û‘¶ (&S)",                  ID_SETTING_SAVEDATA
-        MENUITEM "ƒf[ƒ^o—Í (&O)",                  ID_SETTING_OUTDATA
+        MENUITEM "ãƒ‡ãƒã‚¤ã‚¹ (&D)",                   ID_SETTING_DEVICE
+        MENUITEM "ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ (&A)",                ID_SETTING_ANIMATION
+        MENUITEM "éŸ³å£°èªè­˜ (&P)",                   ID_SETTING_SPEECH
+        MENUITEM "ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ (&M)",                  ID_SETTING_MOTION
+        MENUITEM "ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ (&N)",                 ID_SETTING_NETWORK
+        MENUITEM "ã‚«ãƒ¡ãƒ© ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ (&C)",              ID_SETTING_VIEWMODE
+        MENUITEM "ãƒ­ã‚° ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ (&L)",               ID_SETTING_LOGINGMODE
+        MENUITEM "ãƒ‡ãƒ¼ã‚¿ä¿å­˜ (&S)",                  ID_SETTING_SAVEDATA
+        MENUITEM "ãƒ‡ãƒ¼ã‚¿å‡ºåŠ› (&O)",                  ID_SETTING_OUTDATA
     END
-    POPUP "ƒwƒ‹ƒv (&H)"
+    POPUP "ãƒ˜ãƒ«ãƒ— (&H)"
     BEGIN
-        MENUITEM "ƒAƒoƒEƒg (&A)...",                ID_APP_ABOUT
+        MENUITEM "ã‚¢ãƒã‚¦ãƒˆ (&A)...",                ID_APP_ABOUT
     END
 END
 
@@ -229,7 +230,7 @@ END
 
 IDD_ABOUTBOX DIALOGEX 0, 0, 239, 83
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ƒo[ƒWƒ‡ƒ“î•ñ Rinions"
+CAPTION "ãƒãƒ¼ã‚¸ãƒ§ãƒ³æƒ…å ± Rinions"
 FONT 9, "MS UI Gothic", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
@@ -241,121 +242,121 @@ END
 
 IDD_SETVIEWMODE DIALOGEX 0, 0, 131, 113
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION " ƒJƒƒ‰Ý’è"
+CAPTION " ã‚«ãƒ¡ãƒ©è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,14,92,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,71,92,50,14
-    GROUPBOX        "ƒJƒƒ‰ƒ‚[ƒh",IDC_STATIC,7,7,117,76
-    CONTROL         " ƒ~ƒ‰[ƒŠƒ“ƒO‚ðs‚¤",IDC_CHECK_VIEW_MIRRORING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,19,63,10
-    CONTROL         " ƒJƒƒ‰ƒCƒ[ƒW‚ð•\Ž¦‚·‚é",IDC_CHECK_VIEW_USEIMAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,33,83,10
-    LTEXT           "ƒXƒPƒ‹ƒgƒ“‚Ìƒ‰ƒCƒ“‚Ì‘¾‚³",IDC_STATIC,16,53,64,8
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,71,92,50,14
+    GROUPBOX        "ã‚«ãƒ¡ãƒ©ãƒ¢ãƒ¼ãƒ‰",IDC_STATIC,7,7,117,76
+    CONTROL         " ãƒŸãƒ©ãƒ¼ãƒªãƒ³ã‚°ã‚’è¡Œã†",IDC_CHECK_VIEW_MIRRORING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,19,63,10
+    CONTROL         " ã‚«ãƒ¡ãƒ©ã‚¤ãƒ¡ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã™ã‚‹",IDC_CHECK_VIEW_USEIMAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,33,83,10
+    LTEXT           "ã‚¹ã‚±ãƒ«ãƒˆãƒ³ã®ãƒ©ã‚¤ãƒ³ã®å¤ªã•",IDC_STATIC,16,53,64,8
     COMBOBOX        IDC_COMBO_SKL_LINE,16,63,39,104,CBS_DROPDOWNLIST | WS_TABSTOP
 END
 
 IDD_SETLOGMODE DIALOGEX 0, 0, 131, 151
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ƒƒO ƒEƒBƒ“ƒhƒEÝ’è"
+CAPTION "ãƒ­ã‚° ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,7,130,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,76,130,50,14
-    GROUPBOX        "ƒ[ƒJƒ‹",IDC_STATIC,7,7,119,59
-    CONTROL         " À•Wƒf[ƒ^",IDC_CHECK_LOG_POSITION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,19,48,10
-    CONTROL         " ƒNƒI[ƒ^ƒjƒIƒ“",IDC_CHECK_LOG_QUATERNION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,33,54,10
-    CONTROL         " ‰ñ“]Šp",IDC_CHECK_LOG_ANGLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,47,39,10
-    GROUPBOX        "ƒlƒbƒgƒ[ƒN",IDC_STATIC,7,76,119,41
-    CONTROL         " ƒlƒbƒgƒ[ƒN ŽóMƒf[ƒ^",IDC_CHECK_LOG_NETWORK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,88,76,10
-    CONTROL         " ƒlƒbƒgƒ[ƒN ƒ`ƒFƒbƒN",IDC_CHECK_LOG_NET_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,102,76,10
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,76,130,50,14
+    GROUPBOX        "ãƒ­ãƒ¼ã‚«ãƒ«",IDC_STATIC,7,7,119,59
+    CONTROL         " åº§æ¨™ãƒ‡ãƒ¼ã‚¿",IDC_CHECK_LOG_POSITION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,19,48,10
+    CONTROL         " ã‚¯ã‚ªãƒ¼ã‚¿ãƒ‹ã‚ªãƒ³",IDC_CHECK_LOG_QUATERNION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,33,54,10
+    CONTROL         " å›žè»¢è§’",IDC_CHECK_LOG_ANGLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,47,39,10
+    GROUPBOX        "ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯",IDC_STATIC,7,76,119,41
+    CONTROL         " ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ å—ä¿¡ãƒ‡ãƒ¼ã‚¿",IDC_CHECK_LOG_NETWORK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,88,76,10
+    CONTROL         " ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ ãƒã‚§ãƒƒã‚¯",IDC_CHECK_LOG_NET_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,102,76,10
 END
 
 IDD_SETNETWORK DIALOGEX 0, 0, 163, 309
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ƒlƒbƒgƒ[ƒNÝ’è"
+CAPTION "ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "ƒ†[ƒU–¼",IDC_STATIC,7,7,150,31
+    GROUPBOX        "ãƒ¦ãƒ¼ã‚¶å",IDC_STATIC,7,7,150,31
     EDITTEXT        IDC_EDIT_RINIONS_NAME,15,19,90,14
-    GROUPBOX        "ƒf[ƒ^o—Íæ",IDC_STATIC,7,47,150,56
-    CONTROL         " ƒlƒbƒgƒ[ƒN ‚Ì‚Ý",IDC_RADIO_NETWORK,"Button",BS_AUTORADIOBUTTON,16,59,77,10
-    CONTROL         " ƒlƒbƒgƒ[ƒN ‚Æ ƒ[ƒJƒ‹",IDC_RADIO_NET_SMEM,"Button",BS_AUTORADIOBUTTON,16,73,77,10
-    CONTROL         " ƒƒOƒf[ƒ^‚Ì‚Ýƒlƒbƒgƒ[ƒN‚Ö‘—M‚·‚é",IDC_CHECK_NET_LOGONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,86,117,10
-    GROUPBOX        "ƒf[ƒ^‚ÌŽóM",IDC_STATIC,7,113,150,77
-    LTEXT           "ŽóMƒ|[ƒg”Ô†",IDC_STATIC,16,129,44,8
+    GROUPBOX        "ãƒ‡ãƒ¼ã‚¿å‡ºåŠ›å…ˆ",IDC_STATIC,7,47,150,56
+    CONTROL         " ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ ã®ã¿",IDC_RADIO_NETWORK,"Button",BS_AUTORADIOBUTTON,16,59,77,10
+    CONTROL         " ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ ã¨ ãƒ­ãƒ¼ã‚«ãƒ«",IDC_RADIO_NET_SMEM,"Button",BS_AUTORADIOBUTTON,16,73,77,10
+    CONTROL         " ãƒ­ã‚°ãƒ‡ãƒ¼ã‚¿ã®ã¿ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ã¸é€ä¿¡ã™ã‚‹",IDC_CHECK_NET_LOGONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,86,117,10
+    GROUPBOX        "ãƒ‡ãƒ¼ã‚¿ã®å—ä¿¡",IDC_STATIC,7,113,150,77
+    LTEXT           "å—ä¿¡ãƒãƒ¼ãƒˆç•ªå·",IDC_STATIC,16,129,44,8
     EDITTEXT        IDC_EDIT_CLIENT_PORT,61,125,30,14,ES_NUMBER
-    GROUPBOX        "Å‘åŽóM‘¬“xikbpsj",IDC_STATIC,14,145,135,38
+    GROUPBOX        "æœ€å¤§å—ä¿¡é€Ÿåº¦ï¼ˆkbpsï¼‰",IDC_STATIC,14,145,135,38
     CONTROL         "",IDC_SLIDER_IN_FPS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,161,104,15
     EDITTEXT        IDC_EDIT_IN_FPS,121,165,22,12,ES_AUTOHSCROLL
-    GROUPBOX        "ƒAƒjƒ[ƒVƒ‡ƒ“’†ŒpƒT[ƒo",IDC_STATIC,7,201,150,35
+    GROUPBOX        "ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ä¸­ç¶™ã‚µãƒ¼ãƒ",IDC_STATIC,7,201,150,35
     EDITTEXT        IDC_EDIT_SERVER_NAME,16,217,95,14
-    LTEXT           "ƒ|[ƒg”Ô†",IDC_STATIC,114,207,31,8
+    LTEXT           "ãƒãƒ¼ãƒˆç•ªå·",IDC_STATIC,114,207,31,8
     EDITTEXT        IDC_EDIT_SERVER_PORT,114,217,30,14,ES_NUMBER
-    GROUPBOX        "ƒOƒ‹[ƒv ƒL[",IDC_STATIC,7,247,150,32
+    GROUPBOX        "ã‚°ãƒ«ãƒ¼ãƒ— ã‚­ãƒ¼",IDC_STATIC,7,247,150,32
     EDITTEXT        IDC_EDIT_GROUP_KEY,16,259,95,14
     DEFPUSHBUTTON   "OK",IDOK,14,288,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,99,288,50,14
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,99,288,50,14
 END
 
 IDD_SETDEVICE DIALOGEX 0, 0, 125, 167
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ƒfƒoƒCƒXÝ’è"
+CAPTION "ãƒ‡ãƒã‚¤ã‚¹è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,7,148,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,70,148,50,14
-    GROUPBOX        "Œ»Ý‚Ìƒ‰ƒCƒuƒ‰ƒŠ",IDC_STATIC,7,8,113,30
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,70,148,50,14
+    GROUPBOX        "ç¾åœ¨ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒª",IDC_STATIC,7,8,113,30
     LTEXT           "",IDC_INFO_CRNT_LIB,16,20,85,12,SS_SUNKEN
-    GROUPBOX        "Ä‹N“®Žž‚É—Dæ‚·‚éƒ‰ƒCƒuƒ‰ƒŠ",IDC_STATIC,7,47,113,38
+    GROUPBOX        "å†èµ·å‹•æ™‚ã«å„ªå…ˆã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒª",IDC_STATIC,7,47,113,38
     CONTROL         " OpenNI + NiTE",IDC_RADIO_LIB_OPENNI,"Button",BS_AUTORADIOBUTTON,16,59,62,10
     CONTROL         " Kinect SDK",IDC_RADIO_LIB_KINECT,"Button",BS_AUTORADIOBUTTON,16,71,51,10
-    GROUPBOX        "ƒn[ƒhƒEƒFƒA",IDC_STATIC,7,95,113,41
-    CONTROL         " LED ‚Ì§Œä",IDC_CHECK_LED_CONTROL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,107,70,10
-    CONTROL         " ƒ`ƒ‹ƒgƒ‚[ƒ^‚Ì§Œä",IDC_CHECK_MOTOR_CONTROL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,121,72,10
+    GROUPBOX        "ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢",IDC_STATIC,7,95,113,41
+    CONTROL         " LED ã®åˆ¶å¾¡",IDC_CHECK_LED_CONTROL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,107,70,10
+    CONTROL         " ãƒãƒ«ãƒˆãƒ¢ãƒ¼ã‚¿ã®åˆ¶å¾¡",IDC_CHECK_MOTOR_CONTROL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,121,72,10
 END
 
 IDD_SETMOTION_OPENNI DIALOGEX 0, 0, 159, 307
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ƒ‚[ƒVƒ‡ƒ“Ý’è"
+CAPTION "ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,15,287,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,96,287,50,14
-    GROUPBOX        "ƒRƒ“ƒtƒBƒfƒ“ƒX",IDC_STATIC,7,7,148,29
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,96,287,50,14
+    GROUPBOX        "ã‚³ãƒ³ãƒ•ã‚£ãƒ‡ãƒ³ã‚¹",IDC_STATIC,7,7,148,29
     CONTROL         "",IDC_SLIDER_CNFDNC,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,17,104,15
     EDITTEXT        IDC_EDIT_CNFDNC,120,19,22,12,ES_AUTOHSCROLL
-    GROUPBOX        "ŠÖß‚Ì§–ñ",IDC_STATIC,7,47,148,28
-    CONTROL         " ŠÖß‚Ì“®‚«‚É§–ñ‚ð‰Á‚¦‚é",IDC_CHECK_JOINT_CONSTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,59,87,10
-    GROUPBOX        "ƒXƒ€[ƒWƒ“ƒO",IDC_STATIC,7,85,148,93
+    GROUPBOX        "é–¢ç¯€ã®åˆ¶ç´„",IDC_STATIC,7,47,148,28
+    CONTROL         " é–¢ç¯€ã®å‹•ãã«åˆ¶ç´„ã‚’åŠ ãˆã‚‹",IDC_CHECK_JOINT_CONSTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,59,87,10
+    GROUPBOX        "ã‚¹ãƒ ãƒ¼ã‚¸ãƒ³ã‚°",IDC_STATIC,7,85,148,93
     GROUPBOX        "",IDC_STATIC,14,137,135,34
-    CONTROL         " ˆÚ“®•½‹Ï",IDC_CHECK_MVAV_SMOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,137,47,10
+    CONTROL         " ç§»å‹•å¹³å‡",IDC_CHECK_MVAV_SMOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,137,47,10
     COMBOBOX        IDC_COMBO_MVAV_TYPE,21,151,48,81,CBS_DROPDOWNLIST | WS_TABSTOP
-    LTEXT           "ŽŸ”",IDC_STATIC,80,155,14,8
+    LTEXT           "æ¬¡æ•°",IDC_STATIC,80,155,14,8
     COMBOBOX        IDC_COMBO_MVAV_NUM,96,151,48,157,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     GROUPBOX        "",IDC_STATIC,14,97,135,35
-    CONTROL         " NITE ƒXƒ€[ƒWƒ“ƒO",IDC_CHECK_NITE_SMOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,97,66,10
+    CONTROL         " NITE ã‚¹ãƒ ãƒ¼ã‚¸ãƒ³ã‚°",IDC_CHECK_NITE_SMOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,97,66,10
     CONTROL         "",IDC_SLIDER_SMOOTH,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,111,104,15
     EDITTEXT        IDC_EDIT_SMOOTH,121,115,22,12,ES_AUTOHSCROLL
-    GROUPBOX        "•â³",IDC_STATIC,7,187,148,47
-    LTEXT           "YŽ²‰ñ“]",IDC_STATIC,16,201,32,8
+    GROUPBOX        "è£œæ­£",IDC_STATIC,7,187,148,47
+    LTEXT           "Yè»¸å›žè»¢",IDC_STATIC,16,201,32,8
     CONTROL         "",IDC_SLIDER_YROT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,213,104,15
     EDITTEXT        IDC_EDIT_YROT,120,213,22,12,ES_AUTOHSCROLL
-    GROUPBOX        "ŒŸo•”ˆÊ",IDC_STATIC,7,243,148,32
+    GROUPBOX        "æ¤œå‡ºéƒ¨ä½",IDC_STATIC,7,243,148,32
     COMBOBOX        IDC_COMBO_DETECT,16,255,48,104,CBS_DROPDOWNLIST | WS_TABSTOP
-    CONTROL         " ŠçŒŸo",IDC_CHECK_FACE_DETECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,257,44,10
+    CONTROL         " é¡”æ¤œå‡º",IDC_CHECK_FACE_DETECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,257,44,10
 END
 
 IDD_SETMOTION_KINECT DIALOGEX 0, 0, 159, 309
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ƒ‚[ƒVƒ‡ƒ“Ý’è"
+CAPTION "ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,15,287,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,96,287,50,14
-    GROUPBOX        "ŠÖß‚Ì§–ñ",IDC_STATIC,7,7,148,28
-    CONTROL         " ŠÖß‚Ì“®‚«‚É§–ñ‚ð‰Á‚¦‚é",IDC_CHECK_JOINT_CONSTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,19,87,10
-    GROUPBOX        "ƒXƒ€[ƒWƒ“ƒO",IDC_STATIC,7,45,148,136
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,96,287,50,14
+    GROUPBOX        "é–¢ç¯€ã®åˆ¶ç´„",IDC_STATIC,7,7,148,28
+    CONTROL         " é–¢ç¯€ã®å‹•ãã«åˆ¶ç´„ã‚’åŠ ãˆã‚‹",IDC_CHECK_JOINT_CONSTRAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,19,87,10
+    GROUPBOX        "ã‚¹ãƒ ãƒ¼ã‚¸ãƒ³ã‚°",IDC_STATIC,7,45,148,136
     GROUPBOX        "",IDC_STATIC,14,57,135,77
-    CONTROL         " Kinect SDK ƒXƒ€[ƒWƒ“ƒO",IDC_CHECK_KINECT_SMOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,58,83,10
+    CONTROL         " Kinect SDK ã‚¹ãƒ ãƒ¼ã‚¸ãƒ³ã‚°",IDC_CHECK_KINECT_SMOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,58,83,10
     LTEXT           "Smoothing",IDC_STATIC,19,72,32,8
     CONTROL         "",IDC_SLIDER_SMOOTH,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,82,104,15
     EDITTEXT        IDC_EDIT_SMOOTH,120,85,22,12,ES_AUTOHSCROLL
@@ -363,88 +364,88 @@ BEGIN
     CONTROL         "",IDC_SLIDER_CRRCTN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,112,104,15
     EDITTEXT        IDC_EDIT_CRRCTN,120,115,22,12,ES_AUTOHSCROLL
     GROUPBOX        "",IDC_STATIC,14,141,135,34
-    CONTROL         " ˆÚ“®•½‹Ï",IDC_CHECK_MVAV_SMOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,141,47,10
+    CONTROL         " ç§»å‹•å¹³å‡",IDC_CHECK_MVAV_SMOOTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,141,47,10
     COMBOBOX        IDC_COMBO_MVAV_TYPE,21,155,48,81,CBS_DROPDOWNLIST | WS_TABSTOP
-    LTEXT           "ŽŸ”",IDC_STATIC,80,158,14,8
+    LTEXT           "æ¬¡æ•°",IDC_STATIC,80,158,14,8
     COMBOBOX        IDC_COMBO_MVAV_NUM,96,155,48,157,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "•â³",IDC_STATIC,7,189,148,47
-    LTEXT           "YŽ²‰ñ“]",IDC_STATIC,18,203,32,8
+    GROUPBOX        "è£œæ­£",IDC_STATIC,7,189,148,47
+    LTEXT           "Yè»¸å›žè»¢",IDC_STATIC,18,203,32,8
     CONTROL         "",IDC_SLIDER_YROT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,215,104,15
     EDITTEXT        IDC_EDIT_YROT,120,216,22,12,ES_AUTOHSCROLL
-    GROUPBOX        "ŒŸo•”ˆÊ",IDC_STATIC,7,244,148,32
+    GROUPBOX        "æ¤œå‡ºéƒ¨ä½",IDC_STATIC,7,244,148,32
     COMBOBOX        IDC_COMBO_DETECT,16,256,48,104,CBS_DROPDOWNLIST | WS_TABSTOP
-    CONTROL         " ŠçŒŸo",IDC_CHECK_FACE_DETECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,99,257,41,10
+    CONTROL         " é¡”æ¤œå‡º",IDC_CHECK_FACE_DETECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,99,257,41,10
 END
 
 IDD_SETANIMATION DIALOGEX 0, 0, 171, 67
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ƒAƒjƒ[ƒVƒ‡ƒ“Ý’è"
+CAPTION "ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,27,46,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,93,46,50,14
-    GROUPBOX        "ƒAƒjƒ[ƒVƒ‡ƒ“UUID",IDC_STATIC,7,7,157,33
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,93,46,50,14
+    GROUPBOX        "ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³UUID",IDC_STATIC,7,7,157,33
     EDITTEXT        IDC_EDIT_ANIMATION_UUID,16,19,140,14,ES_AUTOHSCROLL
 END
 
 IDD_SETDATASAVE DIALOGEX 0, 0, 151, 291
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ƒf[ƒ^•Û‘¶Ý’è"
+CAPTION "ãƒ‡ãƒ¼ã‚¿ä¿å­˜è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "ƒtƒ@ƒCƒ‹ ƒtƒH[ƒ}ƒbƒg",IDC_STATIC,7,7,137,158
+    GROUPBOX        "ãƒ•ã‚¡ã‚¤ãƒ« ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆ",IDC_STATIC,7,7,137,158
     CONTROL         " OpenNI (.oni)",IDC_RADIO_SAVE_ONI,"Button",BS_AUTORADIOBUTTON,16,19,60,10
     CONTROL         " Joints Text",IDC_RADIO_SAVE_ORG,"Button",BS_AUTORADIOBUTTON,16,36,55,10
     GROUPBOX        "",IDC_STATIC,14,53,125,87
-    CONTROL         " BVH ƒtƒ@ƒCƒ‹ ",IDC_RADIO_SAVE_BVH,"Button",BS_AUTORADIOBUTTON,16,53,49,10
-    LTEXT           "Œ`Ž®",IDC_STATIC,29,71,15,8
+    CONTROL         " BVH ãƒ•ã‚¡ã‚¤ãƒ« ",IDC_RADIO_SAVE_BVH,"Button",BS_AUTORADIOBUTTON,16,53,49,10
+    LTEXT           "å½¢å¼",IDC_STATIC,29,71,15,8
     LTEXT           "FPS",IDC_STATIC,29,90,14,8
     COMBOBOX        IDC_COMB_SAVE_BVH_FMT,58,69,50,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     COMBOBOX        IDC_COMB_SAVE_BVH_FPS,58,87,50,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "•ªŠ„ŽžŠÔi•bj",IDC_STATIC,29,110,48,8
+    LTEXT           "åˆ†å‰²æ™‚é–“ï¼ˆç§’ï¼‰",IDC_STATIC,29,110,48,8
     EDITTEXT        IDC_EDIT_SAVE_DIVTIME,81,108,25,12,ES_AUTOHSCROLL
-    LTEXT           "ƒXƒP[ƒ‹i‘ÎƒCƒ“ƒ`j",IDC_STATIC,29,125,51,8
+    LTEXT           "ã‚¹ã‚±ãƒ¼ãƒ«ï¼ˆå¯¾ã‚¤ãƒ³ãƒï¼‰",IDC_STATIC,29,125,51,8
     EDITTEXT        IDC_EDIT_SAVE_SZSCALE,81,123,25,12,ES_AUTOHSCROLL
-    CONTROL         " •Û‘¶‚µ‚È‚¢",IDC_RADIO_NOT_SAVE,"Button",BS_AUTORADIOBUTTON,16,146,91,10
-    GROUPBOX        "ƒƒO‚Ì•Û‘¶",IDC_STATIC,7,177,137,87
-    CONTROL         "ƒT[ƒo‚ÖƒƒO‚ð‘—M‚·‚é",IDC_CHECK_SAVE_LOG_NET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,189,81,10
+    CONTROL         " ä¿å­˜ã—ãªã„",IDC_RADIO_NOT_SAVE,"Button",BS_AUTORADIOBUTTON,16,146,91,10
+    GROUPBOX        "ãƒ­ã‚°ã®ä¿å­˜",IDC_STATIC,7,177,137,87
+    CONTROL         "ã‚µãƒ¼ãƒã¸ãƒ­ã‚°ã‚’é€ä¿¡ã™ã‚‹",IDC_CHECK_SAVE_LOG_NET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,189,81,10
     GROUPBOX        "",IDC_STATIC,14,203,125,56
-    CONTROL         "ƒƒO‚ðƒ[ƒJƒ‹‚É•Û‘¶‚·‚é",IDC_CHECK_SAVE_LOG_LCL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,203,83,10
-    LTEXT           "•Û‘¶ƒtƒHƒ‹ƒ_",IDC_STATIC,26,217,45,8
+    CONTROL         "ãƒ­ã‚°ã‚’ãƒ­ãƒ¼ã‚«ãƒ«ã«ä¿å­˜ã™ã‚‹",IDC_CHECK_SAVE_LOG_LCL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,203,83,10
+    LTEXT           "ä¿å­˜ãƒ•ã‚©ãƒ«ãƒ€",IDC_STATIC,26,217,45,8
     EDITTEXT        IDC_EDIT_SAVE_LOG_FLDR,25,226,112,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "ŽQÆ",IDC_BUTTON_SAVE_LOG_REFER,102,240,35,14
+    PUSHBUTTON      "å‚ç…§",IDC_BUTTON_SAVE_LOG_REFER,102,240,35,14
     DEFPUSHBUTTON   "OK",IDOK,14,270,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,86,270,50,14
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,86,270,50,14
 END
 
 IDD_SETOUTDATA DIALOGEX 0, 0, 155, 127
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ƒf[ƒ^o—ÍÝ’è"
+CAPTION "ãƒ‡ãƒ¼ã‚¿å‡ºåŠ›è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,17,106,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,87,106,50,14
-    GROUPBOX        "ƒf[ƒ^o—Í",IDC_STATIC,7,7,141,41
-    CONTROL         " À•Wƒf[ƒ^",IDC_CHECK_OUT_CORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,19,51,10
-    CONTROL         " ƒNƒI[ƒ^ƒjƒIƒ“",IDC_CHECK_OUT_QUAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,33,57,10
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,87,106,50,14
+    GROUPBOX        "ãƒ‡ãƒ¼ã‚¿å‡ºåŠ›",IDC_STATIC,7,7,141,41
+    CONTROL         " åº§æ¨™ãƒ‡ãƒ¼ã‚¿",IDC_CHECK_OUT_CORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,19,51,10
+    CONTROL         " ã‚¯ã‚ªãƒ¼ã‚¿ãƒ‹ã‚ªãƒ³",IDC_CHECK_OUT_QUAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,33,57,10
     GROUPBOX        "",IDC_STATIC,7,57,141,38
-    CONTROL         " o—ÍiFPSj §Œä",IDC_CHECK_OUT_FPS_CTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,57,63,10
+    CONTROL         " å‡ºåŠ›ï¼ˆFPSï¼‰ åˆ¶å¾¡",IDC_CHECK_OUT_FPS_CTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,57,63,10
     CONTROL         "",IDC_SLIDER_OUT_FPS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,73,104,15
     EDITTEXT        IDC_EDIT_OUT_FPS,120,75,22,12,ES_AUTOHSCROLL
 END
 
 IDD_SETSPEECH DIALOGEX 0, 0, 155, 139
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION " ‰¹º”FŽ¯Ý’è"
+CAPTION " éŸ³å£°èªè­˜è¨­å®š"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,17,118,50,14
-    PUSHBUTTON      "ƒLƒƒƒ“ƒZƒ‹",IDCANCEL,87,118,50,14
-    CONTROL         "‰¹º§Œä",IDC_CHECK_SPEECH_CTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,6,50,10
-    GROUPBOX        "ƒRƒ“ƒtƒBƒfƒ“ƒX",IDC_STATIC,7,23,141,38
+    PUSHBUTTON      "ã‚­ãƒ£ãƒ³ã‚»ãƒ«",IDCANCEL,87,118,50,14
+    CONTROL         "éŸ³å£°åˆ¶å¾¡",IDC_CHECK_SPEECH_CTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,6,50,10
+    GROUPBOX        "ã‚³ãƒ³ãƒ•ã‚£ãƒ‡ãƒ³ã‚¹",IDC_STATIC,7,23,141,38
     CONTROL         "",IDC_SLIDER_SPEECH_CONFD,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,39,104,15
     EDITTEXT        IDC_EDIT_SPEECH_CONFD,121,42,22,12,ES_AUTOHSCROLL
-    GROUPBOX        "”FŽ¯Œ¾Œê",IDC_STATIC,7,70,141,34
+    GROUPBOX        "èªè­˜è¨€èªž",IDC_STATIC,7,70,141,34
     COMBOBOX        IDC_COMBO_SPEECH_LANG,20,83,50,104,CBS_DROPDOWNLIST | WS_TABSTOP
 END
 
@@ -453,35 +454,35 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "File Player"
 FONT 9, "MS UI Gothic", 0, 0, 0x0
 BEGIN
-    GROUPBOX        "Ä¶Ý’è",IDC_STATIC,7,7,141,179
-    CONTROL         " ƒŠƒs[ƒgÄ¶",IDC_CHECK_FLPLAYER_REPEAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,21,45,10
-    CONTROL         " ƒNƒH[ƒ^ƒjƒIƒ“‚ÌÄŒvŽZ",IDC_CHECK_FLPLAYER_CALCQUAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,33,77,10
-    CONTROL         " ƒ~ƒ‰[ƒŠƒ“ƒO",IDC_CHECK_FLPLAYER_MIRROR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,45,77,10
-    CONTROL         " ŠJŽnˆÊ’u‚Ì‰Šú‰»",IDC_CHECK_FLPLAYER_INITPOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,57,77,10
-    GROUPBOX        "ƒTƒCƒY",IDC_STATIC,16,73,97,70
-    CONTROL         "ƒ[ƒgƒ‹",IDC_RADIO_FLPLAYER_MT,"Button",BS_AUTORADIOBUTTON,24,86,37,10
-    CONTROL         "ƒZƒ“ƒ`",IDC_RADIO_FLPLAYER_CM,"Button",BS_AUTORADIOBUTTON,24,98,32,10
-    CONTROL         "ƒCƒ“ƒ`",IDC_RADIO_FLPLAYER_INCH,"Button",BS_AUTORADIOBUTTON,24,110,31,10
-    LTEXT           " •â³",IDC_STATIC,24,126,22,8
+    GROUPBOX        "å†ç”Ÿè¨­å®š",IDC_STATIC,7,7,141,179
+    CONTROL         " ãƒªãƒ”ãƒ¼ãƒˆå†ç”Ÿ",IDC_CHECK_FLPLAYER_REPEAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,21,45,10
+    CONTROL         " ã‚¯ã‚©ãƒ¼ã‚¿ãƒ‹ã‚ªãƒ³ã®å†è¨ˆç®—",IDC_CHECK_FLPLAYER_CALCQUAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,33,77,10
+    CONTROL         " ãƒŸãƒ©ãƒ¼ãƒªãƒ³ã‚°",IDC_CHECK_FLPLAYER_MIRROR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,45,77,10
+    CONTROL         " é–‹å§‹ä½ç½®ã®åˆæœŸåŒ–",IDC_CHECK_FLPLAYER_INITPOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,57,77,10
+    GROUPBOX        "ã‚µã‚¤ã‚º",IDC_STATIC,16,73,97,70
+    CONTROL         "ãƒ¡ãƒ¼ãƒˆãƒ«",IDC_RADIO_FLPLAYER_MT,"Button",BS_AUTORADIOBUTTON,24,86,37,10
+    CONTROL         "ã‚»ãƒ³ãƒ",IDC_RADIO_FLPLAYER_CM,"Button",BS_AUTORADIOBUTTON,24,98,32,10
+    CONTROL         "ã‚¤ãƒ³ãƒ",IDC_RADIO_FLPLAYER_INCH,"Button",BS_AUTORADIOBUTTON,24,110,31,10
+    LTEXT           " è£œæ­£",IDC_STATIC,24,126,22,8
     EDITTEXT        IDC_EDIT_SAVE_SZSCALE,45,124,36,12,ES_AUTOHSCROLL
-    LTEXT           "ƒ^ƒCƒ€ ƒXƒP[ƒ‹",IDC_STATIC,16,152,48,8
+    LTEXT           "ã‚¿ã‚¤ãƒ  ã‚¹ã‚±ãƒ¼ãƒ«",IDC_STATIC,16,152,48,8
     CONTROL         "",IDC_SLIDER_FLPLAYER_TIMESCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,164,104,15
     EDITTEXT        IDC_EDIT_FLPLAYER_TIMESCALE,120,165,22,12,ES_AUTOHSCROLL
-    GROUPBOX        "î•ñ",IDC_STATIC,157,7,100,79
-    LTEXT           "‘ƒtƒŒ[ƒ€”",IDC_STATIC,164,20,48,8
-    LTEXT           "Ä¶ŽžŠÔ i•bj",IDC_STATIC,164,36,48,8
-    LTEXT           "Œ»Ý‚ÌƒtƒŒ[ƒ€",IDC_STATIC,164,52,48,8
-    LTEXT           "ó‘Ô",IDC_STATIC,164,68,48,8
+    GROUPBOX        "æƒ…å ±",IDC_STATIC,157,7,100,79
+    LTEXT           "ç·ãƒ•ãƒ¬ãƒ¼ãƒ æ•°",IDC_STATIC,164,20,48,8
+    LTEXT           "å†ç”Ÿæ™‚é–“ ï¼ˆç§’ï¼‰",IDC_STATIC,164,36,48,8
+    LTEXT           "ç¾åœ¨ã®ãƒ•ãƒ¬ãƒ¼ãƒ ",IDC_STATIC,164,52,48,8
+    LTEXT           "çŠ¶æ…‹",IDC_STATIC,164,68,48,8
     LTEXT           "",IDC_INFO_FLPLAYER_ALLFRAME,220,19,30,11,SS_SUNKEN
     LTEXT           "",IDC_INFO_FLPLAYER_ALLTIME,220,35,30,11,SS_SUNKEN
     LTEXT           "",IDC_INFO_FLPLAYER_FRAME,220,52,30,11,SS_SUNKEN
     LTEXT           "",IDC_INFO_FLPLAYER_STATE,220,67,30,11,SS_SUNKEN
     GROUPBOX        "BVH",IDC_STATIC,157,95,100,91
-    LTEXT           "Œ`Ž®",IDC_STATIC,164,109,17,8
+    LTEXT           "å½¢å¼",IDC_STATIC,164,109,17,8
     COMBOBOX        IDC_COMB_SAVE_BVH_FMT,200,106,50,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "FPS",IDC_STATIC,164,127,14,8
     COMBOBOX        IDC_COMB_SAVE_BVH_FPS,200,124,50,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "•ªŠ„ŽžŠÔ(s)",IDC_STATIC,163,147,38,8
+    LTEXT           "åˆ†å‰²æ™‚é–“(s)",IDC_STATIC,163,147,38,8
     EDITTEXT        IDC_EDIT_SAVE_DIVTIME,211,145,39,12,ES_AUTOHSCROLL
     PUSHBUTTON      "SAVE as BVH",IDC_BUTTON_FLPLAYER_SAVE,200,165,50,14
     PUSHBUTTON      "PLAY",IDC_BUTTON_FLPLAYER_PLAY,7,201,50,14
@@ -525,7 +526,7 @@ BEGIN
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x411, 1200
+        VALUE "Translation", 0x411, 65001
     END
 END
 
@@ -799,13 +800,13 @@ END
 STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "Rinions\n\nRinions\n\n\nRinions.Document\nRinions.Document"
-    IDS_EDIT_MENU           "•ÒW"
+    IDS_EDIT_MENU           "ç·¨é›†"
 END
 
 STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "Rinions"
-    AFX_IDS_IDLEMESSAGE     "ƒŒƒfƒB"
+    AFX_IDS_IDLEMESSAGE     "ãƒ¬ãƒ‡ã‚£"
 END
 
 STRINGTABLE
@@ -820,31 +821,31 @@ END
 
 STRINGTABLE
 BEGIN
-    IDS_STR_CNFRM_REBOOT    "ƒvƒƒOƒ‰ƒ€‚ðÄ‹N“®‚µ‚Ü‚·D‚æ‚ë‚µ‚¢‚Å‚·‚©H"
-    IDS_STR_CNFRM_INIT      "ƒvƒƒOƒ‰ƒ€‚ð‰Šú‰»‚µ‚Ü‚·D‚æ‚ë‚µ‚¢‚Å‚·‚©H"
-    IDS_STR_ERR_REBOOT      "ƒvƒƒOƒ‰ƒ€‚ÌÄ‹N“®‚ÉŽ¸”s‚µ‚Ü‚µ‚½"
-    IDS_STR_NOT_LIB32       "NI—p 32bitƒ‰ƒCƒuƒ‰ƒŠ‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ\nƒlƒbƒgƒ[ƒNŽóM‚Æˆê•”‚Ìƒtƒ@ƒCƒ‹“Çž‚Ì‚ÝŽg—p‰Â”\‚Å‚·"
-    IDS_STR_NOT_LIB64       "NI—p 64bitƒ‰ƒCƒuƒ‰ƒŠ‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ\nƒlƒbƒgƒ[ƒNŽóM‚Æˆê•”‚Ìƒtƒ@ƒCƒ‹“Çž‚Ì‚ÝŽg—p‰Â”\‚Å‚·"
-    IDS_STR_NOT_DEVICE      "NI ƒfƒoƒCƒX‚ªÚ‘±‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ\nƒlƒbƒgƒ[ƒNŽóM‚Æˆê•”‚Ìƒtƒ@ƒCƒ‹“Çž‚Ì‚ÝŽg—p‰Â”\‚Å‚·"
-    IDS_STR_NOT_LOGIN       "ƒT[ƒo‚ÉƒƒOƒCƒ“‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½"
-    IDS_STR_EXEC_MULTI      "‚±‚Ìƒ\ƒtƒgƒEƒFƒA‚ð‘½d‹N“®‚µ‚½ê‡‚Ì“®ì‚Í•Ûá‚³‚ê‚Ü‚¹‚ñ\n‚±‚Ì‚Ü‚Ü‹N“®‚µ‚Ü‚·‚©H"
-    IDS_STR_NOTOPEN_SOCKET  "’ÊMƒ\ƒPƒbƒg‚ðƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñ\nŠù‚É‘¼‚ÌƒvƒƒZƒX‚ªŽw’è‚³‚ê‚½ƒ|[ƒg‚ðŽg—p‚µ‚Ä‚¢‚Ü‚·\nƒlƒbƒgƒ[ƒNƒCƒ“ƒ^[ƒtƒFƒCƒX‚ª‹N“®‚µ‚Ä‚¢‚È‚¢‰Â”\«‚à‚ ‚è‚Ü‚·\n‚Ü‚½‚ÍCƒAƒjƒ[ƒVƒ‡ƒ“’†ŒpƒT[ƒo‚ÌƒAƒhƒŒƒX‚ªŠÔˆá‚Á‚Ä‚¢‚Ü‚·"
-    IDS_STR_FAIL_RSCV       "ƒf[ƒ^‚ÌŽóM‚ª‚Å‚«‚Ü‚¹‚ñ"
-    IDS_STR_FRBDDN_SERVER   "‚±‚ÌƒT[ƒo‚ðŽg—p‚·‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñiŽg—p‹–‰Â‚ª‚ ‚è‚Ü‚¹‚ñj"
-    IDS_STR_DUPLI_ANIM      "Žw’è‚³‚ê‚½ƒAƒjƒ[ƒVƒ‡ƒ“UUID‚ÍŠù‚É“o˜^‚³‚ê‚Ä‚¢‚Ü‚·"
-    IDS_STR_ALREADY_LOGIN   "Šù‚ÉƒƒOƒCƒ“Ï‚Ý‚Å‚·"
+    IDS_STR_CNFRM_REBOOT    "ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’å†èµ·å‹•ã—ã¾ã™ï¼Žã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ"
+    IDS_STR_CNFRM_INIT      "ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’åˆæœŸåŒ–ã—ã¾ã™ï¼Žã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ"
+    IDS_STR_ERR_REBOOT      "ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®å†èµ·å‹•ã«å¤±æ•—ã—ã¾ã—ãŸ"
+    IDS_STR_NOT_LIB32       "NIç”¨ 32bitãƒ©ã‚¤ãƒ–ãƒ©ãƒªãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã¾ã›ã‚“\nãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯å—ä¿¡ã¨ä¸€éƒ¨ã®ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã®ã¿ä½¿ç”¨å¯èƒ½ã§ã™"
+    IDS_STR_NOT_LIB64       "NIç”¨ 64bitãƒ©ã‚¤ãƒ–ãƒ©ãƒªãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã¾ã›ã‚“\nãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯å—ä¿¡ã¨ä¸€éƒ¨ã®ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã®ã¿ä½¿ç”¨å¯èƒ½ã§ã™"
+    IDS_STR_NOT_DEVICE      "NI ãƒ‡ãƒã‚¤ã‚¹ãŒæŽ¥ç¶šã•ã‚Œã¦ã„ã¾ã›ã‚“\nãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯å—ä¿¡ã¨ä¸€éƒ¨ã®ãƒ•ã‚¡ã‚¤ãƒ«èª­è¾¼ã®ã¿ä½¿ç”¨å¯èƒ½ã§ã™"
+    IDS_STR_NOT_LOGIN       "ã‚µãƒ¼ãƒã«ãƒ­ã‚°ã‚¤ãƒ³ã§ãã¾ã›ã‚“ã§ã—ãŸ"
+    IDS_STR_EXEC_MULTI      "ã“ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’å¤šé‡èµ·å‹•ã—ãŸå ´åˆã®å‹•ä½œã¯ä¿éšœã•ã‚Œã¾ã›ã‚“\nã“ã®ã¾ã¾èµ·å‹•ã—ã¾ã™ã‹ï¼Ÿ"
+    IDS_STR_NOTOPEN_SOCKET  "é€šä¿¡ã‚½ã‚±ãƒƒãƒˆã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“\næ—¢ã«ä»–ã®ãƒ—ãƒ­ã‚»ã‚¹ãŒæŒ‡å®šã•ã‚ŒãŸãƒãƒ¼ãƒˆã‚’ä½¿ç”¨ã—ã¦ã„ã¾ã™\nãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ã‚¤ã‚¹ãŒèµ·å‹•ã—ã¦ã„ãªã„å¯èƒ½æ€§ã‚‚ã‚ã‚Šã¾ã™\nã¾ãŸã¯ï¼Œã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ä¸­ç¶™ã‚µãƒ¼ãƒã®ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒé–“é•ã£ã¦ã„ã¾ã™"
+    IDS_STR_FAIL_RSCV       "ãƒ‡ãƒ¼ã‚¿ã®å—ä¿¡ãŒã§ãã¾ã›ã‚“"
+    IDS_STR_FRBDDN_SERVER   "ã“ã®ã‚µãƒ¼ãƒã‚’ä½¿ç”¨ã™ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ï¼ˆä½¿ç”¨è¨±å¯ãŒã‚ã‚Šã¾ã›ã‚“ï¼‰"
+    IDS_STR_DUPLI_ANIM      "æŒ‡å®šã•ã‚ŒãŸã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³UUIDã¯æ—¢ã«ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã™"
+    IDS_STR_ALREADY_LOGIN   "æ—¢ã«ãƒ­ã‚°ã‚¤ãƒ³æ¸ˆã¿ã§ã™"
 END
 
 STRINGTABLE
 BEGIN
-    IDS_STR_NORSPNS_SERVER  "ƒAƒjƒ[ƒVƒ‡ƒ“’†ŒpƒT[ƒo‚ª‰ž“š‚µ‚Ü‚¹‚ñ"
-    IDS_STR_NORSPNS_RELAY   "’†ŒpƒT[ƒo‚ª‰ž“š‚µ‚Ü‚¹‚ñ"
-    IDS_STR_SUCCESS_LOGIN   "ƒƒOƒCƒ“‚É¬Œ÷‚µ‚Ü‚µ‚½"
-    IDS_STR_LOCAL_MODE      "ƒ[ƒJƒ‹ƒ‚[ƒh"
-    IDS_STR_NETWORK_MODE    "ƒlƒbƒgƒ[ƒNƒ‚[ƒh"
-    IDS_STR_LOGGING_IN      "ƒƒOƒCƒ“’†"
-    IDS_STR_LOGGED_OUT      "ƒƒOƒAƒEƒg"
-    IDS_STR_RECEIVING_DATA  "ƒf[ƒ^ŽóM’†"
+    IDS_STR_NORSPNS_SERVER  "ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ä¸­ç¶™ã‚µãƒ¼ãƒãŒå¿œç­”ã—ã¾ã›ã‚“"
+    IDS_STR_NORSPNS_RELAY   "ä¸­ç¶™ã‚µãƒ¼ãƒãŒå¿œç­”ã—ã¾ã›ã‚“"
+    IDS_STR_SUCCESS_LOGIN   "ãƒ­ã‚°ã‚¤ãƒ³ã«æˆåŠŸã—ã¾ã—ãŸ"
+    IDS_STR_LOCAL_MODE      "ãƒ­ãƒ¼ã‚«ãƒ«ãƒ¢ãƒ¼ãƒ‰"
+    IDS_STR_NETWORK_MODE    "ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ãƒ¢ãƒ¼ãƒ‰"
+    IDS_STR_LOGGING_IN      "ãƒ­ã‚°ã‚¤ãƒ³ä¸­"
+    IDS_STR_LOGGED_OUT      "ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ"
+    IDS_STR_RECEIVING_DATA  "ãƒ‡ãƒ¼ã‚¿å—ä¿¡ä¸­"
     IDS_STR_STATUSBAR_INIT  "Waiting ......                                              "
     IDS_STR_STATUSBAR_LCLFPS "Local FPS: 0.0     "
     IDS_STR_STATUSBAR_NETFPS "Net FPS: 0.0     "
@@ -854,50 +855,50 @@ END
 
 STRINGTABLE
 BEGIN
-    IDS_STR_SET_INVALID_UUID "•s³‚È UUID ‚Å‚·"
-    IDS_STR_REC_MODE_ONI    "ONI Œ`Ž®‚Å‹L˜^‚µ‚Ü‚·"
-    IDS_STR_REC_MODE_BVH    "BVH Œ`Ž®‚Å‹L˜^‚µ‚Ü‚·\niˆêŽžƒtƒ@ƒCƒ‹‚Í Joints Text Œ`Ž®‚Å‚·j"
-    IDS_STR_REC_MODE_ORG    "Joints Text Œ`Ž®‚Å‹L˜^‚µ‚Ü‚·"
-    IDS_STR_REC_MODE_ERR    "–¢’m‚Ì‹L˜^Œ`Ž®‚ªŽw’è‚³‚ê‚Ü‚µ‚½"
-    IDS_STR_MENU_WINDOW     "ƒEƒBƒ“ƒhƒE"
-    IDS_STR_MENU_SENSOR     "ƒZƒ“ƒT["
+    IDS_STR_SET_INVALID_UUID "ä¸æ­£ãª UUID ã§ã™"
+    IDS_STR_REC_MODE_ONI    "ONI å½¢å¼ã§è¨˜éŒ²ã—ã¾ã™"
+    IDS_STR_REC_MODE_BVH    "BVH å½¢å¼ã§è¨˜éŒ²ã—ã¾ã™\nï¼ˆä¸€æ™‚ãƒ•ã‚¡ã‚¤ãƒ«ã¯ Joints Text å½¢å¼ã§ã™ï¼‰"
+    IDS_STR_REC_MODE_ORG    "Joints Text å½¢å¼ã§è¨˜éŒ²ã—ã¾ã™"
+    IDS_STR_REC_MODE_ERR    "æœªçŸ¥ã®è¨˜éŒ²å½¢å¼ãŒæŒ‡å®šã•ã‚Œã¾ã—ãŸ"
+    IDS_STR_MENU_WINDOW     "ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦"
+    IDS_STR_MENU_SENSOR     "ã‚»ãƒ³ã‚µãƒ¼"
     IDS_STR_NOT_READ_FACE_CSCDFL 
-                            "OpenCV‚ÌŠç”FŽ¯—p‚Ìƒf[ƒ^ƒtƒ@ƒCƒ‹‚ð“Ç‚Ýž‚ß‚Ü‚¹‚ñ‚Å‚µ‚½D\nŠç”FŽ¯‚Í—˜—p‚Å‚«‚Ü‚¹‚ñD"
+                            "OpenCVã®é¡”èªè­˜ç”¨ã®ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸï¼Ž\né¡”èªè­˜ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ï¼Ž"
     IDS_STR_NOT_READ_EYES_CSCDFL 
-                            "OpenCV‚Ì–Ú‚Ì”FŽ¯—pƒf[ƒ^ƒtƒ@ƒCƒ‹‚ð“Ç‚Ýž‚ß‚Ü‚¹‚ñ‚Å‚µ‚½D\n–Ú‚Ì”FŽ¯‚ðs‚¤‚Æ‚±‚Í‚Å‚«‚Ü‚¹‚ñD"
+                            "OpenCVã®ç›®ã®èªè­˜ç”¨ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸï¼Ž\nç›®ã®èªè­˜ã‚’è¡Œã†ã¨ã“ã¯ã§ãã¾ã›ã‚“ï¼Ž"
     IDS_STR_NOT_READ_MOUTH_CSCDFL 
-                            "OpenCV‚ÌŒû‚Ì”FŽ¯—pƒf[ƒ^ƒtƒ@ƒCƒ‹‚ð“Ç‚Ýž‚ß‚Ü‚¹‚ñ‚Å‚µ‚½D\nŒû‚Ì”FŽ¯‚ðs‚¤‚Æ‚±‚Í‚Å‚«‚Ü‚¹‚ñD"
-    IDS_STR_NOT_LOAD_FACE_DLL "Kinect SDK ‚ÌŠç”FŽ¯—p‚ÌDLL‚ð“Ç‚Ýž‚ß‚Ü‚¹‚ñ‚Å‚µ‚½D\nŠç”FŽ¯‚Í—˜—p‚Å‚«‚Ü‚¹‚ñD"
+                            "OpenCVã®å£ã®èªè­˜ç”¨ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸï¼Ž\nå£ã®èªè­˜ã‚’è¡Œã†ã¨ã“ã¯ã§ãã¾ã›ã‚“ï¼Ž"
+    IDS_STR_NOT_LOAD_FACE_DLL "Kinect SDK ã®é¡”èªè­˜ç”¨ã®DLLã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸï¼Ž\né¡”èªè­˜ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ï¼Ž"
 END
 
 STRINGTABLE
 BEGIN
-    IDS_STR_UNABLE_FACE_DETECTION "Šç”FŽ¯‚Í—˜—p‚Å‚«‚Ü‚¹‚ñD"
-    IDS_STR_ERR_NO_SAVE_DATA "•Û‘¶‚Å‚«‚éƒf[ƒ^‚Í‚ ‚è‚Ü‚¹‚ñ"
-    IDS_STR_ERR_NO_LOAD_FILE "“Çžƒtƒ@ƒCƒ‹‚ª‚ ‚è‚Ü‚¹‚ñ"
-    IDS_STR_ERR_LIB_LOAD_FILE "Œ»Ý‚ÌNIƒ‰ƒCƒuƒ‰ƒŠ‚ÍC‚±‚Ìƒtƒ@ƒCƒ‹‚ðƒTƒ|[ƒg‚µ‚Ä‚¢‚Ü‚¹‚ñ"
-    IDS_STR_ERR_UNKNOWN_FILE "ƒtƒ@ƒCƒ‹ƒtƒH[ƒ}ƒbƒg‚ªŽ¯•Ê‚Å‚«‚Ü‚¹‚ñ. ‚Ü‚½‚Í“Ç‚Ýž‚ÝƒGƒ‰[‚Å‚·"
-    IDS_STR_ERR_NEXT_FRAME  "ƒtƒŒ[ƒ€ƒf[ƒ^‚ð“Ç‚Ýž‚ß‚Ü‚¹‚ñ\nƒtƒŒ[ƒ€ƒf[ƒ^ŠÔ‚ÌŽžŠÔŠÔŠu‚ª‘å‚«‚·‚¬‚Ü‚·"
+    IDS_STR_UNABLE_FACE_DETECTION "é¡”èªè­˜ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ï¼Ž"
+    IDS_STR_ERR_NO_SAVE_DATA "ä¿å­˜ã§ãã‚‹ãƒ‡ãƒ¼ã‚¿ã¯ã‚ã‚Šã¾ã›ã‚“"
+    IDS_STR_ERR_NO_LOAD_FILE "èª­è¾¼ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã‚Šã¾ã›ã‚“"
+    IDS_STR_ERR_LIB_LOAD_FILE "ç¾åœ¨ã®NIãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¯ï¼Œã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚µãƒãƒ¼ãƒˆã—ã¦ã„ã¾ã›ã‚“"
+    IDS_STR_ERR_UNKNOWN_FILE "ãƒ•ã‚¡ã‚¤ãƒ«ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆãŒè­˜åˆ¥ã§ãã¾ã›ã‚“. ã¾ãŸã¯èª­ã¿è¾¼ã¿ã‚¨ãƒ©ãƒ¼ã§ã™"
+    IDS_STR_ERR_NEXT_FRAME  "ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“\nãƒ•ãƒ¬ãƒ¼ãƒ ãƒ‡ãƒ¼ã‚¿é–“ã®æ™‚é–“é–“éš”ãŒå¤§ãã™ãŽã¾ã™"
 END
 
 STRINGTABLE
 BEGIN
-    IDS_STR_INIT_DEVICE     "NI ƒfƒoƒCƒX‚Ì‰Šú‰»’† ..."
-    IDS_STR_RESET_DEVICE    "NI ƒfƒoƒCƒX‚ÌƒŠƒZƒbƒg’† ..."
-    IDS_STR_START_SPEECH    "‰¹º”FŽ¯‹@”\‚Ì‹N“®’† ..."
-    IDS_STR_STOP_SPEECH     "‰¹º”FŽ¯‹@”\‚Ì’âŽ~’† ..."
-    IDS_STR_RESTART_SPEECH  "‰¹º”FŽ¯‹@”\‚ÌÄ‹N“®’† ..."
-    IDS_STR_CREATE_IMAGE    "ƒJƒƒ‰ ƒCƒ[ƒW‚Ìì¬’† ..."
-    IDS_STR_DELETE_IMAGE    "ƒJƒƒ‰ ƒCƒ[ƒW‚Ìíœ’† ..."
-    IDS_STR_PROCSING_LOGIN  "ƒƒOƒCƒ“ˆ—’† ..."
+    IDS_STR_INIT_DEVICE     "NI ãƒ‡ãƒã‚¤ã‚¹ã®åˆæœŸåŒ–ä¸­ ..."
+    IDS_STR_RESET_DEVICE    "NI ãƒ‡ãƒã‚¤ã‚¹ã®ãƒªã‚»ãƒƒãƒˆä¸­ ..."
+    IDS_STR_START_SPEECH    "éŸ³å£°èªè­˜æ©Ÿèƒ½ã®èµ·å‹•ä¸­ ..."
+    IDS_STR_STOP_SPEECH     "éŸ³å£°èªè­˜æ©Ÿèƒ½ã®åœæ­¢ä¸­ ..."
+    IDS_STR_RESTART_SPEECH  "éŸ³å£°èªè­˜æ©Ÿèƒ½ã®å†èµ·å‹•ä¸­ ..."
+    IDS_STR_CREATE_IMAGE    "ã‚«ãƒ¡ãƒ© ã‚¤ãƒ¡ãƒ¼ã‚¸ã®ä½œæˆä¸­ ..."
+    IDS_STR_DELETE_IMAGE    "ã‚«ãƒ¡ãƒ© ã‚¤ãƒ¡ãƒ¼ã‚¸ã®å‰Šé™¤ä¸­ ..."
+    IDS_STR_PROCSING_LOGIN  "ãƒ­ã‚°ã‚¤ãƒ³å‡¦ç†ä¸­ ..."
 END
 
-#endif    // “ú–{Œê (“ú–{) resources
+#endif    // æ—¥æœ¬èªž (æ—¥æœ¬) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// ‰pŒê resources
+// è‹±èªž resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
@@ -1738,10 +1739,10 @@ BEGIN
     IDS_STR_ERR_LIB_LOAD_FILE 
                             "Current NI Libary does not Support this File Format"
     IDS_STR_ERR_UNKNOWN_FILE "Unknown File Format. or Fail to Read File"
-    IDS_STR_ERR_NEXT_FRAME  "Fail to read the next FrameEData\nThe time interval between Frames is too long"
+    IDS_STR_ERR_NEXT_FRAME  "Fail to read the next Frameãƒ»Data\nThe time interval between Frames is too long"
 END
 
-#endif    // ‰pŒê resources
+#endif    // è‹±èªž resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -1757,12 +1758,13 @@ END
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
 LANGUAGE 17, 1
-#pragma code_page(932)
-#include "res\Rinions.rc2"     // Microsoft Visual C++ ˆÈŠO‚Å•ÒW‚³‚ê‚½ƒŠƒ\[ƒX
-#include "l.JPN\afxres.rc"     // •W€ƒRƒ“ƒ|[ƒlƒ“ƒg
+//#pragma code_page(932)
+#pragma code_page(65001)
+#include "res\Rinions.rc2"     // Microsoft Visual C++ ä»¥å¤–ã§ç·¨é›†ã•ã‚ŒãŸãƒªã‚½ãƒ¼ã‚¹
+#include "l.JPN\afxres.rc"     // æ¨™æº–ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆ
 #if !defined(_AFXDLL)
-#include "l.JPN\afxprint.rc"   // ˆóü/ˆóüƒvƒŒƒrƒ…[ ƒŠƒ\[ƒX
-#include "l.JPN\afxribbon.rc"  // MFC ‚ÌƒŠƒ{ƒ“ ƒŠƒ\[ƒX‚ÆƒRƒ“ƒgƒ[ƒ‹ ƒo[ ƒŠƒ\[ƒX
+#include "l.JPN\afxprint.rc"   // å°åˆ·/å°åˆ·ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼ ãƒªã‚½ãƒ¼ã‚¹
+#include "l.JPN\afxribbon.rc"  // MFC ã®ãƒªãƒœãƒ³ ãƒªã‚½ãƒ¼ã‚¹ã¨ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ« ãƒãƒ¼ ãƒªã‚½ãƒ¼ã‚¹
 #endif
 #endif
 

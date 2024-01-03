@@ -1,4 +1,4 @@
-// SetMotion.cpp : ŽÀ‘•ƒtƒ@ƒCƒ‹
+// SetMotion.cpp : å®Ÿè£…ãƒ•ã‚¡ã‚¤ãƒ«
 //
 
 #include "stdafx.h"
@@ -11,7 +11,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // 
-// CSetMotion ƒ_ƒCƒAƒƒO
+// CSetMotion ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 //
 
 IMPLEMENT_DYNAMIC(CSetMotion, CDialog)
@@ -28,7 +28,7 @@ CSetMotion::CSetMotion(CParameterSet prm, UINT id, CWnd* pParent /*=NULL*/)
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // 
-// CSetOpenNIMotion ƒ_ƒCƒAƒƒO
+// CSetOpenNIMotion ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 //
 // for OpenNI/OpenNI2
 //
@@ -96,7 +96,7 @@ END_MESSAGE_MAP()
 
 
 
-// CSetOpenNIMotion ƒƒbƒZ[ƒW ƒnƒ“ƒhƒ‰
+// CSetOpenNIMotion ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒ³ãƒ‰ãƒ©
 
 BOOL CSetOpenNIMotion::OnInitDialog()
 {
@@ -261,7 +261,7 @@ void CSetOpenNIMotion::OnOK()
 	param.YaxisCorrect = (float)(YaxisCrrct/180.*PI);
 
 	//
-	param.detectParts = partsCombo->GetCurSel() + 2;	// OpenNI‚É‡‚í‚¹‚é
+	param.detectParts = partsCombo->GetCurSel() + 2;	// OpenNIã«åˆã‚ã›ã‚‹
 	if (faceCBox->GetCheck()) {
 		param.useFaceDetect = TRUE;
 	}
@@ -435,7 +435,7 @@ BOOL CSetOpenNIMotion::DoLocalTerminateAction(LPCTSTR com)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 
-// CSetKinectMotion ƒ_ƒCƒAƒƒO
+// CSetKinectMotion ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 //
 // for Kinect SDK
 //
@@ -501,7 +501,7 @@ END_MESSAGE_MAP()
 
 
 
-// CSetKinectMotion ƒƒbƒZ[ƒW ƒnƒ“ƒhƒ‰
+// CSetKinectMotion ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒ³ãƒ‰ãƒ©
 
 BOOL CSetKinectMotion::OnInitDialog()
 {
@@ -589,7 +589,7 @@ BOOL CSetKinectMotion::OnInitDialog()
 	YaxisEBox->SetWindowText(buf);
 	
 	//
-	partsCombo->SetCurSel(param.detectParts - 2);	// OpenNI‚É‡‚í‚¹‚é
+	partsCombo->SetCurSel(param.detectParts - 2);	// OpenNIã«åˆã‚ã›ã‚‹
 
 	if (param.useFaceDetect) {
 		faceCBox->SetCheck(1);

@@ -26,15 +26,15 @@ int	 Ni2SHMPosJointNum(int n);
 
 
 
-// SDK ŒÅ—L‚ÌƒWƒ‡ƒCƒ“ƒg”Ô†‚©‚ç SharedMemory(SL/OS) ‚ÌƒWƒ‡ƒCƒ“ƒg‚Ìî•ñ‚ð“¾‚é
-int			 NiSDK2SHMPosJointNum (int n, NiSDK_Lib lib);	// À•W—pƒWƒ‡ƒCƒ“ƒg”Ô†
-std::string  NiSDK2SHMPosJointName(int n, NiSDK_Lib lib);	// À•W—pƒWƒ‡ƒCƒ“ƒg–¼
-int			 NiSDK2SHMRotJointNum (int n, NiSDK_Lib lib);	// ‰ñ“]—pƒWƒ‡ƒCƒ“ƒg”Ô†
-std::string  NiSDK2SHMRotJointName(int n, NiSDK_Lib lib);	// ‰ñ“]—pƒWƒ‡ƒCƒ“ƒg–¼
+// SDK å›ºæœ‰ã®ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‹ã‚‰ SharedMemory(SL/OS) ã®ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆã®æƒ…å ±ã‚’å¾—ã‚‹
+int			 NiSDK2SHMPosJointNum (int n, NiSDK_Lib lib);	// åº§æ¨™ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·
+std::string  NiSDK2SHMPosJointName(int n, NiSDK_Lib lib);	// åº§æ¨™ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆå
+int			 NiSDK2SHMRotJointNum (int n, NiSDK_Lib lib);	// å›žè»¢ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·
+std::string  NiSDK2SHMRotJointName(int n, NiSDK_Lib lib);	// å›žè»¢ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆå
 
 
-// ‹¤’ÊƒWƒ‡ƒCƒ“ƒg”Ô†‚©‚ç SharedMemory(SL/OS) ‚ÌƒWƒ‡ƒCƒ“ƒg‚Ìî•ñ‚ð“¾‚é
-std::string  Ni2SHMPosJointName(int n);						// À•W—pƒWƒ‡ƒCƒ“ƒg–¼
-std::string  Ni2SHMRotJointName(int n);						// ‰ñ“]—pƒWƒ‡ƒCƒ“ƒg–¼
+// å…±é€šã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‹ã‚‰ SharedMemory(SL/OS) ã®ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆã®æƒ…å ±ã‚’å¾—ã‚‹
+std::string  Ni2SHMPosJointName(int n);						// åº§æ¨™ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆå
+std::string  Ni2SHMRotJointName(int n);						// å›žè»¢ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆå
 
 

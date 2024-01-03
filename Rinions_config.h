@@ -24,7 +24,7 @@
 
 		
 
-// 初期ウィンドウサイズ
+// 蛻晄悄繧ｦ繧｣繝ｳ繝峨え繧ｵ繧､繧ｺ
 #define	   RINIONS_WND_XSIZE	800
 #define	   RINIONS_WND_YSIZE	650
 

@@ -5,19 +5,19 @@
 
 
 
-// CSetAnimation É_ÉCÉAÉçÉO
+// CSetAnimation „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 
 class CSetAnimation : public CDialog
 {
 	DECLARE_DYNAMIC(CSetAnimation)
 
 public:
-	CSetAnimation(CParameterSet prm, BOOL login=FALSE, CWnd* pParent=NULL);   // ïWèÄÉRÉìÉXÉgÉâÉNÉ^
+	CSetAnimation(CParameterSet prm, BOOL login=FALSE, CWnd* pParent=NULL);   // Ê®ôÊ∫ñ„Ç≥„É≥„Çπ„Éà„É©„ÇØ„Çø
 	virtual ~CSetAnimation() {}
 
 	CParameterSet getParameter(void) { return param;}
 
-	// É_ÉCÉAÉçÉO ÉfÅ[É^
+	// „ÉÄ„Ç§„Ç¢„É≠„Ç∞ „Éá„Éº„Çø
 	enum { IDD = IDD_SETANIMATION };
 
 
@@ -33,7 +33,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÉTÉ|Å[Ég
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV „Çµ„Éù„Éº„Éà
 
 	DECLARE_MESSAGE_MAP()
 	virtual void OnOK();

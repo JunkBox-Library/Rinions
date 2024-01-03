@@ -3,7 +3,7 @@
 #include  "ExNiLib/ExNiDevice.h"
 
 
-// CFilePlayerDLG É_ÉCÉAÉçÉO
+// CFilePlayerDLG „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 
 class CFilePlayerDLG : public CDialog
 {
@@ -15,7 +15,7 @@ public:
 
 	FileDevParam getParameter(void) { return dev_param;}
 
-	// É_ÉCÉAÉçÉO ÉfÅ[É^
+	// „ÉÄ„Ç§„Ç¢„É≠„Ç∞ „Éá„Éº„Çø
 	enum { IDD = IDD_FLPLAYER_PLAYER };
 
 protected:
@@ -73,7 +73,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÉTÉ|Å[Ég
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV „Çµ„Éù„Éº„Éà
 
 	DECLARE_MESSAGE_MAP()
 public:

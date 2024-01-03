@@ -8,7 +8,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // 
-// CSetMotion É_ÉCÉAÉçÉO
+// CSetMotion „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 //
 
 class CSetMotion : public CDialog
@@ -33,7 +33,7 @@ protected:
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // 
-// CSetOpenNIMotion É_ÉCÉAÉçÉO
+// CSetOpenNIMotion „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 //
 
 class CSetOpenNIMotion : public CSetMotion
@@ -41,10 +41,10 @@ class CSetOpenNIMotion : public CSetMotion
 	DECLARE_DYNAMIC(CSetOpenNIMotion)
 
 public:
-	CSetOpenNIMotion(CParameterSet prm, CWnd* pParent=NULL);   // ïWèÄÉRÉìÉXÉgÉâÉNÉ^
+	CSetOpenNIMotion(CParameterSet prm, CWnd* pParent=NULL);   // Ê®ôÊ∫ñ„Ç≥„É≥„Çπ„Éà„É©„ÇØ„Çø
 	virtual ~CSetOpenNIMotion() {}
 
-	// É_ÉCÉAÉçÉO ÉfÅ[É^
+	// „ÉÄ„Ç§„Ç¢„É≠„Ç∞ „Éá„Éº„Çø
 	enum { IDD = IDD_SETMOTION_OPENNI };
 
 
@@ -81,7 +81,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÉTÉ|Å[Ég
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV „Çµ„Éù„Éº„Éà
 
 	DECLARE_MESSAGE_MAP()
 public:
@@ -106,7 +106,7 @@ protected:
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // 
-// CSetKinectMotion É_ÉCÉAÉçÉO
+// CSetKinectMotion „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 //
 
 class CSetKinectMotion : public CSetMotion
@@ -114,10 +114,10 @@ class CSetKinectMotion : public CSetMotion
 	DECLARE_DYNAMIC(CSetKinectMotion)
 
 public:
-	CSetKinectMotion(CParameterSet prm, CWnd* pParent=NULL);   // ïWèÄÉRÉìÉXÉgÉâÉNÉ^
+	CSetKinectMotion(CParameterSet prm, CWnd* pParent=NULL);   // Ê®ôÊ∫ñ„Ç≥„É≥„Çπ„Éà„É©„ÇØ„Çø
 	virtual ~CSetKinectMotion() {}
 
-	// É_ÉCÉAÉçÉO ÉfÅ[É^
+	// „ÉÄ„Ç§„Ç¢„É≠„Ç∞ „Éá„Éº„Çø
 	enum { IDD = IDD_SETMOTION_KINECT };
 
 
@@ -149,7 +149,7 @@ protected:
 	BOOL		 DoLocalTerminateAction(LPCTSTR com);
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÉTÉ|Å[Ég
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV „Çµ„Éù„Éº„Éà
 
 	DECLARE_MESSAGE_MAP()
 public:

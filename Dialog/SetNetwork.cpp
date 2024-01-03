@@ -1,4 +1,4 @@
-// SetNetwork.cpp : ŽÀ‘•ƒtƒ@ƒCƒ‹
+// SetNetwork.cpp : å®Ÿè£…ãƒ•ã‚¡ã‚¤ãƒ«
 //
 
 #include "stdafx.h"
@@ -15,14 +15,14 @@
 /*
 Delete
 IDD_SETNETWORK
-@@CONTROL         " Ž©“®’²®  i–¢j",IDC_CHECK_AUTO_IN_FPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,115,57,10
+ã€€ã€€CONTROL         " è‡ªå‹•èª¿æ•´  ï¼ˆæœªï¼‰",IDC_CHECK_AUTO_IN_FPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,115,57,10
     CONTROL         " Automatic adjustment (not yet)",IDC_CHECK_AUTO_IN_FPS,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,115,111,10
 */
 
 
 
-// CSetNetwork ƒ_ƒCƒAƒƒO
+// CSetNetwork ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 
 IMPLEMENT_DYNAMIC(CSetNetwork, CDialog)
 
@@ -76,7 +76,7 @@ END_MESSAGE_MAP()
 
 
 
-// CSetNetwork ƒƒbƒZ[ƒW ƒnƒ“ƒhƒ‰
+// CSetNetwork ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ ãƒãƒ³ãƒ‰ãƒ©
 
 BOOL CSetNetwork::OnInitDialog()
 {

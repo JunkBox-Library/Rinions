@@ -1,4 +1,4 @@
-// SetOutData.cpp : À‘•ƒtƒ@ƒCƒ‹
+// SetOutData.cpp : å®Ÿè£…ãƒ•ã‚¡ã‚¤ãƒ«
 //
 
 #include "stdafx.h"
@@ -11,14 +11,14 @@
 /*
 Delete
 IDD_SETOUTDATA
-    CONTROL         " ©“®’²® i–¢j",IDC_CHECK_OUT_FPS_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,75,57,10
+    CONTROL         " è‡ªå‹•èª¿æ•´ ï¼ˆæœªï¼‰",IDC_CHECK_OUT_FPS_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,75,57,10
     CONTROL         " Automatic adjustment (not yet)",IDC_CHECK_OUT_FPS_AUTO,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,75,115,10
 */
 
 
 
-// CSetOutData ƒ_ƒCƒAƒƒO
+// CSetOutData ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 
 IMPLEMENT_DYNAMIC(CSetOutData, CDialog)
 

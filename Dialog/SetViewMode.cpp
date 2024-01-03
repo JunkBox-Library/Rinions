@@ -1,4 +1,4 @@
-// SetViewMode.cpp : 実装ファイル
+// SetViewMode.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include "stdafx.h"
@@ -8,7 +8,7 @@
 #include "WinTools.h"
 
 
-// CSetViewMode ダイアログ
+// CSetViewMode 繝繧､繧｢繝ｭ繧ｰ
 
 IMPLEMENT_DYNAMIC(CSetViewMode, CDialog)
 

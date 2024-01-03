@@ -68,7 +68,7 @@ BOOL  CExNiFileDev::saveAsBVH(LPCTSTR backup, BVHSaveParam param)
 
 
 //
-// –ß‚è’lF@³: ÅŒã‚ÌƒtƒŒ[ƒ€‚ÌŸ‚ÌƒtƒŒ[ƒ€‚Ì”Ô†, •‰: ƒGƒ‰[ Ÿ‚ÌƒtƒŒ[ƒ€‚Ì”Ô†x(-1)
+// æˆ»ã‚Šå€¤ï¼šã€€æ­£: æœ€å¾Œã®ãƒ•ãƒ¬ãƒ¼ãƒ ã®æ¬¡ã®ãƒ•ãƒ¬ãƒ¼ãƒ ã®ç•ªå·, è² : ã‚¨ãƒ©ãƒ¼ æ¬¡ã®ãƒ•ãƒ¬ãƒ¼ãƒ ã®ç•ªå·x(-1)
 //	
 int  CExNiFileDev::convertJointsData(CExNiNetwork* net, FileDevParam param)
 {
@@ -96,9 +96,9 @@ int  CExNiFileDev::convertJointsData(CExNiNetwork* net, FileDevParam param)
 		
 		//
 		clearJointsData();
-		getJointsDataSeq(mirroring);						// Ÿ‚ÌƒtƒŒ[ƒ€
+		getJointsDataSeq(mirroring);						// æ¬¡ã®ãƒ•ãƒ¬ãƒ¼ãƒ 
 		correctPosVect(posVect, frame, *(param.controler));	// for start position
-		if (param.calc_quat) calcRotQaut(posVect, rotQuat); // ƒNƒI[ƒ^ƒjƒIƒ“‚ÌÄŒvZ
+		if (param.calc_quat) calcRotQaut(posVect, rotQuat); // ã‚¯ã‚ªãƒ¼ã‚¿ãƒ‹ã‚ªãƒ³ã®å†è¨ˆç®—
 
 		// Additional Processing
 		posVect[NI_AVATAR] = currentPos;
@@ -165,7 +165,7 @@ void  CExNiFileDev::correctPosVect(Vector<float>* posvect, int frame, int cntrlr
 
 
 //
-// ˆÊ’uƒf[ƒ^‚©‚çƒNƒH[ƒ^ƒjƒIƒ“‚ğŒvZ
+// ä½ç½®ãƒ‡ãƒ¼ã‚¿ã‹ã‚‰ã‚¯ã‚©ãƒ¼ã‚¿ãƒ‹ã‚ªãƒ³ã‚’è¨ˆç®—
 //
 void  CExNiFileDev::calcRotQaut(Vector<float>* posvect, Quaternion<float>* rotquat)
 {
@@ -175,11 +175,11 @@ void  CExNiFileDev::calcRotQaut(Vector<float>* posvect, Quaternion<float>* rotqu
 	Vector<float> torso_up	  = - torso_down;
 	Vector<float> shldr_right = - shldr_left;
 
-	// PELVIS YZ•½–Ê‚Ì‰ñ“]
+	// PELVIS YZå¹³é¢ã®å›è»¢
 	Vector<float> vect = NewellMethod4(posvect[NI_R_HIP], posvect[NI_PELVIS], posvect[NI_L_HIP], posvect[NI_TORSO]);
 	rotquat[NI_PELVIS] = V2VQuaternion(vect_fwrd, vect);
 
-	// X ²‰ñ“]
+	// X è»¸å›è»¢
 	Quaternion<float> quat_lhip = ~rotquat[NI_PELVIS]*posvect[NI_L_HIP]*rotquat[NI_PELVIS];
 	Quaternion<float> quat_rhip = ~rotquat[NI_PELVIS]*posvect[NI_R_HIP]*rotquat[NI_PELVIS];
 

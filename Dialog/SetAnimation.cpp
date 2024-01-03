@@ -1,4 +1,4 @@
-// SetAnimation.cpp : 実装ファイル
+// SetAnimation.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include "stdafx.h"
@@ -9,7 +9,7 @@
 #include "MessageBoxDLG.h"
 
 
-// CSetAnimation ダイアログ
+// CSetAnimation 繝繧､繧｢繝ｭ繧ｰ
 
 IMPLEMENT_DYNAMIC(CSetAnimation, CDialog)
 
@@ -39,7 +39,7 @@ END_MESSAGE_MAP()
 
 
 
-// CSetAnimation メッセージ ハンドラ
+// CSetAnimation 繝｡繝�繧ｻ繝ｼ繧ｸ 繝上Φ繝峨Λ
 
 
 BOOL CSetAnimation::OnInitDialog()

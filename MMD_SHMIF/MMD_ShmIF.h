@@ -33,7 +33,7 @@ Quaternion<double> get_joint_rotation(int num);
 //
 
 /*
-‹¤—Lƒƒ‚ƒŠ–¼
+å…±æœ‰ãƒ¡ãƒ¢ãƒªå
     mPelvis(0), mTorso(1), mChest(2), mNeck(3), mHead(4), mSkull(5), 
 	mEyeLeft(6), mEyeRight(7), mBustLeft(8), mBustRight(9),
     mCollarLeft (10), mShoulderLeft (11), mElbowLeft (12), mWristLeft (13), mFingertipLeft (14),
@@ -46,42 +46,42 @@ Quaternion<double> get_joint_rotation(int num);
 
 
 
-//ƒ{[ƒ“‚Ì”
+//ãƒœãƒ¼ãƒ³ã®æ•°
 #define MMD_JOINT_NUM		23
 
-//ƒ{[ƒ“ƒCƒ“ƒfƒbƒNƒX
-#define MMD_CENTER			0	//ƒZƒ“ƒ^[  mPelvis(0)
-#define MMD_NECK			1	//ñ		mNeck(3)
-#define MMD_HEAD			2	//“ª		mHead(4)
+//ãƒœãƒ¼ãƒ³ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹
+#define MMD_CENTER			0	//ã‚»ãƒ³ã‚¿ãƒ¼  mPelvis(0)
+#define MMD_NECK			1	//é¦–		mNeck(3)
+#define MMD_HEAD			2	//é ­		mHead(4)
 
-#define MMD_L_SHOULDER		3	//¶Œ¨		mShoulderRight(16)
-#define MMD_L_ELBOW			4	//¶‚Ğ‚¶	mElbowRight(17)
-#define MMD_L_HAND			5	//¶èñ	mWristRight(18)
+#define MMD_L_SHOULDER		3	//å·¦è‚©		mShoulderRight(16)
+#define MMD_L_ELBOW			4	//å·¦ã²ã˜	mElbowRight(17)
+#define MMD_L_HAND			5	//å·¦æ‰‹é¦–	mWristRight(18)
 
-#define MMD_R_SHOULDER		6	//‰EŒ¨		mShoulderLeft(11)
-#define MMD_R_ELBOW			7	//‰E‚Ğ‚¶	mElbowLeft(12)
-#define MMD_R_HAND			8	//‰Eèñ	mWristLeft(13)
+#define MMD_R_SHOULDER		6	//å³è‚©		mShoulderLeft(11)
+#define MMD_R_ELBOW			7	//å³ã²ã˜	mElbowLeft(12)
+#define MMD_R_HAND			8	//å³æ‰‹é¦–	mWristLeft(13)
 
-#define MMD_L_HIP			9	//¶‘Ú		mHipRight(25)
-#define MMD_L_KNEE			10	//¶‚Ğ‚´	mKneeRight(26)
-#define MMD_L_FOOT			11	//¶‘«ñ	mFootRight(28)
+#define MMD_L_HIP			9	//å·¦è…¿		mHipRight(25)
+#define MMD_L_KNEE			10	//å·¦ã²ã–	mKneeRight(26)
+#define MMD_L_FOOT			11	//å·¦è¶³é¦–	mFootRight(28)
 
-#define MMD_R_HIP			12	//‰E‘Ú		mHipLeft(20)
-#define MMD_R_KNEE			13	//‰E‚Ğ‚´	mKneeLeft(21)
-#define MMD_R_FOOT			14	//‰E‘«ñ	mFootLeft(23)
+#define MMD_R_HIP			12	//å³è…¿		mHipLeft(20)
+#define MMD_R_KNEE			13	//å³ã²ã–	mKneeLeft(21)
+#define MMD_R_FOOT			14	//å³è¶³é¦–	mFootLeft(23)
 
-#define MMD_TORSO			15	//“·‘Ì	    mTorso(1)
+#define MMD_TORSO			15	//èƒ´ä½“	    mTorso(1)
 
-#define MMD_L_FINGERTIP		16	//¶èæ	mWristRight(18)
-#define MMD_R_FINGERTIP		17	//‰Eèæ	mWristLeft(13)
+#define MMD_L_FINGERTIP		16	//å·¦æ‰‹å…ˆ	mWristRight(18)
+#define MMD_R_FINGERTIP		17	//å³æ‰‹å…ˆ	mWristLeft(13)
 
 
-#define MMD_L_TOE			18	//¶‚Â‚Üæ	mFootRight(28)		for *ver = 1.50f
-#define MMD_R_TOE			19	//‰E‚Â‚Üæ	mFootLeft(23)		for *ver = 1.50f
+#define MMD_L_TOE			18	//å·¦ã¤ã¾å…ˆ	mFootRight(28)		for *ver = 1.50f
+#define MMD_R_TOE			19	//å³ã¤ã¾å…ˆ	mFootLeft(23)		for *ver = 1.50f
 
-#define MMD_L_SHOULDER_M	20	//¶Œ¨C³						for *ver = 1.50f
-#define MMD_R_SHOULDER_M	21	//‰EŒ¨C³						for *ver = 1.50f
-#define MMD_HEAD_FRONT		22	//Šç³–Ê•ûŒü					for *ver = 1.50f
+#define MMD_L_SHOULDER_M	20	//å·¦è‚©ä¿®æ­£						for *ver = 1.50f
+#define MMD_R_SHOULDER_M	21	//å³è‚©ä¿®æ­£						for *ver = 1.50f
+#define MMD_HEAD_FRONT		22	//é¡”æ­£é¢æ–¹å‘					for *ver = 1.50f
 
 
 

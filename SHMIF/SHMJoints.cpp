@@ -8,7 +8,7 @@
 
 
 /*
-‹¤—Lƒƒ‚ƒŠ–¼
+å…±æœ‰ãƒ¡ãƒ¢ãƒªå
     mPelvis(0), mTorso(1), mChest(2), mNeck(3), mHead(4), mSkull(5), 
 	mEyeLeft(6), mEyeRight(7), mBustLeft(8), mBustRight(9),
     mCollarLeft (10), mShoulderLeft (11), mElbowLeft (12), mWristLeft (13), mFingertipLeft (14),
@@ -24,34 +24,34 @@
 // OpenNI
 //
 
-/*                        ˆÊ’u  ‰ñ“]  
- 0: PELVIS					›  ›  => SHMIF_PELVIS(0)
- 1: XN_SKEL_HEAD	        ›  ›  => SHMIF_HEAD(4)
- 2: XN_SKEL_NECK			›  ›  => SHMIF_NECK(3)                   1
- 3: XN_SKEL_TORSO			›  ›  => SHMIF_TORSO(1)                  |
- 4: XN_SKEL_WAIST			~  ~  => none              9 -  7 -  6 - 2 - 12 - 13 - 15
- 5: XN_SKEL_LEFT_COLLAR		~  ~  => none                            |
- 6: XN_SKEL_LEFT_SHOULDER	›  ›  => SHMIF_R_SHLDR(16)               3
- 7: XN_SKEL_LEFT_ELBOW		›  ›  => SHMIF_R_ELBOW(17)               |
- 8: XN_SKEL_LEFT_WRIST		~  ~  => none                            0    
- 9: XN_SKEL_LEFT_HAND		›  ~  =>[SHMIF_R_WRIST(18)]          17      22
-10: XN_SKEL_LEFT_FINGERTIP	~  ~  => none                        |       |
-11: XN_SKEL_RIGHT_COLLAR	~  ~  => none                        18      22
-12: XN_SKEL_RIGHT_SHOULDER	›  ›  => SHMIF_L_SHLDR(11)           |       |
-13: XN_SKEL_RIGHT_ELBOW		›  ›  => SHMIF_L_ELBOW(12)           20      24
-14: XN_SKEL_RIGHT_WRIST		~  ~  => none
-15: XN_SKEL_RIGHT_HAND      ›  ~  =>[SHMIF_L_WRIST(13)]
-16: XN_SKEL_RIGHT_FINGERTIP ~  ~  => none
-17: XN_SKEL_LEFT_HIP		›  ›  => SHMIF_R_HIP(25)
-18: XN_SKEL_LEFT_KNEE		›  ›  => SHMIF_R_KNEE(26)
-19: XN_SKEL_LEFT_ANKLE		~  ~  => none
-20: XN_SKEL_LEFT_FOOT		›  ~  =>[SHMIF_R_ANKLE(27)]
-21: XN_SKEL_RIGHT_HIP		›  ›  => SHMIF_L_HIP(20)
-22: XN_SKEL_RIGHT_KNEE		›  ›  => SHMIF_L_KNEE(21)
-23: XN_SKEL_RIGHT_ANKLE		~  ~  => none
-24: XN_SKEL_RIGHT_FOOT		›  ~  =>[SHMIF_L_ANKLE(22)]
+/*                        ä½ç½®  å›žè»¢  
+ 0: PELVIS					â—‹  â—‹  => SHMIF_PELVIS(0)
+ 1: XN_SKEL_HEAD	        â—‹  â—‹  => SHMIF_HEAD(4)
+ 2: XN_SKEL_NECK			â—‹  â—‹  => SHMIF_NECK(3)                   1
+ 3: XN_SKEL_TORSO			â—‹  â—‹  => SHMIF_TORSO(1)                  |
+ 4: XN_SKEL_WAIST			Ã—  Ã—  => none              9 -  7 -  6 - 2 - 12 - 13 - 15
+ 5: XN_SKEL_LEFT_COLLAR		Ã—  Ã—  => none                            |
+ 6: XN_SKEL_LEFT_SHOULDER	â—‹  â—‹  => SHMIF_R_SHLDR(16)               3
+ 7: XN_SKEL_LEFT_ELBOW		â—‹  â—‹  => SHMIF_R_ELBOW(17)               |
+ 8: XN_SKEL_LEFT_WRIST		Ã—  Ã—  => none                            0    
+ 9: XN_SKEL_LEFT_HAND		â—‹  Ã—  =>[SHMIF_R_WRIST(18)]          17      22
+10: XN_SKEL_LEFT_FINGERTIP	Ã—  Ã—  => none                        |       |
+11: XN_SKEL_RIGHT_COLLAR	Ã—  Ã—  => none                        18      22
+12: XN_SKEL_RIGHT_SHOULDER	â—‹  â—‹  => SHMIF_L_SHLDR(11)           |       |
+13: XN_SKEL_RIGHT_ELBOW		â—‹  â—‹  => SHMIF_L_ELBOW(12)           20      24
+14: XN_SKEL_RIGHT_WRIST		Ã—  Ã—  => none
+15: XN_SKEL_RIGHT_HAND      â—‹  Ã—  =>[SHMIF_L_WRIST(13)]
+16: XN_SKEL_RIGHT_FINGERTIP Ã—  Ã—  => none
+17: XN_SKEL_LEFT_HIP		â—‹  â—‹  => SHMIF_R_HIP(25)
+18: XN_SKEL_LEFT_KNEE		â—‹  â—‹  => SHMIF_R_KNEE(26)
+19: XN_SKEL_LEFT_ANKLE		Ã—  Ã—  => none
+20: XN_SKEL_LEFT_FOOT		â—‹  Ã—  =>[SHMIF_R_ANKLE(27)]
+21: XN_SKEL_RIGHT_HIP		â—‹  â—‹  => SHMIF_L_HIP(20)
+22: XN_SKEL_RIGHT_KNEE		â—‹  â—‹  => SHMIF_L_KNEE(21)
+23: XN_SKEL_RIGHT_ANKLE		Ã—  Ã—  => none
+24: XN_SKEL_RIGHT_FOOT		â—‹  Ã—  =>[SHMIF_L_ANKLE(22)]
 
-[ ] ‚Í––’[i‰ñ“]‚È‚µj
+[ ] ã¯æœ«ç«¯ï¼ˆå›žè»¢ãªã—ï¼‰
 */
 static  int  _OpenNI2SHMPosJoint[] =		// OPENNI_JOINT_NUM
 {
@@ -90,25 +90,25 @@ int	 OpenNI2SHMRotJointNum(int n)
 // OpenNI2
 //
 
-/*							  ˆÊ’u  ‰ñ“]  
- 0: PELVIS						›  ›  => SHMIF_PELVIS(0)
- 1: NITE_JOINT_HEAD				›  ›  => SHMIF_HEAD(4)
- 2: NITE_JOINT_NECK				›  ›  => SHMIF_NECK(3)                      1
- 3: NITE_JOINT_LEFT_SHOULDER	›  ›  => SHMIF_R_SHLDR(16)                  |
- 4: NITE_JOINT_RIGHT_SHOULDER	›  ›  => SHMIF_L_SHLDR(11)      7 - 5 - 3 - 2 - 4 - 6 - 8
- 5: NITE_JOINT_LEFT_ELBOW		›  ›  => SHMIF_R_ELBOW(17)                  |
- 6: NITE_JOINT_RIGHT_ELBOW		›  ›  => SHMIF_L_ELBOW(12)                  9
- 7: NITE_JOINT_LEFT_HAND		›  ~  =>[SHMIF_R_WRIST(18)]                 |
- 8: NITE_JOINT_RIGHT_HAND		›  ~  =>[SHMIF_L_WRIST(13)]                 0    
- 9: NITE_JOINT_TORSO			›  ›  => SHMIF_TORSO(1)                 10      11
-10: NITE_JOINT_LEFT_HIP			›  ›  => SHMIF_R_HIP(25)                |       |
-11: NITE_JOINT_RIGHT_HIP		›  ›  => SHMIF_L_HIP(20)                12      13
-12: NITE_JOINT_LEFT_KNEE		›  ›  => SHMIF_R_KNEE(26)               |       |
-13: NITE_JOINT_RIGHT_KNEE		›  ›  => SHMIF_L_KNEE(21)               14      15
-14: NITE_JOINT_LEFT_FOOT		›  ~  =>[SHMIF_R_ANKLE(27)]
-15: NITE_JOINT_RIGHT_FOOT		›  ~  =>[SHMIF_L_ANKLE(22)]
+/*							  ä½ç½®  å›žè»¢  
+ 0: PELVIS						â—‹  â—‹  => SHMIF_PELVIS(0)
+ 1: NITE_JOINT_HEAD				â—‹  â—‹  => SHMIF_HEAD(4)
+ 2: NITE_JOINT_NECK				â—‹  â—‹  => SHMIF_NECK(3)                      1
+ 3: NITE_JOINT_LEFT_SHOULDER	â—‹  â—‹  => SHMIF_R_SHLDR(16)                  |
+ 4: NITE_JOINT_RIGHT_SHOULDER	â—‹  â—‹  => SHMIF_L_SHLDR(11)      7 - 5 - 3 - 2 - 4 - 6 - 8
+ 5: NITE_JOINT_LEFT_ELBOW		â—‹  â—‹  => SHMIF_R_ELBOW(17)                  |
+ 6: NITE_JOINT_RIGHT_ELBOW		â—‹  â—‹  => SHMIF_L_ELBOW(12)                  9
+ 7: NITE_JOINT_LEFT_HAND		â—‹  Ã—  =>[SHMIF_R_WRIST(18)]                 |
+ 8: NITE_JOINT_RIGHT_HAND		â—‹  Ã—  =>[SHMIF_L_WRIST(13)]                 0    
+ 9: NITE_JOINT_TORSO			â—‹  â—‹  => SHMIF_TORSO(1)                 10      11
+10: NITE_JOINT_LEFT_HIP			â—‹  â—‹  => SHMIF_R_HIP(25)                |       |
+11: NITE_JOINT_RIGHT_HIP		â—‹  â—‹  => SHMIF_L_HIP(20)                12      13
+12: NITE_JOINT_LEFT_KNEE		â—‹  â—‹  => SHMIF_R_KNEE(26)               |       |
+13: NITE_JOINT_RIGHT_KNEE		â—‹  â—‹  => SHMIF_L_KNEE(21)               14      15
+14: NITE_JOINT_LEFT_FOOT		â—‹  Ã—  =>[SHMIF_R_ANKLE(27)]
+15: NITE_JOINT_RIGHT_FOOT		â—‹  Ã—  =>[SHMIF_L_ANKLE(22)]
 
-[ ] ‚Í––’[i‰ñ“]‚È‚µj
+[ ] ã¯æœ«ç«¯ï¼ˆå›žè»¢ãªã—ï¼‰
 */
 static  int  _OpenNI22SHMPosJoint[] =		// OPENNI2_JOINT_NUM
 {
@@ -169,7 +169,7 @@ int	 OpenNI22SHMRotJointNum(int n)
 18: NUI_SKELETON_POSITION_ANKLE_RIGHT     => SHMIF_R_ANKLE(27) 
 19: NUI_SKELETON_POSITION_FOOT_RIGHT      =>[SHMIF_R_FOOT(28)]
 
-[ ] ‚Í––’[, 
+[ ] ã¯æœ«ç«¯, 
 */
 static  int  _Kinect2SHMPosJoint[] =		// KINECT_JOINT_NUM
 {
@@ -206,7 +206,7 @@ int	 Kinect2SHMPosJointNum(int n)
 
 ////////////////////////////////////////////////////////////////////////////////////////
 //
-// ‹¤’ÊƒWƒ‡ƒCƒ“ƒg”Ô†
+// å…±é€šã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·
 //
 
 /*
@@ -255,7 +255,7 @@ int	 Kinect2SHMPosJointNum(int n)
 
 #define	  NI_AVATAR		36  => SHMIF_AVATAR(33)
 	
-[ ] ‚Í––’[
+[ ] ã¯æœ«ç«¯
 */
 static  int  _Ni2SHMPosJoint[] =		// NI_TOTAL_JOINT_NUM (37)
 {
@@ -303,7 +303,7 @@ int	 Ni2SHMRotJointNum(int n)
 //
 
 //
-// Library ŒÅ—L‚ÌƒWƒ‡ƒCƒ“ƒg”Ô†‚©‚ç SHMIF‚ÌÀ•W—pƒWƒ‡ƒCƒ“ƒg”Ô†‚ð“¾‚é
+// Library å›ºæœ‰ã®ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‹ã‚‰ SHMIFã®åº§æ¨™ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‚’å¾—ã‚‹
 //
 int  NiSDK2SHMPosJointNum(int n, NiSDK_Lib lib)
 {
@@ -326,7 +326,7 @@ int  NiSDK2SHMPosJointNum(int n, NiSDK_Lib lib)
 
 
 //
-// Library ŒÅ—L‚ÌƒWƒ‡ƒCƒ“ƒg”Ô†‚©‚ç SHMIF‚Ì‰ñ“]—pƒWƒ‡ƒCƒ“ƒg”Ô†‚ð“¾‚é
+// Library å›ºæœ‰ã®ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‹ã‚‰ SHMIFã®å›žè»¢ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‚’å¾—ã‚‹
 //
 int  NiSDK2SHMRotJointNum(int n, NiSDK_Lib lib)
 {
@@ -349,7 +349,7 @@ int  NiSDK2SHMRotJointNum(int n, NiSDK_Lib lib)
 
 
 //
-// Library ŒÅ—L‚ÌƒWƒ‡ƒCƒ“ƒg”Ô†‚©‚ç SL/OS‚ÌÀ•W—pƒWƒ‡ƒCƒ“ƒg–¼‚ð“¾‚é
+// Library å›ºæœ‰ã®ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‹ã‚‰ SL/OSã®åº§æ¨™ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆåã‚’å¾—ã‚‹
 //
 std::string  NiSDK2SHMPosJointName(int n, NiSDK_Lib lib)
 {
@@ -377,7 +377,7 @@ std::string  NiSDK2SHMPosJointName(int n, NiSDK_Lib lib)
 
 
 //
-// Library ŒÅ—L‚ÌƒWƒ‡ƒCƒ“ƒg”Ô†‚©‚ç SL/OS‚Ì‰ñ“]—pƒWƒ‡ƒCƒ“ƒg–¼‚ð“¾‚é
+// Library å›ºæœ‰ã®ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‹ã‚‰ SL/OSã®å›žè»¢ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆåã‚’å¾—ã‚‹
 //
 std::string  NiSDK2SHMRotJointName(int n, NiSDK_Lib lib)
 {
@@ -405,7 +405,7 @@ std::string  NiSDK2SHMRotJointName(int n, NiSDK_Lib lib)
 
 
 //
-// ‹¤’ÊƒWƒ‡ƒCƒ“ƒg”Ô†‚©‚ç SL/OS‚ÌÀ•W—pƒWƒ‡ƒCƒ“ƒg–¼‚ð“¾‚é
+// å…±é€šã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‹ã‚‰ SL/OSã®åº§æ¨™ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆåã‚’å¾—ã‚‹
 //
 std::string  Ni2SHMPosJointName(int n)
 {
@@ -420,7 +420,7 @@ std::string  Ni2SHMPosJointName(int n)
 
 
 //
-// ‹¤’ÊƒWƒ‡ƒCƒ“ƒg”Ô†‚©‚ç SL/OS‚Ì‰ñ“]—pƒWƒ‡ƒCƒ“ƒg–¼‚ð“¾‚é
+// å…±é€šã‚¸ãƒ§ã‚¤ãƒ³ãƒˆç•ªå·ã‹ã‚‰ SL/OSã®å›žè»¢ç”¨ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆåã‚’å¾—ã‚‹
 //
 std::string  Ni2SHMRotJointName(int n)
 {

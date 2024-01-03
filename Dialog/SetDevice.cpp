@@ -1,4 +1,4 @@
-// SetDevice.cpp : 実装ファイル
+// SetDevice.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include "stdafx.h"
@@ -8,7 +8,7 @@
 #include "WinTools.h"
 
 
-// CSetDevice ダイアログ
+// CSetDevice 繝繧､繧｢繝ｭ繧ｰ
 
 IMPLEMENT_DYNAMIC(CSetDevice, CDialog)
 
@@ -42,7 +42,7 @@ END_MESSAGE_MAP()
 
 
 
-// CSetDevice メッセージ ハンドラ
+// CSetDevice 繝｡繝�繧ｻ繝ｼ繧ｸ 繝上Φ繝峨Λ
 
 BOOL CSetDevice::OnInitDialog()
 {

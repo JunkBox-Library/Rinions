@@ -24,7 +24,7 @@
 #define	  NINET_UDP_CLPORT			8100
 #define   NINET_UDP_TIMEOUT			5		// sec
 
-#define	  NINET_BUFFER_LEN			1600	// Å’á 24(64bit)/48(32bit)ŒÂ‚ÌƒWƒ‡ƒCƒ“ƒgƒf[ƒ^‚ğ“]‘—‰Â”\
+#define	  NINET_BUFFER_LEN			1600	// æœ€ä½ 24(64bit)/48(32bit)å€‹ã®ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆãƒ‡ãƒ¼ã‚¿ã‚’è»¢é€å¯èƒ½
 											// OpenNI:11joints, Kinect SDK:15joints
 
 #define   NINET_FRM_RATE_INTVL		1		// interval of packet check (sec)
@@ -118,7 +118,7 @@ public:
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// ƒf[ƒ^‘—óM
+// ãƒ‡ãƒ¼ã‚¿é€å—ä¿¡
 //
 
 UINT  niNetworkRecieveLoop(LPVOID pParam);

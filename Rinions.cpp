@@ -40,12 +40,12 @@ using namespace jbxwl;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// CRinionsApp ÉÅÉCÉìÉNÉâÉX
+// CRinionsApp „É°„Ç§„É≥„ÇØ„É©„Çπ
 //
 
 BEGIN_MESSAGE_MAP(CRinionsApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &CRinionsApp::OnAppAbout)
-	// ïWèÄÇÃÉtÉ@ÉCÉãäÓñ{ÉhÉLÉÖÉÅÉìÉg ÉRÉ}ÉìÉh
+	// Ê®ôÊ∫ñ„ÅÆ„Éï„Ç°„Ç§„É´Âü∫Êú¨„Éâ„Ç≠„É•„É°„É≥„Éà „Ç≥„Éû„É≥„Éâ
 	ON_COMMAND(ID_MODEL_WND_OPEN, &CRinionsApp::OnModelingWndOpen)
 	ON_COMMAND(ID_LOG_WND_OPEN, &CRinionsApp::OnLogWndOpen)
 	ON_COMMAND(ID_SNSR_WND_OPEN_1, &CRinionsApp::OnSnsrWndOpen_x1)
@@ -81,7 +81,7 @@ END_MESSAGE_MAP()
 
 
 
-// CRinionsApp ÉRÉìÉXÉgÉâÉNÉVÉáÉì
+// CRinionsApp „Ç≥„É≥„Çπ„Éà„É©„ÇØ„Ç∑„Éß„É≥
 CRinionsApp::CRinionsApp()
 {
 	pDocTemplLOG = NULL;
@@ -151,19 +151,19 @@ CRinionsApp  theApp;
 
 
 
-// CRinionsApp èâä˙âª
+// CRinionsApp ÂàùÊúüÂåñ
 
 BOOL  CRinionsApp::InitInstance()
 {
 	CWinApp::InitInstance();
 
 	SetRegistryKey(_T("Rinions by Fumi.Iseki and NSL"));
-	LoadStdProfileSettings(4);  // ïWèÄÇÃ INI ÉtÉ@ÉCÉãÇÃÉIÉvÉVÉáÉìÇÉçÅ[ÉhÇµÇ‹Ç∑ (MRU Çä‹Çﬁ)
+	LoadStdProfileSettings(4);  // Ê®ôÊ∫ñ„ÅÆ INI „Éï„Ç°„Ç§„É´„ÅÆ„Ç™„Éó„Ç∑„Éß„É≥„Çí„É≠„Éº„Éâ„Åó„Åæ„Åô (MRU „ÇíÂê´„ÇÄ)
 
 	//
 	CMultiDocTemplate* pDocTemplate;
 
-	// ÉçÉO ÉEÉBÉhÉE
+	// „É≠„Ç∞ „Ç¶„Ç£„Éâ„Ç¶
 	pDocTemplate = new CMultiDocTemplate(
 		IDR_MAINFRAME,
 		RUNTIME_CLASS(CLogWndDoc),
@@ -173,7 +173,7 @@ BOOL  CRinionsApp::InitInstance()
 	AddDocTemplate(pDocTemplate);
 	pDocTemplLOG = pDocTemplate;
 
-	// ÉCÉÅÅ[ÉWÅiÉZÉìÉTÅ[Åj ÉEÉBÉhÉE
+	// „Ç§„É°„Éº„Ç∏Ôºà„Çª„É≥„Çµ„ÉºÔºâ „Ç¶„Ç£„Éâ„Ç¶
 	/*
 	pDocTemplate = new CMultiDocTemplate(
 		IDR_MAINFRAME,
@@ -193,7 +193,7 @@ BOOL  CRinionsApp::InitInstance()
 	AddDocTemplate(pDocTemplate);
 	pDocTemplSNR = pDocTemplate;
 
-	// ê[ìx ÉEÉBÉhÉE
+	// Ê∑±Â∫¶ „Ç¶„Ç£„Éâ„Ç¶
 	pDocTemplate = new CMultiDocTemplate(
 		IDR_MAINFRAME,
 		RUNTIME_CLASS(CExDocument),
@@ -204,7 +204,7 @@ BOOL  CRinionsApp::InitInstance()
 	pDocTemplDPT = pDocTemplate;
 
 /*
-	// 3DÉÇÉfÉã ÉEÉBÉìÉhÉE (ñ¢é¿ëï)
+	// 3D„É¢„Éá„É´ „Ç¶„Ç£„É≥„Éâ„Ç¶ (Êú™ÂÆüË£Ö)
 	pDocTemplate = new CMultiDocTemplate(
 		IDR_MAINFRAME,
 		RUNTIME_CLASS(CExDocument),
@@ -215,7 +215,7 @@ BOOL  CRinionsApp::InitInstance()
 	pDocTemplMDL = pDocTemplate;
 */
 
-	// ÉÅÉCÉìÉtÉåÅ[ÉÄ ÉEÉBÉìÉhÉEÇçÏê¨
+	// „É°„Ç§„É≥„Éï„É¨„Éº„É† „Ç¶„Ç£„É≥„Éâ„Ç¶„Çí‰ΩúÊàê
 	pMainFrame = new CMainFrame;
 	pMainFrame->pApp = this;
 	if (!pMainFrame->LoadFrame(IDR_MAINFRAME)) return FALSE;
@@ -235,12 +235,12 @@ BOOL  CRinionsApp::InitInstance()
 	//configFilePath = makeConfigFilePath();
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// ÉEÉBÉìÉhÉEÉTÉCÉY
+	// „Ç¶„Ç£„É≥„Éâ„Ç¶„Çµ„Ç§„Ç∫
 	//
 	int wx = RINIONS_WND_XSIZE;
 	int wy = RINIONS_WND_YSIZE;
-	int rx = GetSystemMetrics(SM_CXSCREEN);			// Xï˚å¸ÇÃâëúìx
-	int ry = GetSystemMetrics(SM_CYSCREEN) - 14;	// Yï˚å¸ÇÃâëúìxÅi-ÉcÅ[ÉãÉoÅ[Åj
+	int rx = GetSystemMetrics(SM_CXSCREEN);			// XÊñπÂêë„ÅÆËß£ÂÉèÂ∫¶
+	int ry = GetSystemMetrics(SM_CYSCREEN) - 14;	// YÊñπÂêë„ÅÆËß£ÂÉèÂ∫¶Ôºà-„ÉÑ„Éº„É´„Éê„ÉºÔºâ
 
 	// Default Size
 	windowSize.left   = rx/2 - wx/2;
@@ -273,7 +273,7 @@ BOOL  CRinionsApp::InitInstance()
 	m_pMainWnd->SetWindowPos(NULL, sx, sy, wx, wy, 0);
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// ÉÅÉCÉìÉtÉåÅ[ÉÄÉEÉBÉìÉhÉEÇÃï\é¶
+	// „É°„Ç§„É≥„Éï„É¨„Éº„É†„Ç¶„Ç£„É≥„Éâ„Ç¶„ÅÆË°®Á§∫
 	m_pMainWnd->ShowWindow(SW_SHOW);
 	m_pMainWnd->UpdateWindow();
 
@@ -283,21 +283,21 @@ BOOL  CRinionsApp::InitInstance()
 	/*
 	ret = WaitPidTerm(5);
 	if (!ret) {
-		MessageBoxDLG(IDS_STR_ERROR, IDS_STR_ERR_REBOOT, MB_OK, m_pMainWnd); // "ÉvÉçÉOÉâÉÄÇÃçƒãNìÆÇ…é∏îsÇµÇ‹ÇµÇΩ"
+		MessageBoxDLG(IDS_STR_ERROR, IDS_STR_ERR_REBOOT, MB_OK, m_pMainWnd); // "„Éó„É≠„Ç∞„É©„É†„ÅÆÂÜçËµ∑Âãï„Å´Â§±Êïó„Åó„Åæ„Åó„Åü"
 		return FALSE;
 	}*/
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// DirectX9 ÇÃèâä˙âª
+	// DirectX9 „ÅÆÂàùÊúüÂåñ
 	//
 	ret = Dx9CreateInterface(this);
 	if (!ret) {
-		MessageBoxDLG(IDS_STR_ERROR, IDS_STR_FAIL_GET_DX9DEV, MB_OK, m_pMainWnd); // "DirectX9ÇÃèâä˙âªÇ…é∏îsÇµÇ‹ÇµÇΩ"
+		MessageBoxDLG(IDS_STR_ERROR, IDS_STR_FAIL_GET_DX9DEV, MB_OK, m_pMainWnd); // "DirectX9„ÅÆÂàùÊúüÂåñ„Å´Â§±Êïó„Åó„Åæ„Åó„Åü"
 		return FALSE;
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// NI ÇÃèâä˙âª
+	// NI „ÅÆÂàùÊúüÂåñ
 	//
 	ret = InitNiDevice();
 
@@ -312,23 +312,23 @@ BOOL  CRinionsApp::InitInstance()
 BOOL  CRinionsApp::InitNiDevice(void)
 {
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// NI ÉfÉoÉCÉXÇÃê∂ê¨
+	// NI „Éá„Éê„Ç§„Çπ„ÅÆÁîüÊàê
 	//
 	niDevice = new CExNiDevice();
 	if (niDevice==NULL) return FALSE;
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// ê›íËÉtÉ@ÉCÉãÇÃì«Ç›çûÇ›
+	// Ë®≠ÂÆö„Éï„Ç°„Ç§„É´„ÅÆË™≠„ÅøËæº„Åø
 	//
 	//readConfigFile();
 	appParam.readConfigFile();
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// èâä˙ê›íË
+	// ÂàùÊúüË®≠ÂÆö
 	//
 	BOOL use_image = appParam.isUseImage;	// Backup
 	appParam.isUseImage = FALSE;
-	niDevice->setParameter(appParam);		// ÉfÉoÉCÉXÇ…ä÷Ç∑ÇÈê›íËÇÕîΩâfÇ≥ÇÍÇ»Ç¢
+	niDevice->setParameter(appParam);		// „Éá„Éê„Ç§„Çπ„Å´Èñ¢„Åô„ÇãË®≠ÂÆö„ÅØÂèçÊò†„Åï„Çå„Å™„ÅÑ
 
 	niDevice->pMainFrame = pMainFrame;
 	niDevice->mWnd		 = m_pMainWnd;
@@ -336,12 +336,12 @@ BOOL  CRinionsApp::InitNiDevice(void)
 	niDevice->nowSDKLib  = appParam.nextSDKLib;
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// NI Device ÉCÉìÉXÉ^ÉìÉXÇÃèâä˙âª
+	// NI Device „Ç§„É≥„Çπ„Çø„É≥„Çπ„ÅÆÂàùÊúüÂåñ
 	CMessageBoxDLG* mesgBox = NULL;
 
 	///////////////////////////////////////////////////
-	// NIÉfÉoÉCÉXÇÃèâä˙âª
-	mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_INIT_DEVICE, m_pMainWnd);		// "NIÉfÉoÉCÉXÇÃèâä˙âªíÜ"
+	// NI„Éá„Éê„Ç§„Çπ„ÅÆÂàùÊúüÂåñ
+	mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_INIT_DEVICE, m_pMainWnd);		// "NI„Éá„Éê„Ç§„Çπ„ÅÆÂàùÊúüÂåñ‰∏≠"
 	//
 	BOOL ret = niDevice->init();
 	updateStatusBar();
@@ -356,13 +356,13 @@ BOOL  CRinionsApp::InitNiDevice(void)
 	appParam.saveConfigFile();
 
 	///////////////////////////////////////////////////
-	//  ÉJÉÅÉâ ÉCÉÅÅ[ÉWÇÃèâä˙âª
+	//  „Ç´„É°„É© „Ç§„É°„Éº„Ç∏„ÅÆÂàùÊúüÂåñ
 	if (ret && appParam.isUseImage) {
 		MakeCameraImage();
 	}
 
 	///////////////////////////////////////////////////
-	// Speech Platform ÇÃèâä˙âª
+	// Speech Platform „ÅÆÂàùÊúüÂåñ
 	appParam.enableSpeechReco = FALSE;
 	if (appParam.langSpeech.IsEmpty()) appParam.langSpeech = ::getResourceLocale();
 	if (ret) {
@@ -370,7 +370,7 @@ BOOL  CRinionsApp::InitNiDevice(void)
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// ÉäÉìÉOÉoÉbÉtÉ@ÇÃèâä˙âª
+	// „É™„É≥„Ç∞„Éê„ÉÉ„Éï„Ç°„ÅÆÂàùÊúüÂåñ
 	//
 	ret = niDevice->initRingBuffer();
 	if (!ret) {
@@ -378,13 +378,13 @@ BOOL  CRinionsApp::InitNiDevice(void)
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// ÉÅÉjÉÖÅ[ÇÃê›íË
+	// „É°„Éã„É•„Éº„ÅÆË®≠ÂÆö
 	//
 	updateMenuBar();
 	updateStatusBar();
 
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	// ÉlÉbÉgÉèÅ[ÉNÇ∆ã§óLÉÅÉÇÉäÅCÉWÉáÉCÉìÉgêßñÒÉNÉâÉXÇÃê∂ê¨
+	// „Éç„ÉÉ„Éà„ÉØ„Éº„ÇØ„Å®ÂÖ±Êúâ„É°„É¢„É™Ôºå„Ç∏„Éß„Ç§„É≥„ÉàÂà∂Á¥Ñ„ÇØ„É©„Çπ„ÅÆÁîüÊàê
 	//
 	niJoints  = new CExNiJoints(niDevice->nowSDKLib);
 	niNetwork = new CExNiNetwork();
@@ -509,14 +509,14 @@ void  CRinionsApp::ShutdownNiDevice(void)
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
-// ÉAÉvÉäÉPÅ[ÉVÉáÉìÇÃÉoÅ[ÉWÉáÉìèÓïÒÇ…égÇÌÇÍÇÈ CAboutDlg É_ÉCÉAÉçÉO
+// „Ç¢„Éó„É™„Ç±„Éº„Ç∑„Éß„É≥„ÅÆ„Éê„Éº„Ç∏„Éß„É≥ÊÉÖÂ†±„Å´‰Ωø„Çè„Çå„Çã CAboutDlg „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 
 class CAboutDlg : public CDialog
 {
 public:
 	CAboutDlg();
 
-// É_ÉCÉAÉçÉO ÉfÅ[É^
+// „ÉÄ„Ç§„Ç¢„É≠„Ç∞ „Éá„Éº„Çø
 	enum { IDD = IDD_ABOUTBOX };
 
 
@@ -526,7 +526,7 @@ protected:
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);
 
-// é¿ëï
+// ÂÆüË£Ö
 protected:
 	DECLARE_MESSAGE_MAP()
 	afx_msg LRESULT OnSpeechEvent(WPARAM wParam, LPARAM lParam);
@@ -554,7 +554,7 @@ END_MESSAGE_MAP()
 
 
 //////////////////////////////////////////////////////////////////
-// É_ÉCÉAÉçÉOÇé¿çsÇ∑ÇÈÇΩÇﬂÇÃÉAÉvÉäÉPÅ[ÉVÉáÉì ÉRÉ}ÉìÉh
+// „ÉÄ„Ç§„Ç¢„É≠„Ç∞„ÇíÂÆüË°å„Åô„Çã„Åü„ÇÅ„ÅÆ„Ç¢„Éó„É™„Ç±„Éº„Ç∑„Éß„É≥ „Ç≥„Éû„É≥„Éâ
 void CRinionsApp::OnAppAbout()
 {
 	CAboutDlg aboutDlg;
@@ -569,7 +569,7 @@ void CRinionsApp::OnAppAbout()
 // Destruction of child window
 //
 
-// ÉZÉìÉTÅ[ ÉrÉÖÅ[
+// „Çª„É≥„Çµ„Éº „Éì„É•„Éº
 void CRinionsApp::ViewDestructor(CExView* view)
 {
 	if (view==pSensorView) {
@@ -615,7 +615,7 @@ void CRinionsApp::ViewDestructor(CExView* view)
 
 
 
-// ÉçÉO ÉrÉÖÅ[
+// „É≠„Ç∞ „Éì„É•„Éº
 void CRinionsApp::ViewDestructor(CExTextView* view)
 {
 	if (view==pLogFrame->pView) {
@@ -632,7 +632,7 @@ void CRinionsApp::ViewDestructor(CExTextView* view)
 
 
 
-// ÉçÉO ÉtÉåÅ[ÉÄ
+// „É≠„Ç∞ „Éï„É¨„Éº„É†
 void CRinionsApp::FrameDestructor(CExTextFrame* frm)
 {
 	if (frm==pLogFrame) {
@@ -652,21 +652,21 @@ void CRinionsApp::FrameDestructor(CExTextFrame* frm)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// CRinionsApp ÉÅÉjÉÖÅ[
+// CRinionsApp „É°„Éã„É•„Éº
 //
 
 /////////////////////////////////////////////////////////////////
-// ÉtÉ@ÉCÉã ÉÅÉjÉÖÅ[
+// „Éï„Ç°„Ç§„É´ „É°„Éã„É•„Éº
 //
 
 //
-// ÉçÉOÉCÉì
+// „É≠„Ç∞„Ç§„É≥
 //
 void CRinionsApp::OnAppLogin()
 {
 	if (isLoggedIn) return;
 	
-	// "ÉçÉOÉCÉìíÜ ..."
+	// "„É≠„Ç∞„Ç§„É≥‰∏≠ ..."
 	CMessageBoxDLG* mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_PROCSING_LOGIN, m_pMainWnd);	
 	//unsigned char ret = niNetwork->serverLogin(appParam.animationSrvr, appParam.serverPort, appParam.groupID);
 	unsigned char ret = niNetwork->serverLogin();
@@ -674,32 +674,32 @@ void CRinionsApp::OnAppLogin()
 
 	//
 	if (ret==ANM_COM_ERROR_SERVER_DOWN) {
-		// "ÉçÉOÉCÉìÉTÅ[ÉoÇ™âûìöÇµÇ‹ÇπÇÒ"
+		// "„É≠„Ç∞„Ç§„É≥„Çµ„Éº„Éê„ÅåÂøúÁ≠î„Åó„Åæ„Åõ„Çì"
 		MessageBoxDLG(IDS_STR_ATTNSN, IDS_STR_NORSPNS_SERVER, MB_OK, m_pMainWnd);
 		return;
 	}
 	if (ret==ANM_COM_ERROR_TIMEOUT) {
-		// "íÜåpÉvÉçÉZÉXÇ™âûìöÇµÇ‹ÇπÇÒ"
+		// "‰∏≠Á∂ô„Éó„É≠„Çª„Çπ„ÅåÂøúÁ≠î„Åó„Åæ„Åõ„Çì"
 		MessageBoxDLG(IDS_STR_ATTNSN, IDS_STR_NORSPNS_RELAY, MB_OK, m_pMainWnd);
 		return;
 	}
 	else if (ret==ANM_COM_ERROR_SOCKET) {
-		// "í êMÉ\ÉPÉbÉgÇÉIÅ[ÉvÉìÇ≈Ç´Ç‹ÇπÇÒ"
+		// "ÈÄö‰ø°„ÇΩ„Ç±„ÉÉ„Éà„Çí„Ç™„Éº„Éó„É≥„Åß„Åç„Åæ„Åõ„Çì"
 		MessageBoxDLG(IDS_STR_ATTNSN, IDS_STR_NOTOPEN_SOCKET, MB_OK, m_pMainWnd);
 		return;
 	}
 	else if (ret==ANM_COM_REPLY_FORBIDDEN) {
-		// "Ç±ÇÃÉTÅ[ÉoÇégópÇ∑ÇÈÇ±Ç∆ÇÕÇ≈Ç´Ç‹ÇπÇÒ"
+		// "„Åì„ÅÆ„Çµ„Éº„Éê„Çí‰ΩøÁî®„Åô„Çã„Åì„Å®„ÅØ„Åß„Åç„Åæ„Åõ„Çì"
 		MessageBoxDLG(IDS_STR_ATTNSN, IDS_STR_FRBDDN_SERVER, MB_OK, m_pMainWnd);
 		return;
 	}
 	else if (ret==ANM_COM_REPLY_REGIST_DUPLI) {
-		// "éwíËÇ≥ÇÍÇΩÉAÉjÉÅÅ[ÉVÉáÉìUUIDÇÕä˘Ç…ìoò^Ç≥ÇÍÇƒÇ¢Ç‹Ç∑"
+		// "ÊåáÂÆö„Åï„Çå„Åü„Ç¢„Éã„É°„Éº„Ç∑„Éß„É≥UUID„ÅØÊó¢„Å´ÁôªÈå≤„Åï„Çå„Å¶„ÅÑ„Åæ„Åô"
 		MessageBoxDLG(IDS_STR_ATTNSN, IDS_STR_DUPLI_ANIM, MB_OK, m_pMainWnd);
 		return;
 	}
 	else if (ret==ANM_COM_REPLY_REGIST_ALRDY) {
-		// "ä˘Ç…ÉçÉOÉCÉìçœÇ›Ç≈Ç∑"
+		// "Êó¢„Å´„É≠„Ç∞„Ç§„É≥Ê∏à„Åø„Åß„Åô"
 		MessageBoxDLG(IDS_STR_ATTNSN, IDS_STR_ALREADY_LOGIN, MB_OK, m_pMainWnd);
 		//return;
 	}
@@ -707,7 +707,7 @@ void CRinionsApp::OnAppLogin()
 		TCHAR buf[32];
 		sntprintf(buf, 32, _T("\nreturn code = 0x%02x"), ret);
 		CString err;
-		err.LoadString(IDS_STR_NOT_LOGIN);	// "ÉTÅ[ÉoÇ…ÉçÉOÉCÉìÇ≈Ç´Ç‹ÇπÇÒÇ≈ÇµÇΩ"
+		err.LoadString(IDS_STR_NOT_LOGIN);	// "„Çµ„Éº„Éê„Å´„É≠„Ç∞„Ç§„É≥„Åß„Åç„Åæ„Åõ„Çì„Åß„Åó„Åü"
 		err += buf;
 		MessageBoxDLG(IDS_STR_ATTNSN, err, MB_OK, m_pMainWnd);
 		return;
@@ -732,7 +732,7 @@ void CRinionsApp::OnAppLogin()
 
 
 //
-// ÉçÉOÉAÉEÉg
+// „É≠„Ç∞„Ç¢„Ç¶„Éà
 //
 void CRinionsApp::OnAppLogout()
 {
@@ -774,7 +774,7 @@ void CRinionsApp::closeNetwork(BOOL logout)
 
 
 //
-// ÉlÉbÉgÉèÅ[ÉNÇ©ÇÁÇÃ Data éÛêM
+// „Éç„ÉÉ„Éà„ÉØ„Éº„ÇØ„Åã„Çâ„ÅÆ Data Âèó‰ø°
 //
 void CRinionsApp::OnAppDataRecv()
 {
@@ -785,7 +785,7 @@ void CRinionsApp::OnAppDataRecv()
 	if (!isRecvData) {
 		niNetwork->openRecvSocket();
 		if (niNetwork->recvSocket<=0) {
-			// "íçà”", "ÉfÅ[É^ÇÃéÛêMÇ™Ç≈Ç´Ç‹ÇπÇÒ"
+			// "Ê≥®ÊÑè", "„Éá„Éº„Çø„ÅÆÂèó‰ø°„Åå„Åß„Åç„Åæ„Åõ„Çì"
 			MessageBoxDLG(IDS_STR_ATTNSN, IDS_STR_FAIL_RSCV, MB_OK, m_pMainWnd); 
 			return;
 		}
@@ -808,7 +808,7 @@ void CRinionsApp::OnAppDataRecv()
 
 
 //
-// Data ì«Ç›çûÇ›
+// Data Ë™≠„ÅøËæº„Åø
 //
 void  CRinionsApp::OnAppDataLoad()
 {
@@ -847,7 +847,7 @@ void  CRinionsApp::OnAppDataLoad()
 
 
 //
-// Data ï€ë∂
+// Data ‰øùÂ≠ò
 //
 void  CRinionsApp::OnAppDataSave()
 {
@@ -859,14 +859,14 @@ void  CRinionsApp::OnAppDataSave()
 	if (fname.IsEmpty()) return;
 
 	//
-	int ret = niDevice->backupRecordeTempFile(fname, FALSE);	// FALSE: è„èëÇ´É`ÉFÉbÉN
+	int ret = niDevice->backupRecordeTempFile(fname, FALSE);	// FALSE: ‰∏äÊõ∏„Åç„ÉÅ„Çß„ÉÉ„ÇØ
 
 	if (ret>0) {
 		niDevice->deleteRecordeTempFile();
 		savedData = FALSE;
 	}
 	else {
-		// "ÉGÉâÅ[", "ÉtÉ@ÉCÉãÇÃì«Ç›çûÇ›Ç…é∏îsÇµÇ‹ÇµÇΩ"
+		// "„Ç®„É©„Éº", "„Éï„Ç°„Ç§„É´„ÅÆË™≠„ÅøËæº„Åø„Å´Â§±Êïó„Åó„Åæ„Åó„Åü"
 		DEBUG_ERR("CRinionsApp::OnAppDataSave(): ERROR: Fail to Write File (%d)", ret);
 		MessageBoxDLG(IDS_STR_ERROR, IDS_STR_ERR_WRITE_FILE, MB_OK, m_pMainWnd);
 		savedData = TRUE;
@@ -879,7 +879,7 @@ void  CRinionsApp::OnAppDataSave()
 
 
 //
-// ÉvÉçÉOÉâÉÄÇÃçƒãNìÆ
+// „Éó„É≠„Ç∞„É©„É†„ÅÆÂÜçËµ∑Âãï
 //
 void  CRinionsApp::OnAppReboot()
 {
@@ -895,7 +895,7 @@ void  CRinionsApp::OnAppReboot()
 
 
 //
-// NIÉfÉoÉCÉXÇÃèâä˙âª
+// NI„Éá„Éê„Ç§„Çπ„ÅÆÂàùÊúüÂåñ
 //
 void  CRinionsApp::OnAppInitialize()
 {
@@ -909,7 +909,7 @@ void  CRinionsApp::OnAppInitialize()
 	updateStatusBar(TRUE);
 	appParam.saveConfigFile();
 
-	// "NIÉfÉoÉCÉXÇÃÉäÉZÉbÉgíÜ"
+	// "NI„Éá„Éê„Ç§„Çπ„ÅÆ„É™„Çª„ÉÉ„Éà‰∏≠"
 	CMessageBoxDLG* mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_RESET_DEVICE, m_pMainWnd);
 	ShutdownNiDevice();
 	if (mesgBox!=NULL) delete(mesgBox);
@@ -927,14 +927,14 @@ void  CRinionsApp::OnAppInitialize()
 
 
 /////////////////////////////////////////////////////////////////
-//  ÉEÉBÉìÉhÉE ÉÅÉjÉÖÅ[
+//  „Ç¶„Ç£„É≥„Éâ„Ç¶ „É°„Éã„É•„Éº
 //
 
 
 void  CRinionsApp::OnModelingWndOpen()
 {
 /*
-	if (pModelView!=NULL) return;		// Open çœÇ›
+	if (pModelView!=NULL) return;		// Open Ê∏à„Åø
 
 	CExFrame* pfrm = CreateDocFrmView(pDocTemplMDL, this);
 
@@ -954,7 +954,7 @@ void  CRinionsApp::OnModelingWndOpen()
 		}
 	}
 	else {
-		ExecDocFrmViewError(pMainFrame->m_hWnd, MSG_DFV_FR_NULL);	// FrameÇ÷ÇÃÉ|ÉCÉìÉ^Ç™ NULLÇ≈Ç∑
+		ExecDocFrmViewError(pMainFrame->m_hWnd, MSG_DFV_FR_NULL);	// Frame„Å∏„ÅÆ„Éù„Ç§„É≥„Çø„Åå NULL„Åß„Åô
 	}
 */
 
@@ -1079,7 +1079,7 @@ void CRinionsApp::OnLddWndOpen_x4()
 
 void CRinionsApp::SensorWndOpen()
 {
-	if (pSensorView!=NULL) return;		// Open çœÇ›
+	if (pSensorView!=NULL) return;		// Open Ê∏à„Åø
 
 	CExFrame* pfrm = CreateDocFrmView(pDocTemplSNR, this);
 
@@ -1132,7 +1132,7 @@ void CRinionsApp::SensorWndOpen()
 	}
 	//
 	else {
-		ExecDocFrmViewError(pMainFrame->m_hWnd, MSG_DFV_FR_NULL);	// FrameÇ÷ÇÃÉ|ÉCÉìÉ^Ç™ NULLÇ≈Ç∑
+		ExecDocFrmViewError(pMainFrame->m_hWnd, MSG_DFV_FR_NULL);	// Frame„Å∏„ÅÆ„Éù„Ç§„É≥„Çø„Åå NULL„Åß„Åô
 	}
 
 	updateMenuBar();
@@ -1153,7 +1153,7 @@ void CRinionsApp::StopSensorThread(void)
 
 void  CRinionsApp::MakeCameraImage(void)
 {
-	// ÉCÉÅÅ[ÉWÇÃçÏê¨
+	// „Ç§„É°„Éº„Ç∏„ÅÆ‰ΩúÊàê
 	if (niDevice->has_device && !niDevice->hasImageGenerator() && niDevice->appParam.isUseImage) {
 		CMessageBoxDLG* mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_CREATE_IMAGE, m_pMainWnd);
 		niDevice->createImageGenerator();
@@ -1170,7 +1170,7 @@ void  CRinionsApp::StartSpeechRecognition(void)
 	niDevice->enableSpeechReco = FALSE;
 	//
 	if (appParam.useSpeechReco) {
-		CMessageBoxDLG* mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_START_SPEECH, m_pMainWnd);// "âπê∫îFéØã@î\ÇÃãNìÆíÜ"
+		CMessageBoxDLG* mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_START_SPEECH, m_pMainWnd);// "Èü≥Â£∞Ë™çË≠òÊ©üËÉΩ„ÅÆËµ∑Âãï‰∏≠"
 		ret = niDevice->initSpeech();
 		if (ret) ret = niDevice->createSpeech();			
 		if (ret) ret = niDevice->startSpeech();
@@ -1193,7 +1193,7 @@ void  CRinionsApp::StartSpeechRecognition(void)
 
 void  CRinionsApp::StopSpeechRecognition(void)
 {
-	CMessageBoxDLG* mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_STOP_SPEECH, m_pMainWnd);	// "âπê∫îFéØã@î\ÇÃí‚é~íÜ"
+	CMessageBoxDLG* mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_STOP_SPEECH, m_pMainWnd);	// "Èü≥Â£∞Ë™çË≠òÊ©üËÉΩ„ÅÆÂÅúÊ≠¢‰∏≠"
 	niDevice->stopSpeech();
 	if (mesgBox!=NULL) delete(mesgBox);
 
@@ -1211,7 +1211,7 @@ void  CRinionsApp::ReStartSpeechRecognition(void)
 {
 	BOOL ret = TRUE;
 
-	CMessageBoxDLG* mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_RESTART_SPEECH, m_pMainWnd);	// "âπê∫îFéØã@î\ÇÃí‚é~íÜ"
+	CMessageBoxDLG* mesgBox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_RESTART_SPEECH, m_pMainWnd);	// "Èü≥Â£∞Ë™çË≠òÊ©üËÉΩ„ÅÆÂÅúÊ≠¢‰∏≠"
 	niDevice->stopSpeech();
 	//
 	niDevice->enableSpeechReco = FALSE;
@@ -1281,7 +1281,7 @@ void CRinionsApp::OnDepthWndOpen_x4()
 void CRinionsApp::DepthWndOpen()
 {
 	if (!niDevice->hasDepthGenerator()) return;
-	if (pDepthView!=NULL) return;				// Open çœÇ›
+	if (pDepthView!=NULL) return;				// Open Ê∏à„Åø
 
 	CExFrame* pfrm = CreateDocFrmView(pDocTemplDPT, this);
 
@@ -1315,7 +1315,7 @@ void CRinionsApp::DepthWndOpen()
 	}
 	//
 	else {
-		ExecDocFrmViewError(pMainFrame->m_hWnd, MSG_DFV_FR_NULL);	// FrameÇ÷ÇÃÉ|ÉCÉìÉ^Ç™ NULLÇ≈Ç∑
+		ExecDocFrmViewError(pMainFrame->m_hWnd, MSG_DFV_FR_NULL);	// Frame„Å∏„ÅÆ„Éù„Ç§„É≥„Çø„Åå NULL„Åß„Åô
 	}
 
 	updateMenuBar();
@@ -1328,10 +1328,10 @@ void CRinionsApp::DepthWndOpen()
 
 
 /////////////////////////////////////////////////////////////////
-//Å@ê›íË ÉÅÉjÉÖÅ[
+//„ÄÄË®≠ÂÆö „É°„Éã„É•„Éº
 //
 
-// NI ÉfÉoÉCÉX
+// NI „Éá„Éê„Ç§„Çπ
 void CRinionsApp::OnSettingDevice()
 {
 	CSetDevice* devdlg = new CSetDevice(niDevice, appParam);
@@ -1358,7 +1358,7 @@ void CRinionsApp::OnSettingDevice()
 
 
 
-// ÉÇÅ[ÉVÉáÉìê›íË
+// „É¢„Éº„Ç∑„Éß„É≥Ë®≠ÂÆö
 void CRinionsApp::OnSettingMotion()
 {
 	CSetMotion* mtndlg = NULL;
@@ -1427,7 +1427,7 @@ void CRinionsApp::OnSettingMotion()
 
 
 
-// ÉçÉO ÉEÉBÉìÉhÉE
+// „É≠„Ç∞ „Ç¶„Ç£„É≥„Éâ„Ç¶
 void CRinionsApp::OnSettingLogingMode()
 {
 	CSetLogMode* logdlg = new CSetLogMode(niDevice->nowSDKLib, appParam);
@@ -1444,7 +1444,7 @@ void CRinionsApp::OnSettingLogingMode()
 
 
 
-// ÉZÉìÉTÅ[ ÉEÉBÉìÉhÉE
+// „Çª„É≥„Çµ„Éº „Ç¶„Ç£„É≥„Éâ„Ç¶
 void CRinionsApp::OnSettingViewMode()
 {
 	CSetViewMode* viwdlg = new CSetViewMode(appParam, niDevice->inputDevice);
@@ -1462,7 +1462,7 @@ void CRinionsApp::OnSettingViewMode()
 
 
 
-// ÉfÅ[É^èoóÕ
+// „Éá„Éº„ÇøÂá∫Âäõ
 void CRinionsApp::OnSettingOutData()
 {
 	CSetOutData* smrdlg = new CSetOutData(appParam);
@@ -1480,7 +1480,7 @@ void CRinionsApp::OnSettingOutData()
 
 
 
-// ÉlÉbÉgÉèÅ[ÉN
+// „Éç„ÉÉ„Éà„ÉØ„Éº„ÇØ
 void CRinionsApp::OnSettingNetwork()
 {
 	CSetNetwork* netdlg = new CSetNetwork(appParam, isLoggedIn);
@@ -1497,7 +1497,7 @@ void CRinionsApp::OnSettingNetwork()
 
 
 
-// ÉAÉjÉÅÅ[ÉVÉáÉì UUID
+// „Ç¢„Éã„É°„Éº„Ç∑„Éß„É≥ UUID
 void CRinionsApp::OnSettingAnimation()
 {
 	CSetAnimation* anmdlg = new CSetAnimation(appParam, isLoggedIn);
@@ -1517,7 +1517,7 @@ void CRinionsApp::OnSettingAnimation()
 
 
 
-// ÉfÅ[É^ï€ë∂
+// „Éá„Éº„Çø‰øùÂ≠ò
 void CRinionsApp::OnSettingDataSave()
 {
 //	BOOL fexst = (BOOL)file_exist(RINIONS_BVH_TEMPLATE);
@@ -1535,7 +1535,7 @@ void CRinionsApp::OnSettingDataSave()
 
 
 
-// âπê∫îFéØ
+// Èü≥Â£∞Ë™çË≠ò
 void CRinionsApp::OnSettingSpeech()
 {
 	// Backup
@@ -1560,7 +1560,7 @@ void CRinionsApp::OnSettingSpeech()
 			StopSpeechRecognition();
 		}
 	}
-	else if (langSpeech!=appParam.langSpeech) {	// çƒãNìÆ
+	else if (langSpeech!=appParam.langSpeech) {	// ÂÜçËµ∑Âãï
 		if (appParam.useSpeechReco) {
 			ReStartSpeechRecognition();
 		}
@@ -1581,7 +1581,7 @@ void  CRinionsApp::updateMenuBar(CMenu* menu)
 	int state = niDevice->getDevState();
 
 
-	// ÉfÅ[É^ï€ë∂
+	// „Éá„Éº„Çø‰øùÂ≠ò
 	if (dataSaving || logfSaving || logfSending) {
 		menu->EnableMenuItem(ID_SETTING_SAVEDATA, MF_BYCOMMAND | MF_DISABLED | MF_GRAYED);
 	}
@@ -1633,7 +1633,7 @@ void  CRinionsApp::updateMenuBar(CMenu* menu)
 		}
 	}
 	
-	// ÉZÉìÉTÅ[ÉEÉBÉìÉhÉE
+	// „Çª„É≥„Çµ„Éº„Ç¶„Ç£„É≥„Éâ„Ç¶
 	if (pSensorView!=NULL) {
 		enableLoadedWndMenu(menu, FALSE);
 		menu->EnableMenuItem(ID_APP_DATA_LOAD, MF_BYCOMMAND | MF_DISABLED | MF_GRAYED);
@@ -1646,7 +1646,7 @@ void  CRinionsApp::updateMenuBar(CMenu* menu)
 		enableDepthWndMenu(menu, FALSE);
 	}
 
-	// ÉçÉOÉEÉBÉìÉhÉE
+	// „É≠„Ç∞„Ç¶„Ç£„É≥„Éâ„Ç¶
 	if (pLogFrame!=NULL) {
 		menu->EnableMenuItem(ID_LOG_WND_OPEN, MF_BYCOMMAND | MF_DISABLED | MF_GRAYED);
 	}
@@ -1654,7 +1654,7 @@ void  CRinionsApp::updateMenuBar(CMenu* menu)
 		menu->EnableMenuItem(ID_LOG_WND_OPEN, MF_BYCOMMAND | MF_ENABLED);
 	}
 
-	// ÉçÉOÉCÉì
+	// „É≠„Ç∞„Ç§„É≥
 	if (isLoggedIn) {
 		menu->EnableMenuItem(ID_APP_LOGIN,  MF_BYCOMMAND | MF_DISABLED | MF_GRAYED);
 		menu->EnableMenuItem(ID_APP_LOGOUT, MF_BYCOMMAND | MF_ENABLED);
@@ -1779,10 +1779,10 @@ void  CRinionsApp::updateStatusBar(BOOL init)
 		}
 
 		if (isLoggedIn) {
-			rc.LoadString(IDS_STR_LOGGING_IN);					// ÉçÉOÉCÉìíÜ
+			rc.LoadString(IDS_STR_LOGGING_IN);					// „É≠„Ç∞„Ç§„É≥‰∏≠
 			mesg = mesg + _T(" | " )+ rc;		
 			if (isRecvData) {
-				rc.LoadString(IDS_STR_RECEIVING_DATA);			// ÉfÅ[É^éÛêMíÜ
+				rc.LoadString(IDS_STR_RECEIVING_DATA);			// „Éá„Éº„ÇøÂèó‰ø°‰∏≠
 				mesg = mesg + _T(" | ") + rc;
 			}
 		}

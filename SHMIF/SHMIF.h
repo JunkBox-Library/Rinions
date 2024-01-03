@@ -22,7 +22,7 @@
 
 
 #define   SHMIF_CHANNEL_NUM		22	// Local 1 + Network (Oneself 1 + Other 20)
-#define   SHMIF_DATA_SIZE		64	// ƒWƒ‡ƒCƒ“ƒg‚Ìƒf[ƒ^ƒTƒCƒY  8+8x3+8x4   see also ANM_COM_LEN_DATA in anm_data.h
+#define   SHMIF_DATA_SIZE		64	// ã‚¸ãƒ§ã‚¤ãƒ³ãƒˆã®ãƒ‡ãƒ¼ã‚¿ã‚µã‚¤ã‚º  8+8x3+8x4   see also ANM_COM_LEN_DATA in anm_data.h
 #define   SHMIF_INDEX_LEN		40	// 36 + 4
 #define   SHMIF_UUID_LEN		36
 
@@ -34,7 +34,7 @@
 
 
 //
-//		  ‹¤—Lƒƒ‚ƒŠƒCƒ“ƒfƒbƒNƒX	‹¤—Lƒƒ‚ƒŠ–¼		see	_SHMJointName[]
+//		  å…±æœ‰ãƒ¡ãƒ¢ãƒªã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹	å…±æœ‰ãƒ¡ãƒ¢ãƒªå		see	_SHMJointName[]
 //
 #define   SHMIF_PELVIS		0		//*"mPelvis"
 #define   SHMIF_TORSO		1		//*"mTorso"
@@ -95,9 +95,9 @@ std::string  SHMJointName(int n);
 
 
 ///////////////////////////////////////////////////////////////////////////////////
-//  CSHMInterFace ƒNƒ‰ƒX 
+//  CSHMInterFace ã‚¯ãƒ©ã‚¹ 
 //
-//   å‚ÉƒNƒ‰ƒCƒAƒ“ƒg‚Å‚Ì‹¤—Lƒƒ‚ƒŠ‚Ì“Ç‚İo‚µ‚É—p‚¢‚éD
+//   ä¸»ã«ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã§ã®å…±æœ‰ãƒ¡ãƒ¢ãƒªã®èª­ã¿å‡ºã—ã«ç”¨ã„ã‚‹ï¼
 //
 
 class  CSHMInterFace

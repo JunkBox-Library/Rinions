@@ -16,7 +16,7 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// CExNiDevice ƒNƒ‰ƒX : ƒ‰ƒCƒuƒ‰ƒŠ‚Ìƒ‰ƒbƒp[ƒNƒ‰ƒX
+// CExNiDevice ã‚¯ãƒ©ã‚¹ : ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ãƒ©ãƒƒãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹
 //
 
 CExNiDevice::CExNiDevice(void)
@@ -171,9 +171,9 @@ BOOL  CExNiDevice::init(void)
 	BOOL ret = check_lib();
 	if (!ret) {
 		#ifdef WIN64
-		mesg.LoadString(IDS_STR_NOT_LIB64);			// "64bitƒ‰ƒCƒuƒ‰ƒŠ‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ"
+		mesg.LoadString(IDS_STR_NOT_LIB64);			// "64bitãƒ©ã‚¤ãƒ–ãƒ©ãƒªãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã¾ã›ã‚“"
 		#else
-		mesg.LoadString(IDS_STR_NOT_LIB32);			// "32bitƒ‰ƒCƒuƒ‰ƒŠ‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ"
+		mesg.LoadString(IDS_STR_NOT_LIB32);			// "32bitãƒ©ã‚¤ãƒ–ãƒ©ãƒªãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã¾ã›ã‚“"
 		#endif
 
 		err_message = mesg;
@@ -184,7 +184,7 @@ BOOL  CExNiDevice::init(void)
 	else {
 		ret = init_device();
 		if (!ret) {
-			mesg.LoadString(IDS_STR_NOT_DEVICE);	// "NIƒfƒoƒCƒX‚ªÚ‘±‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ"
+			mesg.LoadString(IDS_STR_NOT_DEVICE);	// "NIãƒ‡ãƒã‚¤ã‚¹ãŒæ¥ç¶šã•ã‚Œã¦ã„ã¾ã›ã‚“"
 			err_message = mesg;
 //			err_message = mesg + _T("\n\n") + getErrorMessage();
 			has_device = FALSE;
@@ -559,7 +559,7 @@ int  CExNiDevice::execLoadedData(BOOL login, FileDevParam param)
 {
 	if (login) niNetwork->openSendSocket();
 
-	// –ß‚è’lF@³: ÅŒã‚ÌƒtƒŒ[ƒ€‚ÌŸ‚ÌƒtƒŒ[ƒ€‚Ì”Ô†, •‰: ƒGƒ‰[
+	// æˆ»ã‚Šå€¤ï¼šã€€æ­£: æœ€å¾Œã®ãƒ•ãƒ¬ãƒ¼ãƒ ã®æ¬¡ã®ãƒ•ãƒ¬ãƒ¼ãƒ ã®ç•ªå·, è² : ã‚¨ãƒ©ãƒ¼
 	int ret = nifile_dev->convertJointsData(niNetwork, param);
 	if (ret<0) {
 		*(param.controler) = NI_FILE_PLAYER_STOP;
@@ -656,7 +656,7 @@ void  CExNiDevice::setParameter(CParameterSet param)
 
 	if (niexport_data!=NULL) {
 		if (param.outDataFPS>1) {
-			int period = Max(1000/(param.outDataFPS-1), 25);	// Å¬ 25ms, Å‘å 40FPS
+			int period = Max(1000/(param.outDataFPS-1), 25);	// æœ€å° 25ms, æœ€å¤§ 40FPS
 			if (period!=niexport_data->outPeriod) {
 				niexport_data->modTime = 0;
 				niexport_data->outPeriod = period;
@@ -742,7 +742,7 @@ void  CExNiDevice::execMirroring(void)
 
 
 //
-// dev==TRUE ‚È‚çƒfƒoƒCƒX‚©‚çƒGƒ‰[ƒƒbƒZ[ƒW‚ğæ“¾‚·‚éD
+// dev==TRUE ãªã‚‰ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å–å¾—ã™ã‚‹ï¼
 //
 CString  CExNiDevice::getErrorMessage(BOOL dev)
 {
@@ -2178,7 +2178,7 @@ int   CExNiDevice::backupRecordeTempFile(LPCTSTR backup_file, BOOL force)
 				if (!force) {
 					if (file_exist_t(backup_file)) {
 						int yesno = MessageBoxDLG(IDS_STR_WARN, IDS_STR_ASK_OVERWRITE, MB_YESNO, mWnd);
-						if (yesno==IDNO) return TRUE;	// ƒGƒ‰[ƒƒbƒZ[ƒW‚ğo‚³‚È‚¢
+						if (yesno==IDNO) return TRUE;	// ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å‡ºã•ãªã„
 					}
 				}
 				CMessageBoxDLG* mbox = MessageBoxDLG(IDS_STR_INFO, IDS_STR_WRTNG_FILE, mWnd);

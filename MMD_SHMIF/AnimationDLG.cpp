@@ -1,4 +1,4 @@
-// SetAnimation.cpp : 実装ファイル
+// SetAnimation.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include "stdafx.h"
@@ -9,7 +9,7 @@
 
 
 
-// CAnimationDLG ダイアログ
+// CAnimationDLG 繝繧､繧｢繝ｭ繧ｰ
 
 IMPLEMENT_DYNAMIC(CAnimationDLG, CDialog)
 
@@ -36,7 +36,7 @@ END_MESSAGE_MAP()
 
 
 
-// CAnimationDLG メッセージ ハンドラ
+// CAnimationDLG 繝｡繝�繧ｻ繝ｼ繧ｸ 繝上Φ繝峨Λ
 
 void CAnimationDLG::OnOK()
 {

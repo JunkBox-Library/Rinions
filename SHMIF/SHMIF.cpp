@@ -3,7 +3,7 @@
  *
  *		Copyright (c) 2011, Fumi.Iseki
  *
- *      CSHMInterFace �N���X�́C��ɃN���C�A���g�ł̋��L�������̓ǂݏo���ɗp����D
+ *      CSHMInterFace クラスは，主にクライアントでの共有メモリの読み出しに用いる．
  * 
  */
 
@@ -48,9 +48,9 @@ std::string  SHMJointName(int n)
 
 
 ///////////////////////////////////////////////////////////////////////////////////
-//  CSHMInterFace �N���X 
+//  CSHMInterFace クラス 
 //
-//   ��ɃN���C�A���g�ł̋��L�������̓ǂݏo���ɗp����D
+//   主にクライアントでの共有メモリの読み出しに用いる．
 //
 
 void  CSHMInterFace::init(char* id)

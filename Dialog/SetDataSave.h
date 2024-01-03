@@ -1,19 +1,19 @@
 #pragma once
 
 
-// CSetDataSave ƒ_ƒCƒAƒƒO
+// CSetDataSave ãƒ€ã‚¤ã‚¢ãƒ­ã‚°
 
 class CSetDataSave : public CDialog
 {
 	DECLARE_DYNAMIC(CSetDataSave)
 
 public:
-	CSetDataSave(NiSDK_Lib lib, CParameterSet prm, CWnd* pParent=NULL);   // •W€ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	CSetDataSave(NiSDK_Lib lib, CParameterSet prm, CWnd* pParent=NULL);   // æ¨™æº–ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	virtual ~CSetDataSave() {}
 
 	CParameterSet getParameter(void) { return param;}
 
-	// ƒ_ƒCƒAƒƒO ƒf[ƒ^
+	// ãƒ€ã‚¤ã‚¢ãƒ­ã‚° ãƒ‡ãƒ¼ã‚¿
 	enum { IDD = IDD_SETDATASAVE };
 
 
@@ -46,7 +46,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ƒTƒ|[ƒg
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ã‚µãƒãƒ¼ãƒˆ
 
 	DECLARE_MESSAGE_MAP()
 public:

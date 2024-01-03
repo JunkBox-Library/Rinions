@@ -1,4 +1,4 @@
-// SetLogMode.cpp : 実装ファイル
+// SetLogMode.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include "stdafx.h"
@@ -9,7 +9,7 @@
 #include "WinTools.h"
 
 
-// CSetLogMode ダイアログ
+// CSetLogMode 繝繧､繧｢繝ｭ繧ｰ
 
 
 IMPLEMENT_DYNAMIC(CSetLogMode, CDialog)

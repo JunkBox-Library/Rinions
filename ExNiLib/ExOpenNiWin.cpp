@@ -13,7 +13,7 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// CExOpenNiWin ÉNÉâÉX
+// CExOpenNiWin „ÇØ„É©„Çπ
 //
 
 CExOpenNiWin::CExOpenNiWin(NiSDK_Lib lib) : COpenNiWin(lib)
@@ -190,7 +190,7 @@ void  CExOpenNiWin::stopLogTransfer(void)
 
 /////////////////////////////////////////////////
 //
-// ÉWÉáÉCÉìÉgÉfÅ[É^ÇÃèàóùÇ∆èoóÕ
+// „Ç∏„Éß„Ç§„É≥„Éà„Éá„Éº„Çø„ÅÆÂá¶ÁêÜ„Å®Âá∫Âäõ
 //
 void  CExOpenNiWin::convertJointsData(void)
 {
@@ -227,7 +227,7 @@ void  CExOpenNiWin::convertJointsData(void)
 	if (pSensorFrame==NULL) return;
 
 	//
-	// ÉfÅ[É^èoóÕ
+	// „Éá„Éº„ÇøÂá∫Âäõ
 	if (niExportData!=NULL) {
 		if (niJoints!=NULL) {
 			niExportData->sendLogNet = hasAngleData && appParam.sendLogNet;
@@ -271,7 +271,7 @@ void  CExOpenNiWin::saveJointsData(void)
 
 void  CExOpenNiWin::loggingJointsData(void)
 {
-	// CRITICAL SECTION Ç…Ç∑ÇÈÇ◊Ç´Ç©?
+	// CRITICAL SECTION „Å´„Åô„Çã„Åπ„Åç„Åã?
 	//
 	
 	//
@@ -382,7 +382,7 @@ void  CExOpenNiWin::convertPos2JointsData(void)
 
 	rotQuat[NI_SDK_PELVIS].init();
 
-	// PELVIS YZé≤ÇÃâÒì]
+	// PELVIS YZËª∏„ÅÆÂõûËª¢
 	if (posVect[NI_SDK_R_HIP].c>=m_confidence && posVect[NI_SDK_L_HIP].c>=m_confidence) { 
 		Vector<double> vect = NewellMethod4(posVect[NI_SDK_R_HIP], posVect[NI_SDK_PELVIS], posVect[NI_SDK_L_HIP], posVect[NI_SDK_TORSO]);
 		
@@ -392,7 +392,7 @@ void  CExOpenNiWin::convertPos2JointsData(void)
 		//}
 	}
 
-	// Xé≤âÒì]
+	// XËª∏ÂõûËª¢
 	Quaternion quat_lhip = ~rotQuat[NI_SDK_PELVIS]*posVect[NI_SDK_L_HIP]*rotQuat[NI_SDK_PELVIS];
 	Quaternion quat_rhip = ~rotQuat[NI_SDK_PELVIS]*posVect[NI_SDK_R_HIP]*rotQuat[NI_SDK_PELVIS];
 
@@ -402,7 +402,7 @@ void  CExOpenNiWin::convertPos2JointsData(void)
 	Quaternion xrot;
 	xrot.setRotation(thx, 1.0, 0.0, 0.0, 1.0);
 
-	// Yé≤âÒì]ï‚ê≥
+	// YËª∏ÂõûËª¢Ë£úÊ≠£
 	Quaternion yrot;
 	yrot.setRotation((double)appParam.YaxisCorrect, 0.0, 1.0, 0.0, 1.0);
 
@@ -508,7 +508,7 @@ void  CExOpenNiWin::convertUpperPos2JointsData(void)
 	rotQuat[NI_SDK_PELVIS].init();
 	posVect[NI_SDK_PELVIS].init();
 
-	// PELVIS YZé≤ÇÃâÒì]
+	// PELVIS YZËª∏„ÅÆÂõûËª¢
 	if (posVect[NI_SDK_R_SHLDR].c>=m_confidence && posVect[NI_SDK_L_SHLDR].c>=m_confidence) { 
 		Vector<double> vect = NewellMethod4(posVect[NI_SDK_R_SHLDR], posVect[NI_SDK_TORSO], posVect[NI_SDK_L_SHLDR], posVect[NI_SDK_NECK]);
 		
@@ -518,7 +518,7 @@ void  CExOpenNiWin::convertUpperPos2JointsData(void)
 		//}
 	}
 
-	// X é≤âÒì]
+	// X Ëª∏ÂõûËª¢
 	Quaternion quat_lshd = ~rotQuat[NI_SDK_PELVIS]*posVect[NI_SDK_L_SHLDR]*rotQuat[NI_SDK_PELVIS];
 	Quaternion quat_rshd = ~rotQuat[NI_SDK_PELVIS]*posVect[NI_SDK_R_SHLDR]*rotQuat[NI_SDK_PELVIS];
 
@@ -528,7 +528,7 @@ void  CExOpenNiWin::convertUpperPos2JointsData(void)
 	Quaternion xrot;
 	xrot.setRotation(thx, 1.0, 0.0, 0.0, 1.0);
 
-	// Yé≤âÒì]ï‚ê≥
+	// YËª∏ÂõûËª¢Ë£úÊ≠£
 	Quaternion yrot;
 	yrot.setRotation((double)appParam.YaxisCorrect, 0.0, 1.0, 0.0, 1.0);
 
@@ -628,7 +628,7 @@ void  CExOpenNiWin::convertRot2JointsData(void)
 	Vector<double> torso_up	   = - torso_down;
 	Vector<double> shldr_right = - shldr_left;
 
-	// PELVIS YZïΩñ ÇÃâÒì]
+	// PELVIS YZÂπ≥Èù¢„ÅÆÂõûËª¢
 	if (posVect[NI_SDK_R_HIP].c>=m_confidence && posVect[NI_SDK_L_HIP].c>=m_confidence) { 
 		Vector<double> vect = NewellMethod4(posVect[NI_SDK_R_HIP], posVect[NI_SDK_PELVIS], posVect[NI_SDK_L_HIP], posVect[NI_SDK_TORSO]);
 		
@@ -641,7 +641,7 @@ void  CExOpenNiWin::convertRot2JointsData(void)
 		rotQuat[NI_SDK_PELVIS].init();
 	}
 
-	// X é≤âÒì]Åiç¿ïWïœä∑Åj
+	// X Ëª∏ÂõûËª¢ÔºàÂ∫ßÊ®ôÂ§âÊèõÔºâ
 	Quaternion quat_lhip = ~rotQuat[NI_SDK_PELVIS]*posVect[NI_SDK_L_HIP]*rotQuat[NI_SDK_PELVIS];
 	Quaternion quat_rhip = ~rotQuat[NI_SDK_PELVIS]*posVect[NI_SDK_R_HIP]*rotQuat[NI_SDK_PELVIS];
 
@@ -791,7 +791,7 @@ bool  CExOpenNiWin::setStartBoneLength()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// ÉXÉåÉbÉh
+// „Çπ„É¨„ÉÉ„Éâ
 //
 
 #include  "CameraView.h"

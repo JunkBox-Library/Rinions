@@ -1,4 +1,4 @@
-// SensorFrame.cpp : 実装ファイル
+// SensorFrame.cpp : 螳溯｣�繝輔ぃ繧､繝ｫ
 //
 
 #include  "stdafx.h"
@@ -64,7 +64,7 @@ END_MESSAGE_MAP()
 
 
 
-// CSensorFrame メッセージ ハンドラ
+// CSensorFrame 繝｡繝�繧ｻ繝ｼ繧ｸ 繝上Φ繝峨Λ
 
 int  CSensorFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 {

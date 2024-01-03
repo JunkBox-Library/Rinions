@@ -5,19 +5,19 @@
 
 
 
-// CSetViewMode É_ÉCÉAÉçÉO
+// CSetViewMode „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 
 class CSetViewMode : public CDialog
 {
 	DECLARE_DYNAMIC(CSetViewMode)
 
 public:
-	CSetViewMode(CParameterSet prm, NiInputDevice dev, CWnd* pParent=NULL);   // ïWèÄÉRÉìÉXÉgÉâÉNÉ^
+	CSetViewMode(CParameterSet prm, NiInputDevice dev, CWnd* pParent=NULL);   // Ê®ôÊ∫ñ„Ç≥„É≥„Çπ„Éà„É©„ÇØ„Çø
 	virtual ~CSetViewMode() {}
 
 	CParameterSet getParameter(void) { return param;}
 
-	// É_ÉCÉAÉçÉO ÉfÅ[É^
+	// „ÉÄ„Ç§„Ç¢„É≠„Ç∞ „Éá„Éº„Çø
 	enum { IDD = IDD_SETVIEWMODE };
 
 
@@ -35,7 +35,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÉTÉ|Å[Ég
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV „Çµ„Éù„Éº„Éà
 
 	DECLARE_MESSAGE_MAP()
 public:

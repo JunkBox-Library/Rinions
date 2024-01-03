@@ -211,7 +211,7 @@ void  CExNiJoints::execOpencvFaceTracking(void)
 	int headx = crdVect[NI_SDK_HEAD].x;
 	int heady = crdVect[NI_SDK_HEAD].y;
 
-	// ƒpƒ‰ƒ[ƒ^ˆË‘¶
+	// ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ä¾å­˜
 	int xsize = (int)(shd.norm()*0.8);
 	int ysize = (int)(n2h.norm()*1.2);
 	//
@@ -367,7 +367,7 @@ void  CExNiJoints::drawOpencvFaceTracking(int color, int line)
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 //
-// •½ŠŠ‰»
+// å¹³æ»‘åŒ–
 //
 
 void  CExNiJoints::initMvavWeight(void)
@@ -478,7 +478,7 @@ void  CExNiJoints::RotMovingAverage(NiSDK_Lib sdk_lib)
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 //
-// §–ñğŒ
+// åˆ¶ç´„æ¡ä»¶
 //
 
 void  CExNiJoints::PosVibNoiseCanceler(void)
@@ -558,7 +558,7 @@ void  CExNiJoints::CheckGroundLevel(float ground_level)
 	if (posVect==NULL) return;
 
 
-	// Œë·‚ª‘å‚«‚·‚¬‚é
+	// èª¤å·®ãŒå¤§ãã™ãã‚‹
 	/*
 	if (posVect[NI_SDK_L_ANKLE].z<ground_level) {
 		posVect[NI_SDK_L_FOOT].z += ground_level - posVect[NI_SDK_L_ANKLE].z;
@@ -627,7 +627,7 @@ void  CExNiJoints::CheckBoneLength(void)
 
 //////////////////////////////////////////////////////////////////////////
 //
-// ‰ñ“]‚Ì§–ñ
+// å›è»¢ã®åˆ¶ç´„
 // 
 
 void  CExNiJoints::CheckJointsRotation(void)
@@ -645,7 +645,7 @@ void  CExNiJoints::CheckJointsRotation(void)
 
 ///////////////////////////////////////////////////
 //
-// §–ñğŒ‚Ìİ’è
+// åˆ¶ç´„æ¡ä»¶ã®è¨­å®š
 //
 
 void  jbxwl::initRBoundJointsRotation()
@@ -665,9 +665,9 @@ void  jbxwl::initRBoundJointsRotation()
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
-X-Rotation, Y-Rotation, Z-Rotation ‚Ì”ÍˆÍ‚ğw’è‚·‚éD’PˆÊ‚Í“xD
+X-Rotation, Y-Rotation, Z-Rotation ã®ç¯„å›²ã‚’æŒ‡å®šã™ã‚‹ï¼å˜ä½ã¯åº¦ï¼
 
-tmin!=0.0 ‚Ìê‡‚ÉğŒ‚ª“K—p‚³‚ê‚éD
+tmin!=0.0 ã®å ´åˆã«æ¡ä»¶ãŒé©ç”¨ã•ã‚Œã‚‹ï¼
 
 @see http://wiki.secondlife.com/wiki/Suggested_BVH_Joint_Rotation_Limits
 

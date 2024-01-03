@@ -7,19 +7,19 @@
 
 
 
-// CSetSpeech É_ÉCÉAÉçÉO
+// CSetSpeech „ÉÄ„Ç§„Ç¢„É≠„Ç∞
 
 class CSetSpeech : public CDialog
 {
 	DECLARE_DYNAMIC(CSetSpeech)
 
 public:
-	CSetSpeech(NiSDK_Lib lib, CParameterSet prm, CWnd* pParent=NULL);   // ïWèÄÉRÉìÉXÉgÉâÉNÉ^
+	CSetSpeech(NiSDK_Lib lib, CParameterSet prm, CWnd* pParent=NULL);   // Ê®ôÊ∫ñ„Ç≥„É≥„Çπ„Éà„É©„ÇØ„Çø
 	virtual ~CSetSpeech() {}
 
 	CParameterSet getParameter(void) { return param;}
 
-	// É_ÉCÉAÉçÉO ÉfÅ[É^
+	// „ÉÄ„Ç§„Ç¢„É≠„Ç∞ „Éá„Éº„Çø
 	enum { IDD = IDD_SETSPEECH };
 
 
@@ -41,7 +41,7 @@ protected:
 
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÉTÉ|Å[Ég
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV „Çµ„Éù„Éº„Éà
 
 	DECLARE_MESSAGE_MAP()
 public:
